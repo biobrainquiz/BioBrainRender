@@ -33,7 +33,6 @@ exports.downloadResultPdf = async (req, res) => {
         ========================= */
 
         const puppeteer = require("puppeteer");
-
         const browser = await puppeteer.launch({
             headless: "new",
             args: ["--no-sandbox", "--disable-setuid-sandbox"]
