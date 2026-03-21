@@ -516,3 +516,266 @@
 2026-03-21 10:59:37 [INFO]: GET /js/navibar.js ::1 
 2026-03-21 10:59:37 [INFO]: GET /units/E4/S1 ::1 
 2026-03-21 10:59:38 [INFO]: GET /mocktest/result/pdf/69b81c00bd9295a122545e8e ::1 
+2026-03-21 11:06:50 [INFO]: 🚀 Server running on port 3000 
+2026-03-21 11:06:50 [INFO]: ✅ Connected to MongoDB 
+2026-03-21 11:06:50 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-21 11:06:50 [INFO]: ⚠ Clearing old Questions... 
+2026-03-21 11:06:50 [INFO]: ⚠ Clearing old Topics... 
+2026-03-21 11:06:50 [INFO]: ⚠ Clearing old Units... 
+2026-03-21 11:06:50 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-21 11:06:50 [INFO]: ⚠ Clearing old Exams... 
+2026-03-21 11:06:50 [INFO]: ⚠ Clearing old Payments... 
+2026-03-21 11:06:50 [INFO]: ⚡ Seeding Exam database... 
+2026-03-21 11:06:50 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-21 11:06:50 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-21 11:06:50 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-21 11:06:51 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-21 11:06:51 [INFO]: 🔥 Questions seeded: 460 successfully! 
+2026-03-21 11:06:51 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-21 11:06:51 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-21 11:06:51 [INFO]: ⚠ Clearing old Users... 
+2026-03-21 11:06:51 [INFO]: ⚠ Clearing old Roles... 
+2026-03-21 11:06:51 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-21 11:06:51 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-21 11:06:51 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-21 11:06:51 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-21 11:06:53 [INFO]: GET / ::1 
+2026-03-21 11:06:53 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:06:53 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:06:53 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:06:53 [INFO]: GET /images/dna-pattern.png ::1 
+2026-03-21 11:06:53 [INFO]: GET /images/molucule-structure.png ::1 
+2026-03-21 11:06:55 [INFO]: GET /mocktest/init/E4/S1 ::1 
+2026-03-21 11:06:55 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:06:55 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:06:55 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:06:55 [INFO]: GET /units/E4/S1 ::1 
+2026-03-21 11:06:57 [INFO]: GET /mocktest/result/pdf/69b6cf2e228eedfa77b194b1 ::1 
+2026-03-21 11:08:20 [INFO]: 🚀 Server running on port 3000 
+2026-03-21 11:08:20 [INFO]: ✅ Connected to MongoDB 
+2026-03-21 11:08:20 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-21 11:08:20 [INFO]: ⚠ Clearing old Questions... 
+2026-03-21 11:08:20 [INFO]: ⚠ Clearing old Topics... 
+2026-03-21 11:08:20 [INFO]: ⚠ Clearing old Units... 
+2026-03-21 11:08:20 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-21 11:08:20 [INFO]: ⚠ Clearing old Exams... 
+2026-03-21 11:08:20 [INFO]: ⚠ Clearing old Payments... 
+2026-03-21 11:08:20 [INFO]: ⚡ Seeding Exam database... 
+2026-03-21 11:08:20 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-21 11:08:20 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-21 11:08:20 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-21 11:08:20 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-21 11:08:20 [INFO]: 🔥 Questions seeded: 460 successfully! 
+2026-03-21 11:08:20 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-21 11:08:20 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-21 11:08:20 [INFO]: ⚠ Clearing old Users... 
+2026-03-21 11:08:20 [INFO]: ⚠ Clearing old Roles... 
+2026-03-21 11:08:20 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-21 11:08:20 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-21 11:08:20 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-21 11:08:20 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-21 11:08:26 [INFO]: GET / ::1 
+2026-03-21 11:08:26 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:08:26 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:08:26 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:08:26 [INFO]: GET /images/dna-pattern.png ::1 
+2026-03-21 11:08:26 [INFO]: GET /images/molucule-structure.png ::1 
+2026-03-21 11:08:42 [INFO]: GET /keep-session-alive ::1 
+2026-03-21 11:13:26 [INFO]: GET /keep-session-alive ::1 
+2026-03-21 11:13:42 [INFO]: GET /keep-session-alive ::1 
+2026-03-21 11:18:42 [INFO]: GET /keep-session-alive ::1 
+2026-03-21 11:23:42 [INFO]: GET /keep-session-alive ::1 
+2026-03-21 11:28:06 [INFO]: 🚀 Server running on port 3000 
+2026-03-21 11:28:06 [INFO]: ✅ Connected to MongoDB 
+2026-03-21 11:28:06 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-21 11:28:06 [INFO]: ⚠ Clearing old Questions... 
+2026-03-21 11:28:06 [INFO]: ⚠ Clearing old Topics... 
+2026-03-21 11:28:06 [INFO]: ⚠ Clearing old Units... 
+2026-03-21 11:28:06 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-21 11:28:06 [INFO]: ⚠ Clearing old Exams... 
+2026-03-21 11:28:06 [INFO]: ⚠ Clearing old Payments... 
+2026-03-21 11:28:06 [INFO]: ⚡ Seeding Exam database... 
+2026-03-21 11:28:07 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-21 11:28:07 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-21 11:28:07 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-21 11:28:07 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-21 11:28:07 [INFO]: 🔥 Questions seeded: 460 successfully! 
+2026-03-21 11:28:07 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-21 11:28:07 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-21 11:28:07 [INFO]: ⚠ Clearing old Users... 
+2026-03-21 11:28:07 [INFO]: ⚠ Clearing old Roles... 
+2026-03-21 11:28:07 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-21 11:28:07 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-21 11:28:07 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-21 11:28:07 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-21 11:28:09 [INFO]: GET / ::1 
+2026-03-21 11:28:09 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:28:09 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:28:09 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:28:10 [INFO]: GET /images/dna-pattern.png ::1 
+2026-03-21 11:28:10 [INFO]: GET /images/molucule-structure.png ::1 
+2026-03-21 11:28:12 [INFO]: GET /mocktest/init/E4/S1 ::1 
+2026-03-21 11:28:13 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:28:13 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:28:13 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:28:13 [INFO]: GET /units/E4/S1 ::1 
+2026-03-21 11:28:17 [INFO]: GET /topics/E4/S1/U1 ::1 
+2026-03-21 11:28:19 [INFO]: POST /mocktest/createorder ::1 
+2026-03-21 11:28:20 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:28:25 [INFO]: POST /mocktest/submit ::1 
+2026-03-21 11:28:28 [INFO]: GET / ::1 
+2026-03-21 11:28:28 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:28:28 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:28:28 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:28:30 [INFO]: GET /admin ::1 
+2026-03-21 11:28:30 [INFO]: GET /css/adminStyle.css ::1 
+2026-03-21 11:28:30 [INFO]: GET /js/admin.js ::1 
+2026-03-21 11:28:31 [INFO]: GET /admin/userroles ::1 
+2026-03-21 11:28:32 [INFO]: GET /css/adminStyle.css ::1 
+2026-03-21 11:28:34 [INFO]: POST /admin/users/add-role ::1 
+2026-03-21 11:28:35 [INFO]: GET / ::1 
+2026-03-21 11:28:35 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:28:35 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:28:35 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:28:38 [INFO]: GET /logout ::1 
+2026-03-21 11:28:38 [INFO]: GET / ::1 
+2026-03-21 11:28:38 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:28:38 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:28:38 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:28:40 [INFO]: GET /admin ::1 
+2026-03-21 11:28:40 [INFO]: GET /login ::1 
+2026-03-21 11:28:40 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:28:40 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:28:40 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:28:42 [INFO]: GET /keep-session-alive ::1 
+2026-03-21 11:28:55 [INFO]: POST /login ::1 
+2026-03-21 11:28:55 [INFO]: GET /admin ::1 
+2026-03-21 11:28:55 [INFO]: GET /css/adminStyle.css ::1 
+2026-03-21 11:28:55 [INFO]: GET /js/admin.js ::1 
+2026-03-21 11:29:07 [INFO]: GET / ::1 
+2026-03-21 11:29:07 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:29:07 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:29:07 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:29:09 [INFO]: GET /mocktest/init/E4/S1 ::1 
+2026-03-21 11:29:09 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:29:09 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:29:09 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:29:09 [INFO]: GET /units/E4/S1 ::1 
+2026-03-21 11:29:14 [INFO]: GET /topics/E4/S1/U1 ::1 
+2026-03-21 11:29:16 [INFO]: POST /mocktest/createorder ::1 
+2026-03-21 11:29:16 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:29:27 [INFO]: POST /mocktest/submit ::1 
+2026-03-21 11:29:30 [INFO]: POST /mocktest/result/aiassistat ::1 
+2026-03-21 11:30:19 [INFO]: 🚀 Server running on port 3000 
+2026-03-21 11:30:19 [INFO]: ✅ Connected to MongoDB 
+2026-03-21 11:30:19 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-21 11:30:19 [INFO]: ⚠ Clearing old Questions... 
+2026-03-21 11:30:19 [INFO]: ⚠ Clearing old Topics... 
+2026-03-21 11:30:19 [INFO]: ⚠ Clearing old Units... 
+2026-03-21 11:30:19 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-21 11:30:19 [INFO]: ⚠ Clearing old Exams... 
+2026-03-21 11:30:19 [INFO]: ⚠ Clearing old Payments... 
+2026-03-21 11:30:19 [INFO]: ⚡ Seeding Exam database... 
+2026-03-21 11:30:19 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-21 11:30:19 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-21 11:30:19 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-21 11:30:19 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-21 11:30:20 [INFO]: 🔥 Questions seeded: 460 successfully! 
+2026-03-21 11:30:20 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-21 11:30:20 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-21 11:30:20 [INFO]: ⚠ Clearing old Users... 
+2026-03-21 11:30:20 [INFO]: ⚠ Clearing old Roles... 
+2026-03-21 11:30:20 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-21 11:30:20 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-21 11:30:20 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-21 11:30:20 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-21 11:30:27 [INFO]: GET / ::1 
+2026-03-21 11:30:27 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:30:27 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:30:27 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:30:28 [INFO]: GET /mocktest/init/E4/S1 ::1 
+2026-03-21 11:30:28 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:30:28 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:30:28 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:30:28 [INFO]: GET /units/E4/S1 ::1 
+2026-03-21 11:30:31 [INFO]: GET /topics/E4/S1/U1 ::1 
+2026-03-21 11:30:33 [INFO]: POST /mocktest/createorder ::1 
+2026-03-21 11:30:33 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:30:38 [INFO]: POST /mocktest/submit ::1 
+2026-03-21 11:30:40 [INFO]: POST /mocktest/result/aiassistat ::1 
+2026-03-21 11:33:42 [INFO]: GET /keep-session-alive ::1 
+2026-03-21 11:35:33 [INFO]: GET /keep-session-alive ::1 
+2026-03-21 11:38:42 [INFO]: GET /keep-session-alive ::1 
+2026-03-21 11:43:42 [INFO]: GET /keep-session-alive ::1 
+2026-03-21 11:48:42 [INFO]: GET /keep-session-alive ::1 
+2026-03-21 11:51:35 [INFO]: GET / ::1 
+2026-03-21 11:51:36 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:51:36 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:51:36 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:51:36 [INFO]: GET /images/dna-pattern.png ::1 
+2026-03-21 11:51:36 [INFO]: GET /images/molucule-structure.png ::1 
+2026-03-21 11:56:52 [INFO]: 🚀 Server running on port 3000 
+2026-03-21 11:56:52 [INFO]: ✅ Connected to MongoDB 
+2026-03-21 11:56:52 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-21 11:56:52 [INFO]: ⚠ Clearing old Questions... 
+2026-03-21 11:56:52 [INFO]: ⚠ Clearing old Topics... 
+2026-03-21 11:56:53 [INFO]: ⚠ Clearing old Units... 
+2026-03-21 11:56:53 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-21 11:56:53 [INFO]: ⚠ Clearing old Exams... 
+2026-03-21 11:56:53 [INFO]: ⚠ Clearing old Payments... 
+2026-03-21 11:56:53 [INFO]: ⚡ Seeding Exam database... 
+2026-03-21 11:56:53 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-21 11:56:53 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-21 11:56:53 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-21 11:56:53 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-21 11:56:53 [INFO]: GET /mocktest/init/E4/S1 ::1 
+2026-03-21 11:56:53 [INFO]: 🔥 Questions seeded: 460 successfully! 
+2026-03-21 11:56:53 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-21 11:56:53 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-21 11:56:53 [INFO]: ⚠ Clearing old Users... 
+2026-03-21 11:56:53 [INFO]: ⚠ Clearing old Roles... 
+2026-03-21 11:56:53 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-21 11:56:53 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-21 11:56:53 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-21 11:56:53 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-21 11:56:53 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:56:53 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:56:53 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:56:53 [INFO]: GET /images/molucule-structure.png ::1 
+2026-03-21 11:56:54 [INFO]: GET /units/E4/S1 ::1 
+2026-03-21 11:56:54 [INFO]: GET / ::1 
+2026-03-21 11:56:55 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:56:55 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:56:55 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:56:55 [INFO]: GET /images/dna-pattern.png ::1 
+2026-03-21 11:56:56 [INFO]: GET /mocktest/init/E4/S1 ::1 
+2026-03-21 11:56:57 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:56:57 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:56:57 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:56:57 [INFO]: GET /units/E4/S1 ::1 
+2026-03-21 11:56:59 [INFO]: GET /topics/E4/S1/U1 ::1 
+2026-03-21 11:57:02 [INFO]: POST /mocktest/createorder ::1 
+2026-03-21 11:57:02 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:57:06 [INFO]: POST /mocktest/submit ::1 
+2026-03-21 11:57:08 [INFO]: GET / ::1 
+2026-03-21 11:57:09 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:57:09 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:57:09 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:57:11 [INFO]: GET /mocktest/init/E4/S1 ::1 
+2026-03-21 11:57:11 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:57:11 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:57:11 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:57:11 [INFO]: GET /units/E4/S1 ::1 
+2026-03-21 11:57:13 [INFO]: GET /topics/E4/S1/U1 ::1 
+2026-03-21 11:57:16 [INFO]: POST /mocktest/createorder ::1 
+2026-03-21 11:57:16 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:57:28 [INFO]: GET /disclaimer ::1 
+2026-03-21 11:57:28 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:57:28 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:57:28 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:57:30 [INFO]: GET / ::1 
+2026-03-21 11:57:30 [INFO]: GET /css/desktopStyle.css ::1 
+2026-03-21 11:57:30 [INFO]: GET /images/biobrain-logo1.png ::1 
+2026-03-21 11:57:30 [INFO]: GET /js/navibar.js ::1 
+2026-03-21 11:58:42 [INFO]: GET /keep-session-alive ::1 
+2026-03-21 12:03:42 [INFO]: GET /keep-session-alive ::1 

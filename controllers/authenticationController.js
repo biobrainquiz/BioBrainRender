@@ -86,9 +86,7 @@ exports.login = async (req, res) => {
         // Send generic error in production
         return res.status(500).json({
             success: false,
-            message: process.env.NODE_ENV === "production"
-                ? "Something went wrong"
-                : err.message
+            message: err.message
         });
     }
 };
@@ -255,10 +253,7 @@ exports.forgotPassword = async (req, res) => {
 
         return res.status(500).json({
             success: false,
-            message:
-                process.env.NODE_ENV === "production"
-                    ? "Something went wrong"
-                    : err.message
+            message:  err.message
         });
     }
 };
