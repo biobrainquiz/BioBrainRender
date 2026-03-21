@@ -123,6 +123,14 @@
     .ai-response:empty {
       display: none;
     }
+
+
+    .ai-explanation li.correct {
+      color: green;
+      /* Correct option text in green */
+      font-weight: bold;
+      /* Optional: make it bold */
+    }
   </style>
 </head>
 
@@ -150,60 +158,76 @@
         <th>Score</th>
       </tr>
       <tr>
-        <td><%= examSession.questionscount %></td>
-        <td><%= examSession.attempted %></td>
-        <td class="correct"><%= examSession.right %></td>
-        <td class="wrong"><%= examSession.wrong %></td>
-        <td><%= examSession.finalscore %></td>
+        <td>
+          <%= examSession.questionscount %>
+        </td>
+        <td>
+          <%= examSession.attempted %>
+        </td>
+        <td class="correct">
+          <%= examSession.right %>
+        </td>
+        <td class="wrong">
+          <%= examSession.wrong %>
+        </td>
+        <td>
+          <%= examSession.finalscore %>
+        </td>
       </tr>
     </table>
 
     <h2>Question Review</h2>
 
-    <% examSession.questions.forEach((q, idx) => {
+    <% examSession.questions.forEach((q, idx)=> {
       const userAns = examSession.answers[q._id]; %>
       <div class="question-box">
-        <p><strong>Q<%= idx + 1 %>:</strong> <%= q.question %></p>
+        <p><strong>Q<%= idx + 1 %>:</strong>
+          <%= q.question %>
+        </p>
 
         <ul class="question-options">
-          <% ['opt1', 'opt2', 'opt3', 'opt4'].forEach((optKey, i) => {
-              const optionNum = i + 1;
-              let cls = '';
-              if (userAns) {
-                cls = (userAns == optionNum && optionNum == q.answer) ? 'correct'
-                    : (userAns == optionNum && optionNum != q.answer) ? 'wrong' : '';
-              }
-              if (!userAns) cls = 'unattempted';
-          %>
+          <% ['opt1', 'opt2' , 'opt3' , 'opt4' ].forEach((optKey, i)=> {
+            const optionNum = i + 1;
+            let cls = '';
+            if (userAns) {
+            cls = (userAns == optionNum && optionNum == q.answer) ? 'correct'
+            : (userAns == optionNum && optionNum != q.answer) ? 'wrong' : '';
+            }
+            if (!userAns) cls = 'unattempted';
+            %>
             <li class="<%= cls %>">
-              <strong><%= String.fromCharCode(65 + i) %>.</strong> <%= q[optKey] %>
+              <strong>
+                <%= String.fromCharCode(65 + i) %>.
+              </strong>
+              <%= q[optKey] %>
             </li>
-          <% }) %>
+            <% }) %>
         </ul>
 
-        <p>Correct Answer: <strong><%= ['A','B','C','D'][q.answer-1] %></strong></p>
+        <p>Correct Answer: <strong>
+            <%= ['A','B','C','D'][q.answer-1] %>
+          </strong></p>
         <% if(!userAns){ %>
           <p class="unattempted">You did not attempt this question.</p>
-        <% } %>
+          <% } %>
 
-        <!-- 🤖 AI BUTTON -->
-         <button class="ai-btn"
-          onclick="<%= examSession.isuserpremium ? 'explainAnswer(this)' : 'return false;' %>"
-          <%- !examSession.isuserpremium ? 'disabled title="Premium Feature: Upgrade to access"' : '' %>
-          data-question="<%= q.question %>"
-          data-opt1="<%= q.opt1 %>"
-          data-opt2="<%= q.opt2 %>"
-          data-opt3="<%= q.opt3 %>"
-          data-opt4="<%= q.opt4 %>"
-          data-correct="<%= q.answer %>"
-          data-user="<%= (userAns === undefined || userAns === null) ? -1 : userAns %>">
-          🤖 Explain Answer
-        </button>
+            <!-- 🤖 AI BUTTON -->
+            <button class="ai-btn" onclick="<%= examSession.isuserpremium ? 'explainAnswer(this)' : 'return false;' %>"
+              <%- !examSession.isuserpremium ? 'disabled title="Premium Feature: Upgrade to access"' : '' %>
+              data-question="<%= q.question %>"
+                data-opt1="<%= q.opt1 %>"
+                  data-opt2="<%= q.opt2 %>"
+                    data-opt3="<%= q.opt3 %>"
+                      data-opt4="<%= q.opt4 %>"
+                        data-correct="<%= q.answer %>"
+                          data-user="<%= (userAns===undefined || userAns===null) ? -1 : userAns %>">
+                            🤖 Explain Answer
+            </button>
 
-        <div class="ai-response"></div>
+            <div class="ai-response"></div>
 
       </div>
-    <% }) %>
+      <% }) %>
 
   </div>
 
