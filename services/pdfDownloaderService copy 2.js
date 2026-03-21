@@ -394,41 +394,11 @@ exports.downloadResultPdf = async (req, res) => {
         // ===== START PDF CONTENT =====
         drawBg(doc);
 
-       // 1. STYLISH HEADER
-        doc.save();
-        
-        // Main Header Background (Deep BioBrain Blue)
-        doc.roundedRect(40, 40, 515, 75, 10).fill("#2f80ed");
-        
-        // Subtle Gradient Overlay (Lighter blue on the right for depth)
-        doc.opacity(0.15)
-           .rect(300, 40, 255, 75)
-           .fillColor("white")
-           .fill();
-        doc.opacity(1);
-
-        // Vertical Accent Line (Separates Brand from Title)
-        //doc.moveTo(170, 55).lineTo(170, 100).lineWidth(0.5).strokeColor("#ffffff").opacity(0.3).stroke();
-        //doc.opacity(1);
-
-        // Left Side: Brand Identity
-        doc.font('Lora-Bold').fontSize(24).fillColor("white")
-           .text("BioBrain", 60, 58, { characterSpacing: 1 });
-        
-        doc.font('Mont-Regular').fontSize(8).fillColor("#d1e3ff")
-           .text("LEARNING ANALYTICS", 60, 88, { characterSpacing: 2 });
-
-        // Right Side: Report Metadata
-        doc.font('Lora-Bold').fontSize(12).fillColor("white")
-           .text("Performance Analytics Report", 300, 58, { align: "right", width: 235 });
-        
-        // Icons/Labels for "Generated"
-        doc.font('Mont-Medium').fontSize(8).fillColor("#e0e0e0")
-           .text("REPORT GENERATED ON", 300, 78, { align: "right", width: 235 });
-           
-        doc.font('Mont-Bold').fontSize(8.5).fillColor("white")
-           .text(new Date().toLocaleString('en-IN', { dateStyle: 'long', timeStyle: 'short' }).toUpperCase(), 300, 88, { align: "right", width: 235 });
-
+        // 1. HEADER
+        doc.save().roundedRect(40, 40, 515, 70, 10).fill("#2f80ed");
+        doc.font('Lora-Bold').fontSize(22).fillColor("white").text("BioBrain", 60, 55);
+        doc.font('Lora-Bold').fontSize(13).text("Performance Analytics Report", 300, 58, { align: "right", width: 230 });
+        doc.font('Mont-Regular').fontSize(9).fillColor("#e0e0e0").text(`Generated: ${new Date().toLocaleString()}`, 300, 76, { align: "right", width: 230 });
         doc.restore();
 
         let currentY = 125;
@@ -442,7 +412,7 @@ exports.downloadResultPdf = async (req, res) => {
             { label: "Attempt #", value: result.attemptnumber }
         ], currentY);
 
-        // 3. TEST INFO - UPDATED: Added Test ID
+        // 3. TEST INFO
         currentY += 15;
         currentY = drawSectionTitle("Test Details", currentY);
         currentY = drawDynamicInfoGrid([
@@ -450,10 +420,8 @@ exports.downloadResultPdf = async (req, res) => {
             { label: "Subject", value: result.subjectname },
             { label: "Unit", value: result.unitname },
             { label: "Topic", value: result.topicname },
-            { label: "Test ID", value: result._id.toString() }, // Added Test ID here
             { label: "Test Code", value: result.testcode },
             { label: "Difficulty", value: result.difficulty?.toUpperCase() },
-            { label: "Status", value: "Completed" }, // Added a placeholder to keep the grid even (optional)
             { label: "Started At", value: result.teststartedat ? new Date(result.teststartedat).toLocaleString() : "N/A" },
             { label: "Ended At", value: result.testendedat ? new Date(result.testendedat).toLocaleString() : "N/A" }
         ], currentY);
@@ -485,7 +453,7 @@ exports.downloadResultPdf = async (req, res) => {
         doc.font('Mont-Bold').fontSize(10).fillColor("#34495e").text("Score & Integrity Metrics", 40, currentY);
         currentY += 18;
         cardX = 40;
-
+        
         const metrics = [
             { val: `${result.accuracy.toFixed(1)}%`, label: "Accuracy", color: "#27ae60" },
             { val: `${result.percentage.toFixed(1)}%`, label: "Score %", color: "#f39c12" },
@@ -495,74 +463,47 @@ exports.downloadResultPdf = async (req, res) => {
         metrics.forEach(m => {
             const mWidth = 162; // Increased width to fill the row since we have 3 cards now
             doc.save()
-                .roundedRect(cardX, currentY, mWidth, 65, 8)
-                .lineWidth(0.8)
-                .strokeColor("#cccccc")
-                .fillColor("white")
-                .fillAndStroke();
-
+               .roundedRect(cardX, currentY, mWidth, 65, 8)
+               .lineWidth(0.8)
+               .strokeColor("#cccccc")
+               .fillColor("white")
+               .fillAndStroke();
+               
             doc.rect(cardX, currentY, mWidth, 4).fill(m.color);
-
+            
             doc.font('Mont-Bold').fontSize(16).fillColor("#2c3e50")
-                .text(m.val, cardX, currentY + 18, { align: 'center', width: mWidth });
-
+               .text(m.val, cardX, currentY + 18, { align: 'center', width: mWidth });
+               
             doc.font('Mont-Medium').fontSize(8.5).fillColor("#555")
-                .text(m.label, cardX, currentY + 42, { align: 'center', width: mWidth });
-
-            doc.restore();
+               .text(m.label, cardX, currentY + 42, { align: 'center', width: mWidth });
+               
+            doc.restore(); 
             cardX += mWidth + 14.5;
         });
         currentY += 80;
 
 
-        // 6. PROGRESS BARS WITH PERCENTAGE LABELS
+        // 6. PROGRESS BARS
         currentY += 22;
         currentY = drawSectionTitle("Performance Breakdown", currentY);
+        currentY = drawProgressBar("Correct Answers", result.right, result.questionscount, "#27ae60", currentY);
+        currentY = drawProgressBar("Wrong Answers", result.wrong, result.questionscount, "#e74c3c", currentY);
+        currentY = drawProgressBar("Skipped", result.skipped, result.questionscount, "#2f80ed", currentY);
 
-        const drawEnhancedProgressBar = (label, value, total, color, y) => {
-            const percentage = total > 0 ? ((value / total) * 100).toFixed(1) : 0;
-            const barWidth = 515;
-            const filledWidth = (barWidth * Math.min(percentage, 100)) / 100;
-
-            doc.font('Mont-Bold').fontSize(9).fillColor("#2c3e50").text(label, 40, y);
-
-            // Draw background bar
-            doc.roundedRect(40, y + 12, barWidth, 14, 7).fill("#e5e7eb");
-
-            // Draw filled bar
-            if (percentage > 0) {
-                doc.roundedRect(40, y + 12, filledWidth, 14, 7).fill(color);
-            }
-
-            // Draw Percentage Text
-            doc.font('Mont-Bold').fontSize(8.5).fillColor(percentage > 5 ? "white" : "#2c3e50")
-                .text(`${percentage}%`, 45, y + 15, { width: barWidth, align: 'left' });
-
-            return y + 38;
-        };
-
-        currentY = drawEnhancedProgressBar("Correct Answers", result.right, result.questionscount, "#27ae60", currentY);
-        currentY = drawEnhancedProgressBar("Wrong Answers", result.wrong, result.questionscount, "#e74c3c", currentY);
-        currentY = drawEnhancedProgressBar("Skipped Questions", result.skipped, result.questionscount, "#2f80ed", currentY);
-        
         // 7. QUESTION WISE ANALYSIS
         doc.addPage();
         drawBg(doc);
         let qY = drawSectionTitle("Question Wise Analysis", 40);
 
         result.questions.forEach((q, i) => {
-            // 1. MEASURE DYNAMIC HEIGHTS
             const qText = `Q${i + 1}. ${q.question}`;
             const qH = doc.font('Mont-Bold').fontSize(10).heightOfString(qText, { width: 485 });
 
             const options = [q.opt1, q.opt2, q.opt3, q.opt4];
             const optHeights = options.map(opt => doc.font('Mont-Medium').fontSize(9.5).heightOfString(opt, { width: 330 }) + 14);
             const totalOptH = optHeights.reduce((a, b) => a + b, 0) + (options.length * 5);
-            
-            // Total height = padding + question height + space + options height + footer space
             const totalBoxH = qH + totalOptH + 45;
 
-            // 2. PAGE OVERFLOW CHECK
             if (qY + totalBoxH > 780) {
                 doc.addPage();
                 drawBg(doc);
@@ -571,7 +512,6 @@ exports.downloadResultPdf = async (req, res) => {
             }
 
             doc.save();
-            // 3. DRAW MAIN CONTAINER
             doc.roundedRect(40, qY, 515, totalBoxH, 6).lineWidth(0.8).strokeColor("#cccccc").fillColor("white").fillAndStroke();
             doc.fillColor("#2c3e50").font('Mont-Bold').fontSize(10).text(qText, 55, qY + 12, { width: 485 });
 
@@ -581,61 +521,48 @@ exports.downloadResultPdf = async (req, res) => {
                 const optNum = j + 1;
                 const h = optHeights[j];
                 const isCorrect = optNum === q.correctanswer;
-                const isUserChoice = optNum === q.useranswer;
-                const wasSkipped = q.useranswer === -1;
+                const isUser = optNum === q.useranswer;
+                const wasAttempted = q.useranswer !== null && q.useranswer !== undefined;
 
                 let bgColor = "#f8f9fa", borderColor = "#cccccc", textColor = "#2c3e50", labelText = "";
                 let iconType = null, iconColor = null;
 
-                // --- REFINED COLOR LOGIC ---
+                // --- LOGIC FOR LABELS ---
                 if (isCorrect) {
-                    if (wasSkipped) {
-                        // SKIPPED: Professional Blue Theme
-                        bgColor = "#ebf5ff"; borderColor = "#2f80ed"; textColor = "#2255a4";
-                        labelText = "Skipped / Correct Answer";
-                        iconType = 'tick'; iconColor = "#2f80ed";
-                    } else if (isUserChoice) {
-                        // CORRECT: Vibrant Green Theme
-                        bgColor = "#eafaf1"; borderColor = "#27ae60"; textColor = "#1e8449";
+                    bgColor = "#eafaf1"; borderColor = "#27ae60"; textColor = "#1e8449";
+                    iconType = 'tick'; iconColor = "#27ae60";
+                    
+                    if (isUser) {
                         labelText = "Your Answer / Correct Answer";
-                        iconType = 'tick'; iconColor = "#27ae60";
                     } else {
-                        // CORRECT OPTION (when user picked wrong): Green
-                        bgColor = "#eafaf1"; borderColor = "#27ae60"; textColor = "#1e8449";
                         labelText = "Correct Answer";
-                        iconType = 'tick'; iconColor = "#27ae60";
                     }
-                } else if (!wasSkipped && isUserChoice) {
-                    // WRONG CHOICE: Red Theme
+                } else if (wasAttempted && isUser) {
+                    // This is only triggered if the user chose this option and it's NOT the correct one
                     bgColor = "#fdecea"; borderColor = "#e74c3c"; textColor = "#c0392b";
                     labelText = "Your Answer";
                     iconType = 'cross'; iconColor = "#e74c3c";
                 }
 
-                // Draw Option Box
+                // Draw Box
                 doc.roundedRect(55, currentOptY, 485, h, 4).lineWidth(0.6).strokeColor(borderColor).fillColor(bgColor).fillAndStroke();
                 doc.fillColor(textColor).font('Mont-Medium').fontSize(9.5).text(`${optNum}. ${opt}`, 65, currentOptY + (h / 2 - 5), { width: 330 });
 
-                // Draw Icon and Text Label
+                // Draw Label & Icon
                 if (labelText) {
-                    drawStatusIcon(525, currentOptY + (h / 2), iconType, iconColor);
+                    if (iconType) drawStatusIcon(525, currentOptY + (h / 2), iconType, iconColor);
                     doc.font('Mont-Bold').fontSize(7.5).fillColor(iconColor).text(labelText, 360, currentOptY + (h / 2 - 4), { align: 'right', width: 150 });
                 }
                 
                 currentOptY += h + 5;
             });
 
-            // 4. META INFO FOOTER
-            const marksValue = q.useranswer === -1 ? 0 : (q.iscorrect ? q.marks : -q.negativemarks);
-            const statusLabel = q.useranswer === -1 ? "Skipped" : "Attempted";
-            
-            doc.fillColor("#7f8c8d").font('Mont-Regular').fontSize(8)
-               .text(`Time: ${q.timetaken}s | Marks: ${marksValue >= 0 ? '+'+marksValue : marksValue} | Status: ${statusLabel}`, 55, currentOptY + 4);
-            
+            // Meta Info Footer
+            const marksText = q.iscorrect ? `+${q.marks}` : `-${q.negativemarks}`;
+            doc.fillColor("#7f8c8d").font('Mont-Regular').fontSize(8).text(`Time: ${q.timetaken}s | Marks: ${marksText} | Status: ${q.useranswer === null ? "Skipped" : "Attempted"}`, 55, currentOptY + 4);
             doc.restore();
 
-            // Vertical spacing for next question
-            qY = currentOptY + 40; 
+            qY = currentOptY + 40;
         });
 
         // 8. ABOUT BIOBRAIN
@@ -648,6 +575,14 @@ exports.downloadResultPdf = async (req, res) => {
             55, qY + 35, { width: 485, align: 'justify', lineGap: 3 }
         );
         doc.restore();
+
+        // 9. GLOBAL FOOTER
+        const range = doc.bufferedPageRange();
+        for (let i = range.start; i < range.start + range.count; i++) {
+            doc.switchToPage(i);
+            doc.font('Mont-Regular').fontSize(8).fillColor("#7f8c8d").text("BioBrain Learning Analytics Platform", 0, doc.page.height - 30, { align: "center" });
+            doc.text(`Page ${i + 1} of ${range.count}`, 0, doc.page.height - 20, { align: "center" });
+        }
 
         doc.end();
 

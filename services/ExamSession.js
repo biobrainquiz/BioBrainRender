@@ -21,8 +21,7 @@ class ExamSession {
         this.topicname = null;
 
 
-        const now = new Date();
-        this.examstartedat = now.toISOString(); // e.g., "2026-03-08T12:18:07.123Z"
+        this.examstartedat = new Date().toISOString(); // e.g., "2026-03-08T12:18:07.123Z"
         this.examendedat = null; // will fill later
         this.duration = 0; // in seconds
 

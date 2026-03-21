@@ -202,7 +202,7 @@ exports.submit = async (req, res) => {
 
     const now1 = new Date();
     examSessionObj.examstartedat = examSession.examstartedat; // e.g., "2026-03-08T12:18:07.123Z"
-    examSessionObj.examendedat = now1.toISOString(); // e.g., "2026-03-08T12:18:07.123Z"
+    examSessionObj.examendedat = new Date().toISOString(); // e.g., "2026-03-08T12:18:07.123Z"
     examSessionObj.duration = (new Date() - new Date(examSessionObj.examstartedat)) / 1000;
 
     // questions & answers
@@ -313,8 +313,8 @@ async function SaveResult(examSessionObj) {
     percentage: examSessionObj.percentage,
     accuracy: examSessionObj.accuracy,
 
-    testStartedAt: examSessionObj.examstartedat,
-    testEndedAt: examSessionObj.examendedat,
+    teststartedat: examSessionObj.examstartedat,
+    testendedat: examSessionObj.examendedat,
     duration: examSessionObj.duration,
 
     attemptnumber: examSessionObj.attemptnumber,
