@@ -8,5 +8,3 @@ npm install && npx puppeteer browsers install chrome
 👉 This installs Chrome into:
 /opt/render/.cache/puppeteer
 
-Build Command:
-bash render-build.sh && npm install
