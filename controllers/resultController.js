@@ -31,7 +31,6 @@ exports.downloadResultPdf = async (req, res) => {
         /* =========================
         Launch Puppeteer
         ========================= */
-
         const puppeteer = require("puppeteer");
         const browser = await puppeteer.launch({
             headless: "new",
