@@ -1,14 +1,15 @@
-const puppeteer = require("puppeteer");
 const path = require("path");
 const ejs = require("ejs");
 const Result = require("../models/Result");
 const fetch = require("node-fetch");
 const aiAssistantService = require("../services/aiAssistantService");
 
-exports.downloadResultPdf = async (req, res) => {
-    let browser;
-    try {
+const puppeteer = require("puppeteer");
 
+exports.downloadResultPdf = async (req, res) => {
+    let browser; // ✅ single declaration
+
+    try {
         const mocktestid = req.params.mocktestid;
 
         const result = await Result.findById(mocktestid).lean();
@@ -32,15 +33,31 @@ exports.downloadResultPdf = async (req, res) => {
         Launch Puppeteer
         ========================= */
 
-        const puppeteer = require("puppeteer");
+        const isProd = process.env.PRODUCTION === "true";
 
-        browser = await puppeteer.launch({
-            headless: true,
-            args: ["--no-sandbox", "--disable-setuid-sandbox"]
-        });
-
+        try {
+            browser = await puppeteer.launch({
+                headless: true,
+                executablePath: isProd
+                    ? "/usr/bin/chromium-browser"   // Render (Linux)
+                    : "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", // Windows
+                args: ["--no-sandbox", "--disable-setuid-sandbox"]
+            });
+        } catch (e) {
+            // fallback for Render alternate path
+            if (isProd) {
+                browser = await puppeteer.launch({
+                    headless: true,
+                    executablePath: "/usr/bin/chromium",
+                    args: ["--no-sandbox", "--disable-setuid-sandbox"]
+                });
+            } else {
+                throw e;
+            }
+        }
+        
         const page = await browser.newPage();
-        await page.setContent(html, { waitUntil: "networkidle0" });
+        await page.setContent(html, { waitUntil: "domcontentloaded" }); // faster
 
         /* =========================
         Generate PDF
@@ -51,21 +68,25 @@ exports.downloadResultPdf = async (req, res) => {
             printBackground: true
         });
 
-        res.setHeader(
-            "Content-Type",
-            "application/pdf"
-        );
+        res.setHeader("Content-Type", "application/pdf");
         res.setHeader(
             "Content-Disposition",
             `attachment; filename=biobrain-result-${mocktestid}.pdf`
         );
-        res.send(pdfBuffer);
+
+        return res.send(pdfBuffer); // ✅ return to stop execution
+
     } catch (err) {
         console.error(err);
-        res.status(500).send("PDF generation failed");
-    }
-    finally {
-        await browser.close();
+
+        if (!res.headersSent) {
+            res.status(500).send("PDF generation failed");
+        }
+
+    } finally {
+        if (browser) { // ✅ prevent crash
+            await browser.close();
+        }
     }
 };
 
