@@ -32,10 +32,28 @@ exports.downloadResultPdf = async (req, res) => {
         Launch Puppeteer
         ========================= */
 
+        const puppeteer = require("puppeteer");
+
+        const isProd = process.env.PRODUCTION === "true";
+
         const browser = await puppeteer.launch({
             headless: "new",
-            args: ["--no-sandbox"]
+            executablePath: isProd
+                ? process.env.CHROME_PATH // server (Render)
+                : "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", // local
+            args: ["--no-sandbox", "--disable-setuid-sandbox"]
         });
+
+        /*   const browser = await puppeteer.launch({
+     executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
+     headless: "new",
+     args: ["--no-sandbox", "--disable-setuid-sandbox"]
+   });*/
+
+        /*const browser = await puppeteer.launch({
+            headless: "new",
+            args: ["--no-sandbox"]
+        });*/
 
         const page = await browser.newPage();
 
