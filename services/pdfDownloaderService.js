@@ -1,5 +1,6 @@
 const puppeteer = require("puppeteer-core");
 const chromium = require("@sparticuz/chromium");
+const QRCode = require('qrcode');
 const path = require("path");
 const ejs = require("ejs");
 const PDFDocument = require("pdfkit");
@@ -311,6 +312,16 @@ exports.downloadResultPdf = async (req, res) => {
             return res.status(404).send("Result not found");
         }
 
+        //Generate QR Code(do this before or during PDF creation)
+        const qrCodeDataUri = await QRCode.toDataURL(process.env.BASE_URL, {
+            margin: 1,
+            width: 100,
+            color: {
+                dark: '#2f80ed', // Matches BioBrain Blue
+                light: '#ffffff'
+            }
+        });
+
         // ===== Create PDF =====
         const doc = new PDFDocument({ size: "A4", margin: 40, bufferPages: true });
 
@@ -394,43 +405,38 @@ exports.downloadResultPdf = async (req, res) => {
         // ===== START PDF CONTENT =====
         drawBg(doc);
 
-       // 1. STYLISH HEADER
+        // 1. STYLISH HEADER
         doc.save();
-        
+
         // Main Header Background (Deep BioBrain Blue)
         doc.roundedRect(40, 40, 515, 75, 10).fill("#2f80ed");
-        
+
         // Subtle Gradient Overlay (Lighter blue on the right for depth)
         doc.opacity(0.15)
-           .rect(300, 40, 255, 75)
-           .fillColor("white")
-           .fill();
+            .rect(300, 40, 255, 75)
+            .fillColor("white")
+            .fill();
         doc.opacity(1);
-
-        // Vertical Accent Line (Separates Brand from Title)
-        //doc.moveTo(170, 55).lineTo(170, 100).lineWidth(0.5).strokeColor("#ffffff").opacity(0.3).stroke();
-        //doc.opacity(1);
 
         // Left Side: Brand Identity
         doc.font('Lora-Bold').fontSize(24).fillColor("white")
-           .text("BioBrain", 60, 58, { characterSpacing: 1 });
-        
+            .text("BioBrain", 60, 58, { characterSpacing: 1 });
+
         doc.font('Mont-Regular').fontSize(8).fillColor("#d1e3ff")
-           .text("LEARNING ANALYTICS", 60, 88, { characterSpacing: 2 });
+            .text("LEARNING ANALYTICS", 60, 88, { characterSpacing: 2 });
 
         // Right Side: Report Metadata
         doc.font('Lora-Bold').fontSize(12).fillColor("white")
-           .text("Performance Analytics Report", 300, 58, { align: "right", width: 235 });
-        
+            .text("Performance Analytics Report", 300, 58, { align: "right", width: 235 });
+
         // Icons/Labels for "Generated"
         doc.font('Mont-Medium').fontSize(8).fillColor("#e0e0e0")
-           .text("REPORT GENERATED ON", 300, 78, { align: "right", width: 235 });
-           
+            .text("REPORT GENERATED ON", 300, 78, { align: "right", width: 235 });
+
         doc.font('Mont-Bold').fontSize(8.5).fillColor("white")
-           .text(new Date().toLocaleString('en-IN', { dateStyle: 'long', timeStyle: 'short' }).toUpperCase(), 300, 88, { align: "right", width: 235 });
+            .text(new Date().toLocaleString('en-IN', { dateStyle: 'long', timeStyle: 'short' }).toUpperCase(), 300, 88, { align: "right", width: 235 });
 
         doc.restore();
-
         let currentY = 125;
 
         // 2. CANDIDATE INFO
@@ -442,7 +448,29 @@ exports.downloadResultPdf = async (req, res) => {
             { label: "Attempt #", value: result.attemptnumber }
         ], currentY);
 
-        // 3. TEST INFO - UPDATED: Added Test ID
+        // --- Date Formatting Helper ---
+        const formatDateTime = (date) => {
+            if (!date) return "N/A";
+            return new Date(date).toLocaleString('en-US', {
+                month: 'short',
+                day: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: true
+            });
+        };
+
+        // --- Duration Calculation Helper ---
+        const getDuration = (start, end) => {
+            if (!start || !end) return "N/A";
+            const diff = Math.abs(new Date(end) - new Date(start));
+            const mins = Math.floor(diff / 60000);
+            const secs = ((diff % 60000) / 1000).toFixed(0);
+            return `${mins}m ${secs}s`;
+        };
+
+        // 3. TEST INFO 
         currentY += 15;
         currentY = drawSectionTitle("Test Details", currentY);
         currentY = drawDynamicInfoGrid([
@@ -450,12 +478,12 @@ exports.downloadResultPdf = async (req, res) => {
             { label: "Subject", value: result.subjectname },
             { label: "Unit", value: result.unitname },
             { label: "Topic", value: result.topicname },
-            { label: "Test ID", value: result._id.toString() }, // Added Test ID here
+            { label: "Test ID", value: result._id.toString() },
             { label: "Test Code", value: result.testcode },
             { label: "Difficulty", value: result.difficulty?.toUpperCase() },
-            { label: "Status", value: "Completed" }, // Added a placeholder to keep the grid even (optional)
-            { label: "Started At", value: result.teststartedat ? new Date(result.teststartedat).toLocaleString() : "N/A" },
-            { label: "Ended At", value: result.testendedat ? new Date(result.testendedat).toLocaleString() : "N/A" }
+            { label: "Total Duration", value: getDuration(result.teststartedat, result.testendedat) },
+            { label: "Started At", value: formatDateTime(result.teststartedat) },
+            { label: "Ended At", value: formatDateTime(result.testendedat) }
         ], currentY);
 
         // 4. ATTEMPT STATS (Cards)
@@ -544,7 +572,7 @@ exports.downloadResultPdf = async (req, res) => {
         currentY = drawEnhancedProgressBar("Correct Answers", result.right, result.questionscount, "#27ae60", currentY);
         currentY = drawEnhancedProgressBar("Wrong Answers", result.wrong, result.questionscount, "#e74c3c", currentY);
         currentY = drawEnhancedProgressBar("Skipped Questions", result.skipped, result.questionscount, "#2f80ed", currentY);
-        
+
         // 7. QUESTION WISE ANALYSIS
         doc.addPage();
         drawBg(doc);
@@ -558,7 +586,7 @@ exports.downloadResultPdf = async (req, res) => {
             const options = [q.opt1, q.opt2, q.opt3, q.opt4];
             const optHeights = options.map(opt => doc.font('Mont-Medium').fontSize(9.5).heightOfString(opt, { width: 330 }) + 14);
             const totalOptH = optHeights.reduce((a, b) => a + b, 0) + (options.length * 5);
-            
+
             // Total height = padding + question height + space + options height + footer space
             const totalBoxH = qH + totalOptH + 45;
 
@@ -576,7 +604,7 @@ exports.downloadResultPdf = async (req, res) => {
             doc.fillColor("#2c3e50").font('Mont-Bold').fontSize(10).text(qText, 55, qY + 12, { width: 485 });
 
             let currentOptY = qY + 12 + qH + 10;
-            
+
             options.forEach((opt, j) => {
                 const optNum = j + 1;
                 const h = optHeights[j];
@@ -621,32 +649,47 @@ exports.downloadResultPdf = async (req, res) => {
                     drawStatusIcon(525, currentOptY + (h / 2), iconType, iconColor);
                     doc.font('Mont-Bold').fontSize(7.5).fillColor(iconColor).text(labelText, 360, currentOptY + (h / 2 - 4), { align: 'right', width: 150 });
                 }
-                
+
                 currentOptY += h + 5;
             });
 
             // 4. META INFO FOOTER
             const marksValue = q.useranswer === -1 ? 0 : (q.iscorrect ? q.marks : -q.negativemarks);
             const statusLabel = q.useranswer === -1 ? "Skipped" : "Attempted";
-            
+
             doc.fillColor("#7f8c8d").font('Mont-Regular').fontSize(8)
-               .text(`Time: ${q.timetaken}s | Marks: ${marksValue >= 0 ? '+'+marksValue : marksValue} | Status: ${statusLabel}`, 55, currentOptY + 4);
-            
+                .text(`Time: ${q.timetaken}s | Marks: ${marksValue >= 0 ? '+' + marksValue : marksValue} | Status: ${statusLabel}`, 55, currentOptY + 4);
+
             doc.restore();
 
             // Vertical spacing for next question
-            qY = currentOptY + 40; 
+            qY = currentOptY + 40;
         });
 
-        // 8. ABOUT BIOBRAIN
-        if (qY > 600) { doc.addPage(); drawBg(doc); qY = 40; } else { qY += 20; }
+        // 8. ABOUT BIOBRAIN (with QR Code)
+        if (qY > 600) { doc.addPage(); drawBg(doc); qY = 40; } else { qY += 30; }
+
         doc.save();
-        doc.roundedRect(40, qY, 515, 100, 8).lineWidth(0.5).strokeColor("#2f80ed").dash(5, { space: 2 }).stroke();
+        // Container
+        doc.roundedRect(40, qY, 515, 110, 8).lineWidth(0.5).strokeColor("#2f80ed").dash(5, { space: 2 }).stroke();
+
+        // Add the QR Code Image on the right side
+        doc.image(qrCodeDataUri, 445, qY + 10, { width: 90 });
+
+        // Text Content (Adjusted width to 380 to make room for QR)
         doc.font('Lora-Bold').fontSize(12).fillColor("#2f80ed").text("About BioBrain", 55, qY + 15);
-        doc.font('Mont-Regular').fontSize(9).fillColor("#444").text(
-            "BioBrain is a cutting-edge Learning Analytics Platform designed to empower students through data-driven insights. Our system provides deep psychometric analysis of test performance, identifying conceptual gaps and offering precise recommendations for academic improvement. For technical support or institutional inquiries, please visit www.biobrain.com.",
-            55, qY + 35, { width: 485, align: 'justify', lineGap: 3 }
-        );
+        doc.font('Mont-Regular').fontSize(9).fillColor("#444")
+            .text(
+                `BioBrain is a cutting-edge Learning Analytics Platform designed to empower students through data-driven insights. Scan the QR code to visit our platform or go to `,
+                55, qY + 35,
+                {
+                    width: 380,
+                    align: 'justify',
+                    lineGap: 3,
+                    continued: true
+                }
+            )
+            .font('Mont-Bold').fillColor("#2f80ed").text(`${process.env.BASE_URL}.`);
         doc.restore();
 
         doc.end();
