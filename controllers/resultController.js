@@ -6,7 +6,7 @@ const fetch = require("node-fetch");
 const aiAssistantService = require("../services/aiAssistantService");
 
 exports.downloadResultPdf = async (req, res) => {
-
+    let browser;
     try {
 
         const mocktestid = req.params.mocktestid;
@@ -31,25 +31,15 @@ exports.downloadResultPdf = async (req, res) => {
         /* =========================
         Launch Puppeteer
         ========================= */
+
         const puppeteer = require("puppeteer");
-        const browser = await puppeteer.launch({
-            headless: "new",
+
+        browser = await puppeteer.launch({
+            headless: true,
             args: ["--no-sandbox", "--disable-setuid-sandbox"]
         });
 
-        /*   const browser = await puppeteer.launch({
-     executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
-     headless: "new",
-     args: ["--no-sandbox", "--disable-setuid-sandbox"]
-   });*/
-
-        /*const browser = await puppeteer.launch({
-            headless: "new",
-            args: ["--no-sandbox"]
-        });*/
-
         const page = await browser.newPage();
-
         await page.setContent(html, { waitUntil: "networkidle0" });
 
         /* =========================
@@ -61,25 +51,21 @@ exports.downloadResultPdf = async (req, res) => {
             printBackground: true
         });
 
-        await browser.close();
-
         res.setHeader(
             "Content-Type",
             "application/pdf"
         );
-
         res.setHeader(
             "Content-Disposition",
             `attachment; filename=biobrain-result-${mocktestid}.pdf`
         );
-
         res.send(pdfBuffer);
-
     } catch (err) {
-
         console.error(err);
         res.status(500).send("PDF generation failed");
-
+    }
+    finally {
+        await browser.close();
     }
 };
 
