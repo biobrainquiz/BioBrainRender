@@ -150,43 +150,23 @@ async function autoSeedExamDb(source, forcedSeedingExamDbInEnv) {
 
     const paymentsData = JSON.parse(fs.readFileSync(path.join(__dirname, `../datafeed/${source}/paymenttable.json`)));
 
+
     // 7️⃣ Insert Questions with exam, subject, unit, topic _id
-    const questionsDir = path.join(__dirname, `../datafeed/${source}/questions`);
-    const questionFiles = fs.readdirSync(questionsDir)
-      .filter(file => file.startsWith("questiontable_") && file.endsWith(".json"));
 
-    let totalInserted = 0;
+    const questionsData = JSON.parse(fs.readFileSync(path.join(__dirname, `../datafeed/${source}/questiontable.json`)));
 
-    for (const file of questionFiles) {
-      const filePath = path.join(questionsDir, file);
-      logger.info(`📂 Seeding Questions From ${file}...`);
-      const questionsData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-      const questionsToInsert = questionsData.map(q => {
-        try {
-          const exam = exams.find(e => e.examcode === q.examcode);
-          const subject = subjects.find(s => s.subjectcode === q.subjectcode && s.exam.equals(exam._id));
-          const unit = units.find(u => u.unitcode === q.unitcode && u.subject.equals(subject._id));
-          const topic = topics.find(t => t.topiccode === q.topiccode && t.unit.equals(unit._id));
-          return {
-            ...q,
-            exam: exam._id,
-            subject: subject._id,
-            unit: unit._id,
-            topic: topic._id
-          };
-        } catch (err) {
-          console.error(`❌ Error in file ${file}`);
-          console.error("Bad question:", q);
-          throw err; // fail-fast
-        }
-      });
-      // 💾 Insert per file
-      await Question.insertMany(questionsToInsert);
-      totalInserted += questionsToInsert.length;
-      logger.info(`✅ Inserted ${questionsToInsert.length} from ${file}`);
-    }
-    logger.info(`🔥 Total Questions seeded: ${totalInserted}`);
+    const questionsToInsert = questionsData.map(q => {
+      const exam = exams.find(e => e.examcode === q.examcode);
+      const subject = subjects.find(s => s.subjectcode === q.subjectcode && s.exam.equals(exam._id));
+      const unit = units.find(u => u.unitcode === q.unitcode && u.subject.equals(subject._id));
+      const topic = topics.find(t => t.topiccode === q.topiccode && t.unit.equals(unit._id));
+      return { ...q, exam: exam._id, subject: subject._id, unit: unit._id, topic: topic._id };
+    });
+    await Question.insertMany(questionsToInsert);
+
+    logger.info(`🔥 Questions seeded: ${questionsToInsert.length} successfully!`);
     logger.info("✅ All Exam database seeded successfully!");
+
   }
   catch (err) {
     logger.error("Auto seeding of Exam data failed", err);
