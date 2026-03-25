@@ -30,9 +30,5 @@ router.get(
   "/mocktest/result/pdf/:mocktestid",
   resultController.downloadResultPdf);
 
-// Download PDF
-router.post(
-  "/mocktest/result/aiassistat",
-  resultController.aiAssistantExplainAnswer);
 
 module.exports = router;

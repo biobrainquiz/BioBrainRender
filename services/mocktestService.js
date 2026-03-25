@@ -221,6 +221,7 @@ exports.submit = async (req, res) => {
     examSessionObj.percentage = 0;
     examSessionObj.accuracy = 0;
     examSessionObj.calculateScore();
+    examSessionObj.generateStats();
     examSessionObj.updateIsUserPremiumFlag(req.session.user);
 
     

@@ -1,0 +1,362 @@
+[
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "11",
+    "question": "Which of the following describes the 'Red Queen Hypothesis' in evolution?",
+    "opt1": "Species must constantly adapt to survive against ever-evolving opposites",
+    "opt2": "Evolution occurs in rapid bursts followed by long stasis",
+    "opt3": "The strongest organisms always produce the most offspring",
+    "opt4": "Mutation rates are constant across all phyla",
+    "answer": "1", "difficulty_level": "hard", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "12",
+    "question": "The 'RNA World' hypothesis suggests that RNA was the first genetic material because:",
+    "opt1": "It is more stable than DNA",
+    "opt2": "It can both store information and catalyze chemical reactions",
+    "opt3": "It is only found in primitive bacteria",
+    "opt4": "It does not require a phosphate backbone",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "13",
+    "question": "Which organelle is thought to have originated via endosymbiosis?",
+    "opt1": "Golgi Apparatus",
+    "opt2": "Endoplasmic Reticulum",
+    "opt3": "Mitochondria",
+    "opt4": "Lysosome",
+    "answer": "3", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "14",
+    "question": "In a phylogenetic tree, a group that includes an ancestral species and all of its descendants is:",
+    "opt1": "Paraphyletic",
+    "opt2": "Monophyletic",
+    "opt3": "Polyphyletic",
+    "opt4": "Analogous",
+    "answer": "2", "difficulty_level": "hard", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "15",
+    "question": "The movement of alleles into or out of a population due to migration is called:",
+    "opt1": "Genetic Drift",
+    "opt2": "Gene Flow",
+    "opt3": "Mutation",
+    "opt4": "Selection",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "16",
+    "question": "Which human ancestor is famous for the first documented use of fire?",
+    "opt1": "Homo habilis",
+    "opt2": "Homo erectus",
+    "opt3": "Australopithecus afarensis",
+    "opt4": "Homo neanderthalensis",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "17",
+    "question": "Industrial melanism in peppered moths is a classic example of:",
+    "opt1": "Stabilizing Selection",
+    "opt2": "Disruptive Selection",
+    "opt3": "Directional Selection",
+    "opt4": "Artificial Selection",
+    "answer": "3", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "18",
+    "question": "What is the term for the evolution of similar features in independent evolutionary lineages?",
+    "opt1": "Homology",
+    "opt2": "Convergent Evolution",
+    "opt3": "Divergent Evolution",
+    "opt4": "Coevolution",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "19",
+    "question": "The half-life of Carbon-14 is approximately 5730 years. It is best used for dating:",
+    "opt1": "Organic remains up to 50,000 years old",
+    "opt2": "Volcanic rocks from the Cambrian era",
+    "opt3": "Inorganic crystals in the Earth's core",
+    "opt4": "Dinosaur bones from the Jurassic period",
+    "answer": "1", "difficulty_level": "hard", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "20",
+    "question": "Which of these is a vestigial structure in humans?",
+    "opt1": "Pancreas",
+    "opt2": "Appendix",
+    "opt3": "Spleen",
+    "opt4": "Gallbladder",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "21",
+    "question": "Miller and Urey's experiment demonstrated that:",
+    "opt1": "Life can be created in a lab from scratch",
+    "opt2": "Organic molecules can form from inorganic precursors",
+    "opt3": "DNA was the first molecule of inheritance",
+    "opt4": "Oxygen was abundant in the early atmosphere",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "22",
+    "question": "A balanced polymorphism, like the sickle-cell trait in malaria-prone areas, is maintained by:",
+    "opt1": "Homozygote advantage",
+    "opt2": "Heterozygote advantage",
+    "opt3": "Genetic bottleneck",
+    "opt4": "Founder effect",
+    "answer": "2", "difficulty_level": "hard", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "23",
+    "question": "Marsupials in Australia and placental mammals in North America show similar forms due to:",
+    "opt1": "Common ancestry",
+    "opt2": "Adaptive Radiation",
+    "opt3": "Convergent Evolution",
+    "opt4": "Gene Flow",
+    "answer": "3", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "24",
+    "question": "Which type of speciation occurs when a population is divided by a geographic barrier?",
+    "opt1": "Sympatric",
+    "opt2": "Allopatric",
+    "opt3": "Parapatric",
+    "opt4": "Artificial",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "25",
+    "question": "The 'Cambrian Explosion' refers to:",
+    "opt1": "A massive volcanic eruption",
+    "opt2": "The sudden appearance of most major animal phyla",
+    "opt3": "The extinction of the dinosaurs",
+    "opt4": "The formation of the moon",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "26",
+    "question": "Which of the following is an example of a pre-zygotic reproductive barrier?",
+    "opt1": "Hybrid sterility",
+    "opt2": "Temporal isolation",
+    "opt3": "Hybrid breakdown",
+    "opt4": "Reduced hybrid viability",
+    "answer": "2", "difficulty_level": "hard", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "27",
+    "question": "The total aggregate of genes in a population at any one time is called the:",
+    "opt1": "Genotype",
+    "opt2": "Gene Pool",
+    "opt3": "Genome",
+    "opt4": "Allele frequency",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "28",
+    "question": "What is the main source of new alleles in a population?",
+    "opt1": "Sexual reproduction",
+    "opt2": "Genetic Drift",
+    "opt3": "Mutation",
+    "opt4": "Natural Selection",
+    "answer": "3", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "29",
+    "question": "Which principle states that 'ontogeny recapitulates phylogeny'?",
+    "opt1": "Biogenetic Law",
+    "opt2": "Mendel's Law",
+    "opt3": "Law of Segregation",
+    "opt4": "Hardy-Weinberg Law",
+    "answer": "1", "difficulty_level": "hard", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "30",
+    "question": "The oldest known bird-like fossil is:",
+    "opt1": "Archaeopteryx",
+    "opt2": "Pteranodon",
+    "opt3": "Velociraptor",
+    "opt4": "Triceratops",
+    "answer": "1", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "31",
+    "question": "According to Lamarck, evolution occurred through:",
+    "opt1": "Natural Selection",
+    "opt2": "Inheritance of acquired characteristics",
+    "opt3": "Survival of the fittest",
+    "opt4": "Random mutations",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "32",
+    "question": "The presence of gill slits in human embryos suggests:",
+    "opt1": "Humans can breathe underwater in the womb",
+    "opt2": "Common ancestry with fish",
+    "opt3": "Convergent evolution with dolphins",
+    "opt4": "Vestigial function of the lungs",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "33",
+    "question": "Which of the following defines 'Cladogenesis'?",
+    "opt1": "Evolution of a single lineage into a new species",
+    "opt2": "Branching evolution where a new species arises from a parent",
+    "opt3": "Extinction of an entire family",
+    "opt4": "Random changes in a population's DNA",
+    "answer": "2", "difficulty_level": "hard", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "34",
+    "question": "The theory of Punctuated Equilibrium was proposed by:",
+    "opt1": "Charles Darwin",
+    "opt2": "Gould and Eldredge",
+    "opt3": "Jean-Baptiste Lamarck",
+    "opt4": "Gregor Mendel",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "35",
+    "question": "During which period did the dinosaurs go extinct?",
+    "opt1": "Jurassic",
+    "opt2": "Triassic",
+    "opt3": "Cretaceous",
+    "opt4": "Permian",
+    "answer": "3", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "36",
+    "question": "A group of interbreeding individuals of the same species in a specific area is a:",
+    "opt1": "Community",
+    "opt2": "Population",
+    "opt3": "Ecosystem",
+    "opt4": "Biome",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "37",
+    "question": "Which is the most primitive group of primates?",
+    "opt1": "Anthropoids",
+    "opt2": "Prosimians",
+    "opt3": "Hominids",
+    "opt4": "Old World Monkeys",
+    "answer": "2", "difficulty_level": "hard", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "38",
+    "question": "Who wrote 'The Descent of Man'?",
+    "opt1": "Alfred Russel Wallace",
+    "opt2": "Charles Darwin",
+    "opt3": "Thomas Huxley",
+    "opt4": "Richard Dawkins",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "39",
+    "question": "Polyploidy is a common mechanism of sympatric speciation in:",
+    "opt1": "Mammals",
+    "opt2": "Plants",
+    "opt3": "Birds",
+    "opt4": "Reptiles",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "40",
+    "question": "What does a 'molecular clock' measure?",
+    "opt1": "The time since two species diverged based on mutations",
+    "opt2": "The age of a fossil using radioactive isotopes",
+    "opt3": "The speed of muscle contraction",
+    "opt4": "The rate of photosynthesis",
+    "answer": "1", "difficulty_level": "hard", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "41",
+    "question": "The 'Big Five' refers to:",
+    "opt1": "The five kingdoms of life",
+    "opt2": "The five largest animals on Earth",
+    "opt3": "The five mass extinction events in history",
+    "opt4": "The five continents of the prehistoric world",
+    "answer": "3", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "42",
+    "question": "What is the study of the distribution of species across the planet?",
+    "opt1": "Geology",
+    "opt2": "Biogeography",
+    "opt3": "Paleontology",
+    "opt4": "Taxonomy",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "43",
+    "question": "The 'Out of Africa' theory suggests that:",
+    "opt1": "Life originated in the ocean near Africa",
+    "opt2": "Modern humans evolved in Africa and then migrated",
+    "opt3": "Dinosaurs migrated from Africa to Europe",
+    "opt4": "Agriculture first began in sub-Saharan Africa",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "44",
+    "question": "Which of these is a post-zygotic barrier?",
+    "opt1": "Behavioral isolation",
+    "opt2": "Mechanical isolation",
+    "opt3": "Hybrid infertility",
+    "opt4": "Gametic isolation",
+    "answer": "3", "difficulty_level": "hard", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "45",
+    "question": "Coevolution is most likely to occur between:",
+    "opt1": "A predator and its prey",
+    "opt2": "Two species living on different continents",
+    "opt3": "An organism and a rock",
+    "opt4": "A bird and a cloud",
+    "answer": "1", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "46",
+    "question": "The first photosynthetic organisms produced which byproduct?",
+    "opt1": "Carbon Dioxide",
+    "opt2": "Methane",
+    "opt3": "Oxygen",
+    "opt4": "Nitrogen",
+    "answer": "3", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "47",
+    "question": "What characterizes the 'Bottleneck Effect'?",
+    "opt1": "A large population thriving in a new area",
+    "opt2": "A sudden reduction in population size due to environmental change",
+    "opt3": "Continuous gene flow between two populations",
+    "opt4": "Increasing genetic diversity over time",
+    "answer": "2", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "48",
+    "question": "Darwin's Finches are an example of:",
+    "opt1": "Adaptive Radiation",
+    "opt2": "Convergent Evolution",
+    "opt3": "Stabilizing Selection",
+    "opt4": "Artificial Selection",
+    "answer": "1", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "49",
+    "question": "What does 'fitness' mean in a Darwinian sense?",
+    "opt1": "The physical strength of an individual",
+    "opt2": "The ability to run the fastest",
+    "opt3": "The contribution of an individual to the gene pool of the next generation",
+    "opt4": "The intelligence of an organism",
+    "answer": "3", "difficulty_level": "easy", "marks": "1"
+  },
+  {
+    "examcode": "E4", "subjectcode": "S1", "unitcode": "U2", "topiccode": "T1", "qno": "50",
+    "question": "Which molecule is used as a primary energy currency in all living cells?",
+    "opt1": "DNA",
+    "opt2": "Glucose",
+    "opt3": "ATP",
+    "opt4": "Insulin",
+    "answer": "3", "difficulty_level": "easy", "marks": "1"
+  }
+]

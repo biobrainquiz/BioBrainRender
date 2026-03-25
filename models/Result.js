@@ -75,7 +75,7 @@ const ResultSchema = new mongoose.Schema({
 
 
 // Generate test paper code
-ResultSchema.methods.getTestPaperCode = function () {
+/*ResultSchema.methods.getTestPaperCode = function () {
 
   const parts = [];
 
@@ -85,11 +85,10 @@ ResultSchema.methods.getTestPaperCode = function () {
   if (this.topiccode) parts.push(this.topiccode);
 
   return parts.join("_");
-};
-
+};*/
 
 // Calculate score
-ResultSchema.methods.calculateScore = function () {
+/*ResultSchema.methods.calculateScore = function () {
 
   let right = 0;
   let wrong = 0;
@@ -124,7 +123,61 @@ ResultSchema.methods.calculateScore = function () {
   this.accuracy = this.attempted
     ? (right / this.attempted) * 100
     : 0;
-};
+};*/
+
+/*ResultSchema.methods.generateStats = function () {
+
+  const topicMap = {};
+  const unitMap = {};
+
+  this.questions.forEach(q => {
+
+    // Topic Key
+    const tKey = this.topiccode + "_" + this.topicname;
+
+    if (!topicMap[tKey]) {
+      topicMap[tKey] = { total: 0, correct: 0, time: 0 };
+    }
+
+    topicMap[tKey].total++;
+    topicMap[tKey].time += q.timetaken;
+
+    if (q.useranswer === q.correctanswer) {
+      topicMap[tKey].correct++;
+    }
+
+    // Unit Key
+    const uKey = this.unitcode + "_" + this.unitname;
+
+    if (!unitMap[uKey]) {
+      unitMap[uKey] = { total: 0, correct: 0, time: 0 };
+    }
+
+    unitMap[uKey].total++;
+    unitMap[uKey].time += q.timetaken;
+
+    if (q.useranswer === q.correctanswer) {
+      unitMap[uKey].correct++;
+    }
+  });
+
+  // Convert to array
+  this.topicstats = Object.entries(topicMap).map(([key, val]) => ({
+    topic: key,
+    total: val.total,
+    correct: val.correct,
+    accuracy: (val.correct / val.total) * 100,
+    avgTime: val.time / val.total
+  }));
+
+  this.unitstats = Object.entries(unitMap).map(([key, val]) => ({
+    unit: key,
+    total: val.total,
+    correct: val.correct,
+    accuracy: (val.correct / val.total) * 100,
+    avgTime: val.time / val.total
+  }));
+};*/
 
 const Result = mongoose.model("Result", ResultSchema);
 module.exports = Result;

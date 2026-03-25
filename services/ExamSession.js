@@ -2,7 +2,7 @@
 class ExamSession {
     constructor({ examcode, subjectcode, unitcode, topiccode, count, difficulty } = {}) {
 
-        
+
         this.examcode = examcode;
         this.subjectcode = subjectcode;
         this.unitcode = unitcode;
@@ -52,14 +52,14 @@ class ExamSession {
         this.answers = null; // { questionId: selectedOption }
         this.attemptnumber = 1;
 
-        this.resultid=null;
+        this.resultid = null;
     }
 
     updateIsUserPremiumFlag(user) {
         // Check if any role in the array matches the premium role ID
         this.isuserpremium = Array.isArray(user.roles)
             && user.roles.some(r => r._id === "650f1a2b3c4d5e6f7a8b9014" || r.role === "premium_student");
-        this.userroles=user.roles;
+        this.userroles = user.roles;
 
         /*this.isuserpremium = Array.isArray(user.roles) 
         && user.roles.some(r => r.role === "premium_student");*/
@@ -96,6 +96,60 @@ class ExamSession {
         this.percentage = Math.round((this.finalscore / this.questionscount) * 100);
         this.accuracy = this.attempted ? Math.round((this.right / this.attempted) * 100) : 0;
     }
+
+    generateStats() {
+
+        const topicMap = {};
+        const unitMap = {};
+
+        this.questions.forEach(q => {
+
+            // Topic Key
+            const tKey = this.topiccode + "_" + this.topicname;
+
+            if (!topicMap[tKey]) {
+                topicMap[tKey] = { total: 0, correct: 0, time: 0 };
+            }
+
+            topicMap[tKey].total++;
+            topicMap[tKey].time += q.timetaken;
+
+            if (q.useranswer === q.correctanswer) {
+                topicMap[tKey].correct++;
+            }
+
+            // Unit Key
+            const uKey = this.unitcode + "_" + this.unitname;
+
+            if (!unitMap[uKey]) {
+                unitMap[uKey] = { total: 0, correct: 0, time: 0 };
+            }
+
+            unitMap[uKey].total++;
+            unitMap[uKey].time += q.timetaken;
+
+            if (q.useranswer === q.correctanswer) {
+                unitMap[uKey].correct++;
+            }
+        });
+
+        // Convert to array
+        this.topicstats = Object.entries(topicMap).map(([key, val]) => ({
+            topic: key,
+            total: val.total,
+            correct: val.correct,
+            accuracy: (val.correct / val.total) * 100,
+            avgTime: val.time / val.total
+        }));
+
+        this.unitstats = Object.entries(unitMap).map(([key, val]) => ({
+            unit: key,
+            total: val.total,
+            correct: val.correct,
+            accuracy: (val.correct / val.total) * 100,
+            avgTime: val.time / val.total
+        }));
+    };
 
     getExampaperCode() {
 

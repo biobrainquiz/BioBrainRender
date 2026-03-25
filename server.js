@@ -192,6 +192,7 @@ app.use("/", require("./routes/unit"));
 app.use("/", require("./routes/topic"));
 app.use("/", require("./routes/authentication"));
 app.use("/", require("./routes/mocktest"));
+app.use("/", require("./routes/aiAssistant"));
 
 
 /* =========================================

@@ -6,16 +6,6 @@
     "auditLog": "D:\\Projects\\BioBrainMdb\\logs\\info\\.78e571931c43fe049e8bebeb77c2b4b10981f49f-audit.json",
     "files": [
         {
-            "date": 1773148253067,
-            "name": "D:\\Projects\\BioBrainMdb\\logs\\info\\info-10-03-2026.log",
-            "hash": "6a7ae711fdba068cf18b3aeb2b5e4dce343f1bb7c032b4b26e81fecbde3d82a5"
-        },
-        {
-            "date": 1773167406917,
-            "name": "D:\\Projects\\BioBrainMdb\\logs\\info\\info-11-03-2026.log",
-            "hash": "01cd6520f52ddee005b3f3a9f6740430a25659f687f5e2e852caf89aa71be125"
-        },
-        {
             "date": 1773284580963,
             "name": "D:\\Projects\\BioBrainMdb\\logs\\info\\info-12-03-2026.log",
             "hash": "dfac24ac91158557cec6f7462e512bc29b6b0e79c5f1b068225d6f00fda300cf"
@@ -54,6 +44,11 @@
             "date": 1774348282958,
             "name": "D:\\Projects\\BioBrainMdb\\logs\\info\\info-24-03-2026.log",
             "hash": "3a1379a33b06fda30190fdd86a0dce41cc3632d4e1122f7b17115ae6558963d8"
+        },
+        {
+            "date": 1774432654644,
+            "name": "D:\\Projects\\BioBrainMdb\\logs\\info\\info-25-03-2026.log",
+            "hash": "ff9d44a1f7910269ca0f86f1e3ef03c8390fc3bec440ebf2ede766071b6cff5c"
         }
     ],
     "hashType": "sha256"
