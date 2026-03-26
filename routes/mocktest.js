@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const requireLogin = require("../middleware/requireLogin");
+const refreshUser = require("../middleware/refreshUser");
 const mocktestController = require("../controllers/mocktestController");
 const resultController = require("../controllers/resultController");
 
@@ -22,6 +23,7 @@ router.post(
 router.post(
   "/mocktest/submit",
   requireLogin,
+  refreshUser,
   mocktestController.submit
 );
 
