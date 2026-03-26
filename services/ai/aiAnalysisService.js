@@ -27,7 +27,7 @@ async function generateAIResponse(prompt) {
 
     const data = await response.json();
 
-    console.log(data);
+    logger.info("Generated AI response:", data);
     return data?.candidates?.[0]?.content?.parts?.[0]?.text
       || "No explanation available";
 
