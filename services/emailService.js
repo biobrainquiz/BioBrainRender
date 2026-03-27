@@ -2,9 +2,7 @@ const { Resend } = require("resend");
 const fs = require("fs");
 const logger = require("../utils/logger");
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-async function sendReportEmail(useremail, username,filename, pdfpath) {
+async function sendExamReportEmail(useremail, username, filename, pdfpath) {
 
   const pdfBuffer = fs.readFileSync(pdfpath);
 
@@ -49,10 +47,31 @@ async function sendReportEmail(useremail, username,filename, pdfpath) {
     return response;
 
   } catch (error) {
-    logger.error("Error sending email:", error);
+    logger.error("Error sending exam report email:", error);
     throw error;
   }
 
 }
 
-module.exports = sendReportEmail;
+async function sendForgotPasswordEmail(user, resetlink) {
+
+  try {
+
+        // 5️⃣ Send reset email using Resend
+        const resend = new Resend(process.env.RESEND_API_KEY);
+
+        await resend.emails.send({
+            from: process.env.EMAIL_FROM,
+            to: user.email,
+            subject: "BioBrain Password Reset",
+            html: `...`
+        });
+
+  } catch (error) {
+    logger.error("Error sending forgot password email:", error);
+    throw error;
+  }
+
+}
+
+module.exports = { sendExamReportEmail, sendForgotPasswordEmail};

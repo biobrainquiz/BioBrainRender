@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Projects\\BioBrain\\logs\\combined\\.24306a67334881ef4723dc8ad49d734063c33743-audit.json",
+    "files": [
+        {
+            "date": 1774522516375,
+            "name": "D:\\Projects\\BioBrain\\logs\\combined\\combined-26-03-2026.log",
+            "hash": "54e66516f511aa5dc4c063b2d7e3ad362eff518ddb500f470f0df5c1e583b15d"
+        },
+        {
+            "date": 1774576883947,
+            "name": "D:\\Projects\\BioBrain\\logs\\combined\\combined-27-03-2026.log",
+            "hash": "5e28a3e5909260aa12e402e1228f4e738ac73b14525995b94b5324c9b3b33bd9"
+        }
+    ],
+    "hashType": "sha256"
+}

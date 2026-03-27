@@ -14,14 +14,15 @@ const crypto = require("crypto");
 // Library used to hash and compare passwords securely
 const bcrypt = require("bcryptjs");
 
-// Email service provider used to send password reset emails
-const { Resend } = require("resend");
+
 
 // Utility that detects device type (mobile / desktop) to render correct view
 const getDevice = require("../utils/getDevice");
 
 // Custom logger utility for structured error logging
 const logger = require("../utils/logger");
+
+const { sendExamReportEmail, sendForgotPasswordEmail }=require("../services/emailService");
 
 
 // ==========================
@@ -226,16 +227,7 @@ exports.forgotPassword = async (req, res) => {
         // 4️⃣ Create password reset URL
         const resetURL = `${process.env.BASE_URI}/reset/${token}`;
 
-        // 5️⃣ Send reset email using Resend
-        const resend = new Resend(process.env.RESEND_API_KEY);
-
-        await resend.emails.send({
-            from: process.env.EMAIL_FROM,
-            to: user.email,
-            subject: "BioBrain Password Reset",
-            html: `...`
-        });
-
+        sendForgotPasswordEmail(user, resetURL);
         return res.json({
             success: true,
             message: "Reset link sent to email!"

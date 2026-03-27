@@ -1,62 +1,277 @@
+<style>
+  /* =========================================
+       1. GLOBAL & HEADER BASE
+    ========================================= */
+  :root {
+    --header-height: 60px;
+    --bio-teal: #2dd4bf;
+    --dark-slate: #0f172a;
+    --text-muted: #94a3b8;
+  }
+
+  body {
+    padding-top: var(--header-height);
+    /* Offset for fixed header */
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+  }
+
+  header {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(45, 212, 191, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  /* =========================================
+       2. LOGO (MAX VERTICAL HEIGHT)
+    ========================================= */
+  .logo-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* Uses full 60px */
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  #logo {
+    height: 100%;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    /* Slight padding to prevent touching the very top/bottom edge */
+    padding: 4px 0;
+  }
+
+  /* =========================================
+       3. NAV LINKS
+    ========================================= */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links li a:hover {
+    color: var(--bio-teal);
+  }
+
+  /* =========================================
+       4. USER MENU & STACKED DROPDOWN
+    ========================================= */
+  .user-menu {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .user-trigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 12px;
+    background: rgba(30, 41, 59, 0.6);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: border-color 0.2s;
+  }
+
+  .user-trigger:hover {
+    border-color: var(--bio-teal);
+  }
+
+  .user-avatar {
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, var(--bio-teal), #0ea5e9);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  /* Dropdown Box */
+  .dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 52px;
+    background: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: 220px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    z-index: 1001;
+  }
+
+  .user-menu.active .dropdown {
+    display: block;
+    animation: dropAnim 0.2s ease-out;
+  }
+
+  /* Stacked Header */
+
+  .dropdown-header {
+    padding: 12px;
+    margin: 8px;
+    /* Adds space around the rectangle */
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background: rgba(255, 255, 255, 0.05);
+    /* Slightly lighter for visibility */
+    border-radius: 12px;
+    /* This creates the rounded rectangle */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* Optional subtle border */
+  }
+
+  .dropdown-username {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+  }
+
+  .dropdown-email {
+    font-size: 11px;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dropdown-item {
+    display: block;
+    padding: 12px 15px;
+    color: #f8fafc;
+    text-decoration: none;
+    font-size: 13px;
+    transition: background 0.2s;
+  }
+
+  .dropdown-item:hover {
+    background: rgba(45, 212, 191, 0.1);
+    color: var(--bio-teal);
+  }
+
+  .logout {
+    color: #ef4444 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  /* Login Button */
+  .btn-navbar {
+    background: var(--bio-teal);
+    color: var(--dark-slate) !important;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-weight: 700 !important;
+    font-size: 13px;
+  }
+
+  @keyframes dropAnim {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
 <header>
-  <link rel="stylesheet" href="/css/desktopStyle.css" />
   <div class="navbar">
-    <img src="/images/biobrain-logo.png" alt="BioBrain Quiz Logo" id="logo">
+    <a href="/" class="logo-link">
+      <img src="/images/biobrain-logo.png" alt="BioBrain" id="logo">
+    </a>
 
     <ul class="nav-links">
       <li><a href="/">Home</a></li>
-      <li><a href="/admin">Admin</a></li>
       <li><a href="/leaderboard">Leaderboard</a></li>
       <li><a href="/about">About</a></li>
+      <li><a href="/admin">Admin</a></li>
 
       <% if (session && session.user) { %>
         <li class="nav-user">
-          <div class="user-menu">
-
+          <div class="user-menu" id="userMenu">
             <div class="user-trigger">
               <div class="user-avatar">
                 <%= session.user.username.charAt(0).toUpperCase() %>
               </div>
-              <span class="arrow">&#9662;</span>
+              <span style="font-size: 9px; color: var(--text-muted);">&#9662;</span>
             </div>
 
             <div class="dropdown">
               <div class="dropdown-header">
-                <div class="dropdown-avatar">
-                  <%= session.user.username.charAt(0).toUpperCase() %>
-                </div>
-                <div class="dropdown-user-info">
-                  <div class="dropdown-username">
-                    <%= session.user.username %>
-                  </div>
-                  <div class="dropdown-email">
-                    <%= session.user.email %>
-                  </div>
-                </div>
+                <span class="dropdown-username">
+                  <%= session.user.username %>
+                </span>
+                <span class="dropdown-email">
+                  <%= session.user.email %>
+                </span>
               </div>
-
-              <div class="dropdown-divider"></div>
-
-              <a href="/user/profile" class="dropdown-item">
-                👤 Profile
-              </a>
-
-              <a href="/authentication/logout" class="dropdown-item logout">
-                🚪 Logout
-              </a>
+              <a href="/user/profile" class="dropdown-item">👤 Profile</a>
+              <a href="/authentication/logout" class="dropdown-item logout">🚪 Logout</a>
             </div>
-
           </div>
         </li>
-      <% } else { %>
-        <!-- Make Login link look like a button -->
-        <li>
-          <a href="/authentication/login" class="btn-navbar">Login</a>
-        </li>
-      <% } %>
-
+        <% } else { %>
+          <li><a href="/authentication/login" class="btn-navbar">Login</a></li>
+          <% } %>
     </ul>
   </div>
 </header>
 
-<script src="/js/navibar.js"></script>
+<script>
+  // Logic for toggling dropdown and closing on click-outside
+  document.addEventListener('DOMContentLoaded', () => {
+    const userMenu = document.getElementById('userMenu');
+
+    if (userMenu) {
+      userMenu.addEventListener('click', (e) => {
+        userMenu.classList.toggle('active');
+        e.stopPropagation();
+      });
+
+      document.addEventListener('click', () => {
+        userMenu.classList.remove('active');
+      });
+    }
+  });
+</script>
