@@ -3,7 +3,7 @@ const router = express.Router();
 const requireLogin = require("../middleware/requireLogin");
 const refreshUser = require("../middleware/refreshUser");
 const mocktestController = require("../controllers/mocktestController");
-const resultController = require("../controllers/resultController");
+const pdfResultController = require("../controllers/pdfResultController");
 
 // initalize mocktest 
 router.get(
@@ -30,6 +30,11 @@ router.post(
 // Download result PDF
 router.get(
   "/result/pdf/:mocktestid",
-  resultController.downloadResultPdf);
+  pdfResultController.downloadResultPdf);
+
+// send result PDF email
+router.get(
+  "/result/pdf/:mocktestid",
+  pdfResultController.emailResultPdf);
 
 module.exports = router;

@@ -8,6 +8,9 @@ const PDFDocument = require("pdfkit");
 const Result = require("../models/Result");
 const logger = require("../utils/logger");
 
+exports.emailResultPdf = async (req, res) => {
+
+};
 
 // programatically generate pdf
 exports.downloadResultPdf = async (req, res) => {
