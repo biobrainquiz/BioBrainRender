@@ -154,7 +154,7 @@ If you did not request this, please ignore this email.
           <h2 style="color: #2c3e50; margin-bottom: 20px;">Reset Your Password</h2>
 
           <p style="font-size: 16px; color: #555;">
-            Hello, <b>${user.username}</b>$
+            Hello, <b>${user.username}</b>
           </p>
 
           <p style="font-size: 16px; color: #555;">
