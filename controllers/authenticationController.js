@@ -20,8 +20,7 @@ const getDevice = require("../utils/getDevice");
 // Custom logger utility for structured error logging
 const logger = require("../utils/logger");
 
-const { sendExamReportEmail, sendForgotPasswordEmail }=require("../services/emailService");
-
+const  sendForgotPasswordEmail = require("../services/emailService");
 
 // ==========================
 // LOGIN
@@ -181,8 +180,6 @@ exports.logout = (req, res) => {
     });
 };
 
-
-
 // ==========================
 // FORGOT PASSWORD
 // ==========================
@@ -322,7 +319,6 @@ exports.showResetPage = (req, res) => {
         token: req.params.token
     });
 };
-
 
 
 // ==========================

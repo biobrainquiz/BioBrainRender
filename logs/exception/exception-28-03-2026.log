@@ -1,0 +1,146 @@
+2026-03-28 12:05:32 [ERROR]: ReferenceError: PORT is not defined
+    at Server.<anonymous> (D:\Projects\BioBrain\server.js:265:44)
+    at Server.f (D:\Projects\BioBrain\node_modules\once\once.js:25:25)
+    at Object.onceWrapper (node:events:622:28)
+    at Server.emit (node:events:520:35)
+    at emitListeningNT (node:net:1983:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:88:21) {"error":{},"exception":true,"date":"Sat Mar 28 2026 12:05:32 GMT+0530 (India Standard Time)","process":{"pid":15804,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":123039744,"heapTotal":109203456,"heapUsed":39031376,"external":22678996,"arrayBuffers":19989263}},"os":{"loadavg":[0,0,0],"uptime":571810.859},"trace":[{"column":44,"file":"D:\\Projects\\BioBrain\\server.js","function":null,"line":265,"method":null,"native":false},{"column":25,"file":"D:\\Projects\\BioBrain\\node_modules\\once\\once.js","function":"Server.f","line":25,"method":"f","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":622,"method":"onceWrapper","native":false},{"column":35,"file":"node:events","function":"Server.emit","line":520,"method":"emit","native":false},{"column":10,"file":"node:net","function":"emitListeningNT","line":1983,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":88,"method":"processTicksAndRejections","native":false}]}
+2026-03-28 12:07:52 [ERROR]: ReferenceError: PORT is not defined
+    at Server.<anonymous> (D:\Projects\BioBrain\server.js:265:44)
+    at Server.f (D:\Projects\BioBrain\node_modules\once\once.js:25:25)
+    at Object.onceWrapper (node:events:622:28)
+    at Server.emit (node:events:520:35)
+    at emitListeningNT (node:net:1983:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:88:21) {"error":{},"exception":true,"date":"Sat Mar 28 2026 12:07:52 GMT+0530 (India Standard Time)","process":{"pid":7824,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":115253248,"heapTotal":67260416,"heapUsed":47959016,"external":23009639,"arrayBuffers":20319906}},"os":{"loadavg":[0,0,0],"uptime":571951.515},"trace":[{"column":44,"file":"D:\\Projects\\BioBrain\\server.js","function":null,"line":265,"method":null,"native":false},{"column":25,"file":"D:\\Projects\\BioBrain\\node_modules\\once\\once.js","function":"Server.f","line":25,"method":"f","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":622,"method":"onceWrapper","native":false},{"column":35,"file":"node:events","function":"Server.emit","line":520,"method":"emit","native":false},{"column":10,"file":"node:net","function":"emitListeningNT","line":1983,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":88,"method":"processTicksAndRejections","native":false}]}
+2026-03-28 13:57:42 [ERROR]: D:\Projects\BioBrain\utils\url.util.js:5
+export const getNormalDomain = () => {
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1735:18)
+    at Module._compile (node:internal/modules/cjs/loader:1778:20)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\services\emailService.js:4:17) {"error":{},"exception":true,"date":"Sat Mar 28 2026 13:57:42 GMT+0530 (India Standard Time)","process":{"pid":13056,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":110710784,"heapTotal":74076160,"heapUsed":42949752,"external":22659413,"arrayBuffers":19989263}},"os":{"loadavg":[0,0,0],"uptime":578541.171},"trace":[{"column":18,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1735,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1778,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1936,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1525,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1327,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":17,"file":"D:\\Projects\\BioBrain\\services\\emailService.js","function":null,"line":4,"method":null,"native":false}]}
+2026-03-28 13:58:14 [ERROR]: D:\Projects\BioBrain\utils\url.util.js:5
+export const getNormalDomain = () => {
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1735:18)
+    at Module._compile (node:internal/modules/cjs/loader:1778:20)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\services\emailService.js:4:17) {"error":{},"exception":true,"date":"Sat Mar 28 2026 13:58:14 GMT+0530 (India Standard Time)","process":{"pid":8984,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":108519424,"heapTotal":69619712,"heapUsed":40560304,"external":22663283,"arrayBuffers":19993133}},"os":{"loadavg":[0,0,0],"uptime":578573.578},"trace":[{"column":18,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1735,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1778,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1936,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1525,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1327,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":17,"file":"D:\\Projects\\BioBrain\\services\\emailService.js","function":null,"line":4,"method":null,"native":false}]}
+2026-03-28 14:00:20 [ERROR]: D:\Projects\BioBrain\utils\url.util.js:5
+export const getNormalDomain = () => {
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1735:18)
+    at Module._compile (node:internal/modules/cjs/loader:1778:20)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\services\emailService.js:4:45) {"error":{},"exception":true,"date":"Sat Mar 28 2026 14:00:20 GMT+0530 (India Standard Time)","process":{"pid":12700,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":114991104,"heapTotal":67260416,"heapUsed":47377344,"external":22989124,"arrayBuffers":20318974}},"os":{"loadavg":[0,0,0],"uptime":578698.937},"trace":[{"column":18,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1735,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1778,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1936,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1525,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1327,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":45,"file":"D:\\Projects\\BioBrain\\services\\emailService.js","function":null,"line":4,"method":null,"native":false}]}
+2026-03-28 14:15:58 [ERROR]: D:\Projects\BioBrain\services\emailService.js:321
+export const sendForgotPasswordEmail = async (user, resetURL) => {
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1735:18)
+    at Module._compile (node:internal/modules/cjs/loader:1778:20)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\controllers\authenticationController.js:23:56) {"error":{},"exception":true,"date":"Sat Mar 28 2026 14:15:58 GMT+0530 (India Standard Time)","process":{"pid":3988,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":107761664,"heapTotal":66998272,"heapUsed":48886832,"external":22989292,"arrayBuffers":20319142}},"os":{"loadavg":[0,0,0],"uptime":579637.593},"trace":[{"column":18,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1735,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1778,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1936,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1525,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1327,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":56,"file":"D:\\Projects\\BioBrain\\controllers\\authenticationController.js","function":null,"line":23,"method":null,"native":false}]}
+2026-03-28 14:17:40 [ERROR]: D:\Projects\BioBrain\services\emailService.js:319
+export const sendForgotPasswordEmail = async (user, resetURL) => {
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1735:18)
+    at Module._compile (node:internal/modules/cjs/loader:1778:20)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\controllers\authenticationController.js:23:56) {"error":{},"exception":true,"date":"Sat Mar 28 2026 14:17:40 GMT+0530 (India Standard Time)","process":{"pid":4408,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":105230336,"heapTotal":67522560,"heapUsed":47527464,"external":22989292,"arrayBuffers":20319142}},"os":{"loadavg":[0,0,0],"uptime":579739.296},"trace":[{"column":18,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1735,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1778,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1936,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1525,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1327,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":56,"file":"D:\\Projects\\BioBrain\\controllers\\authenticationController.js","function":null,"line":23,"method":null,"native":false}]}
+2026-03-28 14:40:42 [ERROR]: D:\Projects\BioBrain\services\emailService.js:395
+const { Resend } = require('resend');
+        ^
+
+SyntaxError: Identifier 'Resend' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1735:18)
+    at Module._compile (node:internal/modules/cjs/loader:1778:20)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\controllers\authenticationController.js:23:56) {"error":{},"exception":true,"date":"Sat Mar 28 2026 14:40:42 GMT+0530 (India Standard Time)","process":{"pid":17216,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":110239744,"heapTotal":68833280,"heapUsed":40424640,"external":22662515,"arrayBuffers":19992365}},"os":{"loadavg":[0,0,0],"uptime":581121.187},"trace":[{"column":18,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1735,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1778,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1936,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1525,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1327,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":56,"file":"D:\\Projects\\BioBrain\\controllers\\authenticationController.js","function":null,"line":23,"method":null,"native":false}]}
+2026-03-28 20:26:57 [ERROR]: Error: Cannot find module '../controllers/pdfResultController'
+Require stack:
+- D:\Projects\BioBrain\routes\mocktest.js
+- D:\Projects\BioBrain\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1448:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\routes\mocktest.js:6:29)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14) {"error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Projects\\BioBrain\\routes\\mocktest.js","D:\\Projects\\BioBrain\\server.js"]},"exception":true,"date":"Sat Mar 28 2026 20:26:57 GMT+0530 (India Standard Time)","process":{"pid":1728,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":83738624,"heapTotal":39157760,"heapUsed":26782880,"external":20794269,"arrayBuffers":18265621}},"os":{"loadavg":[0,0,0],"uptime":601895.234},"trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1448,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1059,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1064,"method":null,"native":false},{"column":25,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1234,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":29,"file":"D:\\Projects\\BioBrain\\routes\\mocktest.js","function":null,"line":6,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1804,"method":"_compile","native":false}]}
+2026-03-28 20:31:14 [ERROR]: Error: Cannot find module '../controllers/pdfResultController'
+Require stack:
+- D:\Projects\BioBrain\routes\mocktest.js
+- D:\Projects\BioBrain\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1448:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\routes\mocktest.js:6:29)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14) {"error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Projects\\BioBrain\\routes\\mocktest.js","D:\\Projects\\BioBrain\\server.js"]},"exception":true,"date":"Sat Mar 28 2026 20:31:14 GMT+0530 (India Standard Time)","process":{"pid":5412,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":84058112,"heapTotal":55672832,"heapUsed":27684160,"external":20794269,"arrayBuffers":18265621}},"os":{"loadavg":[0,0,0],"uptime":602152.312},"trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1448,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1059,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1064,"method":null,"native":false},{"column":25,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1234,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":29,"file":"D:\\Projects\\BioBrain\\routes\\mocktest.js","function":null,"line":6,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1804,"method":"_compile","native":false}]}
+2026-03-28 20:33:51 [ERROR]: Error: Cannot find module '../controllers/pdfResultController'
+Require stack:
+- D:\Projects\BioBrain\routes\mocktest.js
+- D:\Projects\BioBrain\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1448:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\routes\mocktest.js:6:29)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14) {"error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Projects\\BioBrain\\routes\\mocktest.js","D:\\Projects\\BioBrain\\server.js"]},"exception":true,"date":"Sat Mar 28 2026 20:33:51 GMT+0530 (India Standard Time)","process":{"pid":1004,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":84267008,"heapTotal":55672832,"heapUsed":27799584,"external":20794269,"arrayBuffers":18265621}},"os":{"loadavg":[0,0,0],"uptime":602309},"trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1448,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1059,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1064,"method":null,"native":false},{"column":25,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1234,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":29,"file":"D:\\Projects\\BioBrain\\routes\\mocktest.js","function":null,"line":6,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1804,"method":"_compile","native":false}]}

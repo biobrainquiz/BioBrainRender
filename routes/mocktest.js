@@ -34,7 +34,7 @@ router.get(
 
 // send result PDF email
 router.get(
-  "/result/pdf/:mocktestid",
+  "/result/email/:mocktestid",
   pdfResultController.emailResultPdf);
 
 module.exports = router;

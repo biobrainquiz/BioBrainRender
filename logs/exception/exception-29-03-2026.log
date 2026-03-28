@@ -1,0 +1,80 @@
+2026-03-29 00:05:41 [ERROR]: Error: Cannot find module './services/Mailer'
+Require stack:
+- D:\Projects\BioBrain\services\pdfResultService.js
+- D:\Projects\BioBrain\controllers\pdfResultController.js
+- D:\Projects\BioBrain\routes\mocktest.js
+- D:\Projects\BioBrain\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1448:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\services\pdfResultService.js:13:16)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14) {"error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Projects\\BioBrain\\services\\pdfResultService.js","D:\\Projects\\BioBrain\\controllers\\pdfResultController.js","D:\\Projects\\BioBrain\\routes\\mocktest.js","D:\\Projects\\BioBrain\\server.js"]},"exception":true,"date":"Sun Mar 29 2026 00:05:41 GMT+0530 (India Standard Time)","process":{"pid":17124,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":110645248,"heapTotal":74076160,"heapUsed":37713208,"external":22659413,"arrayBuffers":19989263}},"os":{"loadavg":[0,0,0],"uptime":615019.203},"trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1448,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1059,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1064,"method":null,"native":false},{"column":25,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1234,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":16,"file":"D:\\Projects\\BioBrain\\services\\pdfResultService.js","function":null,"line":13,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1804,"method":"_compile","native":false}]}
+2026-03-29 00:07:12 [ERROR]: Error: Cannot find module './services/Mailer'
+Require stack:
+- D:\Projects\BioBrain\services\pdfResultService.js
+- D:\Projects\BioBrain\controllers\pdfResultController.js
+- D:\Projects\BioBrain\routes\mocktest.js
+- D:\Projects\BioBrain\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1448:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\services\pdfResultService.js:13:16)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14) {"error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Projects\\BioBrain\\services\\pdfResultService.js","D:\\Projects\\BioBrain\\controllers\\pdfResultController.js","D:\\Projects\\BioBrain\\routes\\mocktest.js","D:\\Projects\\BioBrain\\server.js"]},"exception":true,"date":"Sun Mar 29 2026 00:07:12 GMT+0530 (India Standard Time)","process":{"pid":13024,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":112603136,"heapTotal":67260416,"heapUsed":45993680,"external":22988100,"arrayBuffers":20317950}},"os":{"loadavg":[0,0,0],"uptime":615110.046},"trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1448,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1059,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1064,"method":null,"native":false},{"column":25,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1234,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":16,"file":"D:\\Projects\\BioBrain\\services\\pdfResultService.js","function":null,"line":13,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1804,"method":"_compile","native":false}]}
+2026-03-29 00:08:07 [ERROR]: Error: Cannot find module './services/Mailer'
+Require stack:
+- D:\Projects\BioBrain\services\pdfResultService.js
+- D:\Projects\BioBrain\controllers\pdfResultController.js
+- D:\Projects\BioBrain\routes\mocktest.js
+- D:\Projects\BioBrain\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1448:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\services\pdfResultService.js:13:16)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14) {"error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Projects\\BioBrain\\services\\pdfResultService.js","D:\\Projects\\BioBrain\\controllers\\pdfResultController.js","D:\\Projects\\BioBrain\\routes\\mocktest.js","D:\\Projects\\BioBrain\\server.js"]},"exception":true,"date":"Sun Mar 29 2026 00:08:07 GMT+0530 (India Standard Time)","process":{"pid":3464,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":113152000,"heapTotal":66736128,"heapUsed":46025672,"external":22988100,"arrayBuffers":20317950}},"os":{"loadavg":[0,0,0],"uptime":615165.609},"trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1448,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1059,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1064,"method":null,"native":false},{"column":25,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1234,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":16,"file":"D:\\Projects\\BioBrain\\services\\pdfResultService.js","function":null,"line":13,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1804,"method":"_compile","native":false}]}
+2026-03-29 00:08:59 [ERROR]: Error: Cannot find module './services/Mailer'
+Require stack:
+- D:\Projects\BioBrain\services\pdfResultService.js
+- D:\Projects\BioBrain\controllers\pdfResultController.js
+- D:\Projects\BioBrain\routes\mocktest.js
+- D:\Projects\BioBrain\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1448:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\services\pdfResultService.js:13:16)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14) {"error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Projects\\BioBrain\\services\\pdfResultService.js","D:\\Projects\\BioBrain\\controllers\\pdfResultController.js","D:\\Projects\\BioBrain\\routes\\mocktest.js","D:\\Projects\\BioBrain\\server.js"]},"exception":true,"date":"Sun Mar 29 2026 00:08:59 GMT+0530 (India Standard Time)","process":{"pid":13244,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":110387200,"heapTotal":73814016,"heapUsed":37103552,"external":22659413,"arrayBuffers":19989263}},"os":{"loadavg":[0,0,0],"uptime":615217.625},"trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1448,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1059,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1064,"method":null,"native":false},{"column":25,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1234,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":16,"file":"D:\\Projects\\BioBrain\\services\\pdfResultService.js","function":null,"line":13,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1804,"method":"_compile","native":false}]}
+2026-03-29 00:12:12 [ERROR]: Error: Cannot find module './services/Mailer'
+Require stack:
+- D:\Projects\BioBrain\services\pdfResultService.js
+- D:\Projects\BioBrain\controllers\pdfResultController.js
+- D:\Projects\BioBrain\routes\mocktest.js
+- D:\Projects\BioBrain\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1448:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1234:25)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1548:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\Projects\BioBrain\services\pdfResultService.js:13:16)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14) {"error":{"code":"MODULE_NOT_FOUND","requireStack":["D:\\Projects\\BioBrain\\services\\pdfResultService.js","D:\\Projects\\BioBrain\\controllers\\pdfResultController.js","D:\\Projects\\BioBrain\\routes\\mocktest.js","D:\\Projects\\BioBrain\\server.js"]},"exception":true,"date":"Sun Mar 29 2026 00:12:12 GMT+0530 (India Standard Time)","process":{"pid":5572,"uid":null,"gid":null,"cwd":"D:\\Projects\\BioBrain","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v24.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Projects\\BioBrain\\server.js"],"memoryUsage":{"rss":113364992,"heapTotal":66473984,"heapUsed":46128352,"external":22988100,"arrayBuffers":20317950}},"os":{"loadavg":[0,0,0],"uptime":615409.812},"trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Module._resolveFilename","line":1448,"method":"_resolveFilename","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"defaultResolveImpl","line":1059,"method":null,"native":false},{"column":22,"file":"node:internal/modules/cjs/loader","function":"resolveForCJSWithHooks","line":1064,"method":null,"native":false},{"column":25,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1234,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":328,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":245,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1548,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":152,"method":null,"native":false},{"column":16,"file":"D:\\Projects\\BioBrain\\services\\pdfResultService.js","function":null,"line":13,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1804,"method":"_compile","native":false}]}

@@ -3,6 +3,7 @@ const fs = require("fs");
 const logger = require("../utils/logger");
 const { getNormalDomain, getCleanDomain } = require("../utils/url.util");
 
+
 async function sendExamReportEmail(useremail, username, filename, pdfpath) {
 
   const pdfBuffer = fs.readFileSync(pdfpath);
@@ -125,6 +126,7 @@ async function sendForgotPasswordEmail(user, resetURL) {
       </div>`
     });
 
+    console.log(response);
     if (response.error) throw new Error(response.error.message);
     return response.data;
 
@@ -134,4 +136,4 @@ async function sendForgotPasswordEmail(user, resetURL) {
   }
 }
 
-module.exports = { sendExamReportEmail, sendForgotPasswordEmail };
+module.exports = sendForgotPasswordEmail;
