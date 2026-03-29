@@ -1622,3 +1622,1420 @@ r is not defined
 2026-03-29 11:00:28 [INFO]: GET /keep-session-alive 127.0.0.1 
 2026-03-29 11:00:28 [INFO]: GET /keep-session-alive 127.0.0.1 
 2026-03-29 11:01:32 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 13:03:59 [INFO]: 🚀 Server running on port 8080 
+2026-03-29 13:03:59 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 13:03:59 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 13:03:59 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 13:03:59 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 13:04:00 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 13:04:00 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 13:04:00 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 13:04:00 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 13:04:00 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 13:04:00 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 13:04:00 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 13:04:00 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 13:04:00 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 13:04:00 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 13:04:01 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 13:04:01 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 13:04:02 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 13:04:02 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 13:04:02 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 13:04:02 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 13:04:02 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 13:04:02 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 13:04:02 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 13:04:02 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 13:04:02 [INFO]: 🔥 Users seeded: 2 successfully! 
+2026-03-29 13:04:02 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 13:09:31 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 13:09:32 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 13:09:32 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 13:09:32 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 13:09:32 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 13:09:34 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 13:09:34 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 13:09:34 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 13:09:34 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 13:09:34 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 13:09:34 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 13:09:34 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 13:09:34 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 13:09:34 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 13:09:34 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 13:09:34 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 13:09:34 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 13:09:35 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 13:09:35 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 13:09:35 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 13:09:35 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 13:09:35 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 13:09:35 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 13:09:35 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 13:09:35 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 13:09:35 [INFO]: 🔥 Users seeded: 2 successfully! 
+2026-03-29 13:09:35 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 13:09:37 [INFO]: GET / 127.0.0.1 
+2026-03-29 13:09:37 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:09:37 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:09:37 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 13:09:37 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 13:09:38 [INFO]: GET /favicon.ico 127.0.0.1 
+2026-03-29 13:09:39 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:09:39 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:09:39 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:09:42 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 13:09:42 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:09:42 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:12:27 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 13:12:27 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 13:12:27 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 13:12:27 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 13:12:28 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 13:12:28 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 13:12:28 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 13:12:28 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 13:12:28 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 13:12:29 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 13:12:29 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 13:12:29 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 13:12:29 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 13:12:29 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 13:12:29 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 13:12:30 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 13:12:30 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 13:12:30 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 13:12:30 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 13:12:30 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 13:12:30 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 13:12:30 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 13:12:30 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 13:12:30 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 13:12:30 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 13:12:30 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 13:12:30 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 13:12:31 [INFO]: GET / 127.0.0.1 
+2026-03-29 13:12:31 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:12:31 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:12:32 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 13:12:32 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 13:12:34 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:12:34 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:12:34 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:12:39 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 13:12:39 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:12:39 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:13:00 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 13:13:00 [ERROR]: TypeError: next is not a function
+    at model.<anonymous> (D:\Projects\BioBrain\models\User.js:44:3)
+    at async Kareem.execPre (D:\Projects\BioBrain\node_modules\kareem\index.js:70:24)
+    at async model.$__save (D:\Projects\BioBrain\node_modules\mongoose\lib\model.js:394:5)
+    at async model.save (D:\Projects\BioBrain\node_modules\mongoose\lib\model.js:664:5)
+    at async exports.register (D:\Projects\BioBrain\controllers\authenticationController.js:314:9) {"error":"next is not a function"}
+2026-03-29 13:14:06 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 13:14:06 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 13:14:06 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 13:14:06 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 13:14:07 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 13:14:07 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 13:14:07 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 13:14:07 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 13:14:07 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 13:14:07 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 13:14:09 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 13:14:09 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 13:14:09 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 13:14:09 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 13:14:09 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 13:14:09 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 13:14:09 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 13:14:10 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 13:14:10 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 13:14:10 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 13:14:10 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 13:14:10 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 13:14:10 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 13:14:10 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 13:14:10 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 13:14:10 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 13:14:10 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 13:14:12 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 13:14:12 [ERROR]: Verification Email Send Failure {"error":"authenticationEmailService.sendVerificationEmail is not a function","userId":"69c8d84c2f8a791fa9324445"}
+2026-03-29 13:14:14 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:14:14 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:14:14 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:19:15 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 13:24:15 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 13:29:15 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 13:34:15 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 13:43:00 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 13:43:00 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 13:43:00 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 13:43:00 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 13:43:01 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 13:43:01 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 13:43:01 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 13:43:01 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 13:43:01 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 13:43:01 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 13:43:01 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 13:43:01 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 13:43:01 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 13:43:01 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 13:43:01 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 13:43:03 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 13:43:03 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 13:43:03 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 13:43:03 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 13:43:03 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 13:43:03 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 13:43:03 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 13:43:03 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 13:43:03 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 13:43:03 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 13:43:03 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 13:43:03 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 13:43:05 [INFO]: GET / 127.0.0.1 
+2026-03-29 13:43:05 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:43:05 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:43:05 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 13:43:05 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 13:43:22 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:43:22 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:43:22 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:43:26 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 13:43:26 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:43:26 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:43:53 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 13:43:57 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:43:58 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:43:58 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:48:24 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 13:48:25 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 13:48:25 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 13:48:25 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 13:48:25 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 13:48:25 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 13:48:25 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 13:48:25 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 13:48:25 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 13:48:26 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 13:48:26 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 13:48:26 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 13:48:27 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 13:48:27 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 13:48:27 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 13:48:27 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 13:48:27 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 13:48:27 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 13:48:27 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 13:48:27 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 13:48:27 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 13:48:27 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 13:48:27 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 13:48:27 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 13:48:27 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 13:48:27 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 13:48:27 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 13:48:29 [INFO]: GET / 127.0.0.1 
+2026-03-29 13:48:30 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:48:30 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:48:30 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 13:48:30 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 13:48:31 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:48:32 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:48:32 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:48:33 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 13:48:33 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:48:33 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:49:06 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 13:49:08 [ERROR]: Error: Resend Error: {"statusCode":422,"name":"validation_error","message":"Invalid `from` field. The email address needs to follow the `email@example.com` or `Name <email@example.com>` format."}
+    at Mailer.send (D:\Projects\BioBrain\services\Mailer.js:32:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.sendVerificationEmail (D:\Projects\BioBrain\services\authenticationEmailService.js:148:16)
+    at async exports.register (D:\Projects\BioBrain\controllers\authenticationController.js:321:17) 
+2026-03-29 13:49:08 [ERROR]: Error: Resend Error: {"statusCode":422,"name":"validation_error","message":"Invalid `from` field. The email address needs to follow the `email@example.com` or `Name <email@example.com>` format."}
+    at Mailer.send (D:\Projects\BioBrain\services\Mailer.js:32:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.sendVerificationEmail (D:\Projects\BioBrain\services\authenticationEmailService.js:148:16)
+    at async exports.register (D:\Projects\BioBrain\controllers\authenticationController.js:321:17) 
+2026-03-29 13:49:08 [ERROR]: Error: Resend Error: {"statusCode":422,"name":"validation_error","message":"Invalid `from` field. The email address needs to follow the `email@example.com` or `Name <email@example.com>` format."}
+    at Mailer.send (D:\Projects\BioBrain\services\Mailer.js:32:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async exports.sendVerificationEmail (D:\Projects\BioBrain\services\authenticationEmailService.js:148:16)
+    at async exports.register (D:\Projects\BioBrain\controllers\authenticationController.js:321:17) 
+2026-03-29 13:49:08 [ERROR]: Verification Email Send Failure {"error":"Resend Error: {\"statusCode\":422,\"name\":\"validation_error\",\"message\":\"Invalid `from` field. The email address needs to follow the `email@example.com` or `Name <email@example.com>` format.\"}","userId":"69c8e07a9e47f70f16916352"}
+2026-03-29 13:49:10 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:49:10 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:49:10 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:51:00 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 13:51:01 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 13:51:01 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 13:51:01 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 13:51:01 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 13:51:01 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 13:51:01 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 13:51:01 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 13:51:02 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 13:51:02 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 13:51:02 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 13:51:02 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 13:51:03 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 13:51:03 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 13:51:03 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 13:51:03 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 13:51:03 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 13:51:03 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 13:51:03 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 13:51:03 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 13:51:03 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 13:51:03 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 13:51:03 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 13:51:03 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 13:51:03 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 13:51:03 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 13:51:03 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 13:52:21 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 13:52:22 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 13:52:22 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 13:52:22 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 13:52:22 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 13:52:22 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 13:52:23 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 13:52:23 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 13:52:23 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 13:52:24 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 13:52:24 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 13:52:24 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 13:52:24 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 13:52:24 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 13:52:24 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 13:52:24 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 13:52:24 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 13:52:25 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 13:52:25 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 13:52:25 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 13:52:25 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 13:52:25 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 13:52:25 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 13:52:25 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 13:52:25 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 13:52:25 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 13:52:25 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 13:52:38 [INFO]: GET / 127.0.0.1 
+2026-03-29 13:52:38 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:52:38 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:52:38 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 13:52:38 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 13:52:40 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:52:40 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:52:40 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:52:42 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 13:52:42 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:52:42 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:53:00 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 13:53:04 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:53:04 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:53:04 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:53:16 [INFO]: GET /authentication/verify-email/59068a52b5bd00eba133be13b281116bf529284b98c05a33c8c5c9fd6076146b 127.0.0.1 
+2026-03-29 13:53:16 [ERROR]: TypeError: next is not a function
+    at model.<anonymous> (D:\Projects\BioBrain\models\User.js:40:44)
+    at Kareem.execPre (D:\Projects\BioBrain\node_modules\kareem\index.js:68:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {"error":"next is not a function"}
+2026-03-29 13:53:16 [INFO]: GET /favicon.ico 127.0.0.1 
+2026-03-29 13:54:50 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 13:54:52 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 13:54:52 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 13:54:52 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 13:54:53 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 13:54:54 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 13:54:54 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 13:54:54 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 13:54:54 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 13:54:54 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 13:54:54 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 13:54:54 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 13:54:54 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 13:54:54 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 13:54:54 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 13:54:55 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 13:54:55 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 13:54:55 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 13:54:55 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 13:54:55 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 13:54:55 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 13:54:55 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 13:54:55 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 13:54:55 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 13:54:55 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 13:54:55 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 13:54:55 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 13:54:55 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 13:54:56 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:54:56 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:55:15 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 13:55:19 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:55:19 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:55:19 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:55:27 [INFO]: GET /authentication/verify-email/543837ed55c5b9b081d682783b94291be6d6a4d7401e99ee6df7d3409da885bf 127.0.0.1 
+2026-03-29 13:55:27 [INFO]: GET /login?verified=true 127.0.0.1 
+2026-03-29 13:55:35 [INFO]: GET / 127.0.0.1 
+2026-03-29 13:55:35 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:55:35 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:55:35 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 13:55:35 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 13:57:04 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 13:57:04 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 13:57:04 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 13:57:04 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 13:57:04 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 13:57:04 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 13:57:05 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 13:57:05 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 13:57:05 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 13:57:06 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 13:57:06 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 13:57:06 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 13:57:06 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 13:57:06 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 13:57:06 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 13:57:06 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 13:57:06 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 13:57:06 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 13:57:06 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 13:57:06 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 13:57:06 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 13:57:06 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 13:57:06 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 13:57:06 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 13:57:07 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 13:57:07 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 13:57:07 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 13:57:09 [INFO]: GET / 127.0.0.1 
+2026-03-29 13:57:09 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:57:09 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:57:09 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 13:57:09 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 13:57:12 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:57:12 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:57:12 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:57:14 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 13:57:14 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:57:14 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:57:35 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 13:57:39 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:57:39 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:57:39 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:57:49 [INFO]: GET /authentication/verify-email/f6ed0c869aa64c4d28c8129fe737d265f5078522fbbf86563b16c8304fb8398f 127.0.0.1 
+2026-03-29 13:57:49 [INFO]: GET /authentication/login?verified=true 127.0.0.1 
+2026-03-29 13:57:49 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:57:49 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:58:14 [INFO]: POST /authentication/login 127.0.0.1 
+2026-03-29 13:58:14 [INFO]: GET / 127.0.0.1 
+2026-03-29 13:58:14 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:58:14 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:58:14 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 13:58:14 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 13:58:18 [INFO]: GET /authentication/logout 127.0.0.1 
+2026-03-29 13:58:18 [INFO]: GET / 127.0.0.1 
+2026-03-29 13:58:18 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:58:18 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:58:25 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 13:58:26 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 13:58:26 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 13:58:26 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 13:58:26 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 13:58:27 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 13:58:27 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 13:58:28 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 13:58:28 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 13:58:28 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 13:58:28 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 13:58:28 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 13:58:28 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 13:58:28 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 13:58:28 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 13:58:28 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 13:58:28 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 13:58:28 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 13:58:28 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 13:58:28 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 13:58:28 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 13:58:28 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 13:58:28 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 13:58:29 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 13:58:29 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 13:58:29 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 13:58:29 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 13:58:31 [INFO]: GET / 127.0.0.1 
+2026-03-29 13:58:31 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:58:31 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:58:31 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 13:58:31 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 13:58:34 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:58:34 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:58:34 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:58:38 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 13:58:38 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:58:38 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:58:59 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 13:59:03 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 13:59:03 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 13:59:03 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 13:59:17 [INFO]: POST /authentication/login 127.0.0.1 
+2026-03-29 14:00:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:02:41 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:03:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:04:04 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:05:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:07:41 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:08:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:09:04 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:10:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:12:41 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:13:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:14:04 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:15:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:17:41 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:18:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:19:04 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:20:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:22:41 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:23:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:24:04 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:25:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:27:41 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:28:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:29:04 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:29:21 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 14:29:21 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 14:29:21 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 14:29:21 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 14:29:22 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 14:29:23 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 14:29:23 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 14:29:23 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 14:29:23 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 14:29:23 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 14:29:24 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 14:29:24 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 14:29:24 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 14:29:24 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 14:29:24 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 14:29:24 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 14:29:24 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 14:29:24 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 14:29:24 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 14:29:24 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 14:29:24 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 14:29:24 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 14:29:24 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 14:29:24 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 14:29:24 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 14:29:24 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 14:29:24 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 14:29:26 [INFO]: GET / 127.0.0.1 
+2026-03-29 14:29:26 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 14:29:26 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 14:29:26 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 14:29:26 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 14:29:29 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 14:29:29 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 14:29:29 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 14:29:47 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 14:29:47 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 14:29:47 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 14:30:05 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 14:30:09 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 14:30:09 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 14:30:09 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 14:30:19 [INFO]: GET /authentication/verify-email/ddce190bd6ef5004ec713313138e95cec80922effa32afc0f2c970a8b1e64035 127.0.0.1 
+2026-03-29 14:30:19 [ERROR]: Error: Failed to lookup view "pages/desktop/error" in views directory "D:\Projects\BioBrain\views"
+    at app.render (D:\Projects\BioBrain\node_modules\express\lib\application.js:562:17)
+    at ServerResponse.render (D:\Projects\BioBrain\node_modules\express\lib\response.js:923:7)
+    at exports.verifyEmail (D:\Projects\BioBrain\controllers\authenticationController.js:253:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {"user":"Guest","ip":"127.0.0.1"}
+2026-03-29 14:30:35 [INFO]: GET /authentication/verify-email/ddce190bd6ef5004ec713313138e95cec80922effa32afc0f2c970a8b1e64035 127.0.0.1 
+2026-03-29 14:30:35 [ERROR]: Error: Failed to lookup view "pages/desktop/error" in views directory "D:\Projects\BioBrain\views"
+    at app.render (D:\Projects\BioBrain\node_modules\express\lib\application.js:562:17)
+    at ServerResponse.render (D:\Projects\BioBrain\node_modules\express\lib\response.js:923:7)
+    at exports.verifyEmail (D:\Projects\BioBrain\controllers\authenticationController.js:253:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {"user":"Guest","ip":"127.0.0.1"}
+2026-03-29 14:30:36 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:33:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:35:11 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:35:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:36:55 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 14:36:59 [INFO]: GET /authentication/verify-email/ddce190bd6ef5004ec713313138e95cec80922effa32afc0f2c970a8b1e64035 127.0.0.1 
+2026-03-29 14:36:59 [ERROR]: Error: Failed to lookup view "pages/desktop/error" in views directory "D:\Projects\BioBrain\views"
+    at app.render (D:\Projects\BioBrain\node_modules\express\lib\application.js:562:17)
+    at ServerResponse.render (D:\Projects\BioBrain\node_modules\express\lib\response.js:923:7)
+    at exports.verifyEmail (D:\Projects\BioBrain\controllers\authenticationController.js:253:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {"user":"Guest","ip":"127.0.0.1"}
+2026-03-29 14:38:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:40:11 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:40:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:43:16 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 14:43:17 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 14:43:17 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 14:43:17 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 14:43:17 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 14:43:17 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 14:43:17 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 14:43:17 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 14:43:17 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 14:43:17 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 14:43:18 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 14:43:18 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 14:43:18 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 14:43:19 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 14:43:19 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 14:43:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:43:19 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 14:43:19 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 14:43:19 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 14:43:19 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 14:43:19 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 14:43:19 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 14:43:19 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 14:43:19 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 14:43:19 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 14:43:19 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 14:43:19 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 14:43:19 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 14:43:23 [INFO]: GET / 127.0.0.1 
+2026-03-29 14:43:23 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 14:43:23 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 14:43:23 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 14:43:23 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 14:43:26 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 14:43:26 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 14:43:27 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 14:43:27 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 14:43:48 [INFO]: POST /authentication/login 127.0.0.1 
+2026-03-29 14:43:49 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 14:43:49 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 14:43:49 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 14:44:07 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 14:44:11 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 14:44:11 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 14:44:11 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 14:44:21 [INFO]: POST /authentication/login 127.0.0.1 
+2026-03-29 14:44:43 [INFO]: POST /authentication/resend-verification 127.0.0.1 
+2026-03-29 14:45:00 [INFO]: POST /authentication/login 127.0.0.1 
+2026-03-29 14:45:10 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:45:33 [INFO]: POST /authentication/resend-verification 127.0.0.1 
+2026-03-29 14:45:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:46:08 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 14:46:08 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 14:48:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:49:12 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:50:10 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:50:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:51:09 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:53:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:54:12 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:55:10 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:55:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:56:09 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:58:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 14:59:12 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:00:10 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:00:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:01:09 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:03:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:04:12 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:05:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:05:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:06:08 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:08:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:09:12 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:10:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:10:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:11:08 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:13:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:14:12 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:15:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:15:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:16:08 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:18:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:19:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:20:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:20:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:21:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:23:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:24:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:25:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:25:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:26:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:28:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:29:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:30:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:30:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:31:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:33:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:34:18 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 15:34:18 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 15:34:18 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 15:34:18 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 15:34:19 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 15:34:19 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 15:34:19 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 15:34:19 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 15:34:20 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 15:34:20 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 15:34:20 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 15:34:20 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 15:34:20 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 15:34:20 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 15:34:20 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 15:34:21 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 15:34:21 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 15:34:21 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 15:34:21 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 15:34:21 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 15:34:21 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 15:34:21 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 15:34:21 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 15:34:21 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 15:34:21 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 15:34:21 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 15:34:21 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 15:34:23 [INFO]: GET / 127.0.0.1 
+2026-03-29 15:34:23 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:34:23 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:34:23 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 15:34:23 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 15:34:25 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 15:34:25 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:34:25 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:34:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:34:37 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 15:34:37 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:34:37 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:35:03 [INFO]: POST /authentication/resend-verification 127.0.0.1 
+2026-03-29 15:35:09 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 15:35:09 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:35:09 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:35:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:35:36 [INFO]: GET /authentication/forgot 127.0.0.1 
+2026-03-29 15:35:36 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:35:36 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:35:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:35:40 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 15:35:40 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:35:40 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:35:46 [INFO]: GET /authentication/forgot 127.0.0.1 
+2026-03-29 15:35:46 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:35:46 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:35:50 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 15:35:50 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:35:50 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:36:10 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 15:36:14 [INFO]: GET /authentication/check-email?email=krish.chatroom%40gmail.com 127.0.0.1 
+2026-03-29 15:36:14 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:36:14 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:36:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:36:41 [INFO]: GET /authentication/verify-email/94d8317008a21bb695ee04766e7051eec22671e24f0c8e49f1624f6acfab6ed3 127.0.0.1 
+2026-03-29 15:36:41 [INFO]: GET /authentication/login?verified=true 127.0.0.1 
+2026-03-29 15:36:41 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:36:41 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:37:03 [INFO]: GET /authentication/verify-email/94d8317008a21bb695ee04766e7051eec22671e24f0c8e49f1624f6acfab6ed3 127.0.0.1 
+2026-03-29 15:37:03 [INFO]: GET /authentication/resend-link-page?error=expired 127.0.0.1 
+2026-03-29 15:37:03 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:37:03 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:37:20 [INFO]: POST /authentication/resend-verification 127.0.0.1 
+2026-03-29 15:37:24 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 15:37:24 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:37:24 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:38:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:39:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:40:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:40:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:41:15 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:41:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:41:42 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:42:24 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:43:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:44:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:45:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:45:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:46:15 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:46:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:46:42 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:47:24 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:48:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:49:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:50:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:50:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:51:14 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 15:51:14 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 15:51:14 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 15:51:14 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 15:51:15 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:51:15 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 15:51:15 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 15:51:15 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 15:51:15 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 15:51:15 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 15:51:15 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 15:51:15 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 15:51:15 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 15:51:16 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 15:51:16 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 15:51:16 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 15:51:17 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 15:51:17 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 15:51:17 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 15:51:17 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 15:51:17 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 15:51:17 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 15:51:17 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 15:51:17 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 15:51:17 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 15:51:17 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 15:51:17 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 15:51:17 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 15:51:24 [INFO]: GET / 127.0.0.1 
+2026-03-29 15:51:24 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:51:24 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:51:24 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 15:51:24 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 15:51:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:51:26 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 15:51:26 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:51:26 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:51:35 [INFO]: POST /authentication/login 127.0.0.1 
+2026-03-29 15:51:42 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:51:58 [INFO]: GET /authentication/forgot 127.0.0.1 
+2026-03-29 15:51:58 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:51:58 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:52:01 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 15:52:01 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:52:01 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:52:02 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 15:52:02 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:52:02 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:52:13 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 15:52:13 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:52:13 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:52:14 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 15:52:14 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:52:14 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:52:24 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:53:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:54:10 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 15:54:10 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 15:54:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:55:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:55:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:55:43 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 15:55:44 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 15:55:44 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 15:55:44 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 15:55:44 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 15:55:44 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 15:55:45 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 15:55:45 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 15:55:46 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 15:55:46 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 15:55:46 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 15:55:46 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 15:55:46 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 15:55:46 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 15:55:46 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 15:55:47 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 15:55:47 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 15:55:47 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 15:55:47 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 15:55:47 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 15:55:47 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 15:55:47 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 15:55:47 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 15:55:47 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 15:55:47 [INFO]: GET / 127.0.0.1 
+2026-03-29 15:55:47 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 15:55:47 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 15:55:47 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 15:55:47 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:55:47 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:55:47 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 15:55:47 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 15:55:49 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 15:55:50 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:55:50 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:55:51 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 15:55:51 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:55:51 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:56:02 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 15:56:03 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 15:56:03 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 15:56:03 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 15:56:03 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 15:56:04 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 15:56:05 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 15:56:05 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 15:56:05 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 15:56:05 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 15:56:05 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 15:56:05 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 15:56:05 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 15:56:05 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 15:56:05 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 15:56:05 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 15:56:05 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 15:56:05 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 15:56:05 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 15:56:05 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 15:56:05 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 15:56:05 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 15:56:05 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 15:56:05 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 15:56:06 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 15:56:06 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 15:56:06 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 15:56:15 [INFO]: GET / 127.0.0.1 
+2026-03-29 15:56:15 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:56:15 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:56:16 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 15:56:16 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 15:56:17 [INFO]: GET / 127.0.0.1 
+2026-03-29 15:56:17 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:56:17 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:56:19 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 15:56:19 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:56:19 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:56:20 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 15:56:20 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:56:20 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:56:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:56:45 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 15:56:45 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 15:56:45 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 15:56:45 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 15:56:45 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 15:56:46 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 15:56:46 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 15:56:46 [INFO]: GET / 127.0.0.1 
+2026-03-29 15:56:47 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 15:56:47 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 15:56:47 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 15:56:47 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:56:47 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:56:47 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 15:56:47 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 15:56:47 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 15:56:47 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 15:56:47 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 15:56:47 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 15:56:47 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 15:56:48 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 15:56:48 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 15:56:48 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 15:56:48 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 15:56:48 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 15:56:48 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 15:56:48 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 15:56:48 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 15:56:48 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 15:56:48 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 15:56:48 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 15:56:48 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 15:56:49 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 15:56:49 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:56:49 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:56:50 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 15:56:50 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:56:50 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:57:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:58:15 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 15:58:15 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:58:15 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:58:18 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:59:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:59:31 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 15:59:45 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 15:59:46 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 15:59:46 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 15:59:46 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 15:59:46 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 15:59:46 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 15:59:46 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 15:59:46 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 15:59:46 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 15:59:46 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 15:59:47 [INFO]: GET / 127.0.0.1 
+2026-03-29 15:59:47 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 15:59:47 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 15:59:48 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:59:48 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:59:48 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 15:59:48 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 15:59:48 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 15:59:48 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 15:59:48 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 15:59:48 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 15:59:48 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 15:59:48 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 15:59:48 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 15:59:48 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 15:59:48 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 15:59:48 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 15:59:48 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 15:59:48 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 15:59:48 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 15:59:48 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 15:59:48 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 15:59:49 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 15:59:49 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:59:49 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 15:59:50 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 15:59:50 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 15:59:50 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:00:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:00:29 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 16:00:29 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 16:00:29 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 16:00:29 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 16:00:30 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 16:00:30 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 16:00:30 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 16:00:30 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 16:00:30 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 16:00:30 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 16:00:30 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 16:00:30 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 16:00:31 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 16:00:31 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 16:00:31 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 16:00:31 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 16:00:31 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 16:00:31 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 16:00:31 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 16:00:31 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 16:00:31 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 16:00:31 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 16:00:32 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 16:00:32 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 16:00:32 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 16:00:32 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 16:00:32 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 16:00:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:00:37 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:00:37 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:00:37 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:00:38 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 16:00:39 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:00:39 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:00:59 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 16:00:59 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:00:59 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:01:05 [INFO]: GET /authentication/forgot 127.0.0.1 
+2026-03-29 16:01:05 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:01:05 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:01:07 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:01:07 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:01:07 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:01:14 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 16:01:14 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:01:14 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:01:21 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:01:25 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:01:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:01:26 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:01:26 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:01:27 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 16:01:27 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:01:27 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:01:31 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:01:31 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:01:31 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:01:32 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 16:01:32 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:01:32 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:01:34 [INFO]: GET /authentication/forgot 127.0.0.1 
+2026-03-29 16:01:34 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:01:34 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:01:42 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:02:24 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:03:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:04:29 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 16:04:29 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 16:04:29 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 16:04:29 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 16:04:30 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 16:04:31 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 16:04:31 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 16:04:31 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 16:04:31 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 16:04:31 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 16:04:31 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 16:04:31 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 16:04:31 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 16:04:31 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 16:04:31 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 16:04:32 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:04:32 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 16:04:32 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 16:04:32 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 16:04:32 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 16:04:32 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 16:04:32 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 16:04:32 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 16:04:32 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 16:04:32 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 16:04:33 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 16:04:33 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 16:04:33 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 16:04:34 [INFO]: GET / 127.0.0.1 
+2026-03-29 16:04:35 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:04:35 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:04:35 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 16:04:35 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 16:04:36 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:04:36 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:04:36 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:04:39 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 16:04:39 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:04:39 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:05:21 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:05:21 [INFO]: GET /.well-known/appspecific/com.chrome.devtools.json 127.0.0.1 
+2026-03-29 16:05:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:05:29 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 16:05:29 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:05:29 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:05:29 [INFO]: GET /.well-known/appspecific/com.chrome.devtools.json 127.0.0.1 
+2026-03-29 16:05:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:05:59 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:05:59 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:05:59 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:06:02 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 16:06:02 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:06:02 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:06:07 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:06:07 [INFO]: GET /.well-known/appspecific/com.chrome.devtools.json 127.0.0.1 
+2026-03-29 16:06:21 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:06:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:06:42 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:06:59 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 16:07:00 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 16:07:00 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 16:07:00 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 16:07:01 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 16:07:02 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 16:07:02 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 16:07:02 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 16:07:02 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 16:07:02 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 16:07:02 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 16:07:02 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 16:07:02 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 16:07:02 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 16:07:02 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 16:07:03 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 16:07:03 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 16:07:03 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 16:07:03 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 16:07:03 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 16:07:03 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 16:07:03 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 16:07:03 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 16:07:03 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 16:07:03 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 16:07:03 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 16:07:03 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 16:07:04 [INFO]: GET / 127.0.0.1 
+2026-03-29 16:07:04 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:07:04 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:07:04 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 16:07:04 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 16:07:07 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:07:07 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:07:07 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:07:08 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 16:07:09 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:07:09 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:07:15 [INFO]: POST /authentication/resend-verification 127.0.0.1 
+2026-03-29 16:07:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:07:34 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:07:34 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:07:34 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:07:36 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 16:07:36 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:07:36 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:07:37 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 16:07:37 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:07:37 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:07:39 [INFO]: GET /authentication/forgot 127.0.0.1 
+2026-03-29 16:07:39 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:07:39 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:07:40 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:07:40 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:07:40 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:07:42 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 16:07:42 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:07:42 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:07:43 [INFO]: GET /authentication/forgot 127.0.0.1 
+2026-03-29 16:07:43 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:07:43 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:07:47 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:07:47 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:07:47 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:08:01 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 16:08:01 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:08:01 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:08:11 [INFO]: POST /authentication/resend-verification 127.0.0.1 
+2026-03-29 16:08:18 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:08:49 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:08:50 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:08:50 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:08:55 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 16:08:55 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:08:55 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:09:18 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 16:09:22 [INFO]: GET /authentication/check-email?email=krish.chatroom%40gmail.com 127.0.0.1 
+2026-03-29 16:09:22 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:09:22 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:09:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:09:31 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:10:26 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:10:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:11:02 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:11:20 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 16:11:20 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 16:11:20 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 16:11:20 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 16:11:21 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 16:11:21 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 16:11:22 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:11:23 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 16:11:23 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 16:11:23 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 16:11:23 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 16:11:23 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 16:11:23 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 16:11:23 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 16:11:23 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 16:11:23 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 16:11:24 [INFO]: GET /authentication/check-email?email=krish.chatroom%40gmail.com 127.0.0.1 
+2026-03-29 16:11:24 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 16:11:24 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 16:11:24 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:11:24 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:11:25 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 16:11:25 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 16:11:25 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 16:11:25 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 16:11:25 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 16:11:25 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 16:11:25 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 16:11:25 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 16:11:25 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 16:11:25 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 16:11:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:11:26 [INFO]: GET /authentication/check-email?email=krish.chatroom%40gmail.com 127.0.0.1 
+2026-03-29 16:11:26 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:11:26 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:11:42 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:12:15 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 16:12:16 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 16:12:16 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 16:12:16 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 16:12:16 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 16:12:18 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 16:12:18 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 16:12:18 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 16:12:18 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 16:12:18 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 16:12:18 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 16:12:18 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 16:12:18 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 16:12:18 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 16:12:18 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 16:12:19 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 16:12:19 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 16:12:19 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 16:12:19 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 16:12:19 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 16:12:19 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 16:12:19 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 16:12:19 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 16:12:19 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 16:12:19 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 16:12:19 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 16:12:19 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 16:12:20 [INFO]: GET /authentication/check-email?email=krish.chatroom%40gmail.com 127.0.0.1 
+2026-03-29 16:12:20 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:12:20 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:12:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:12:55 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 16:12:56 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 16:12:56 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 16:12:56 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 16:12:56 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 16:12:57 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 16:12:57 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 16:12:57 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 16:12:57 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 16:12:57 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 16:12:58 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 16:12:58 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 16:12:58 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 16:12:58 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 16:12:58 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 16:12:58 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 16:12:58 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 16:12:58 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 16:12:58 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 16:12:58 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 16:12:58 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 16:12:58 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 16:12:58 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 16:12:58 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 16:12:58 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 16:12:58 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 16:12:58 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 16:12:59 [INFO]: GET /authentication/check-email?email=krish.chatroom%40gmail.com 127.0.0.1 
+2026-03-29 16:12:59 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:12:59 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:13:00 [INFO]: GET / 127.0.0.1 
+2026-03-29 16:13:00 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:13:00 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:13:00 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 16:13:00 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 16:13:02 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:13:03 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:13:03 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:13:04 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 16:13:04 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:13:04 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:13:07 [INFO]: POST /authentication/resend-verification 127.0.0.1 
+2026-03-29 16:13:13 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:13:13 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:13:13 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:13:15 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 16:13:15 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:13:15 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:13:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:13:38 [INFO]: POST /authentication/resend-verification 127.0.0.1 
+2026-03-29 16:13:59 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:13:59 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:13:59 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:14:01 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 16:14:01 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:14:01 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:14:19 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 16:14:23 [INFO]: GET /authentication/check-email?email=krish.chatroom%40gmail.com 127.0.0.1 
+2026-03-29 16:14:23 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:14:23 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:14:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:14:31 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:15:00 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 16:15:00 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 16:15:00 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 16:15:00 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 16:15:01 [INFO]: GET / 127.0.0.1 
+2026-03-29 16:15:01 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 16:15:01 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 16:15:01 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:15:01 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:15:01 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 16:15:01 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 16:15:01 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 16:15:01 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 16:15:02 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 16:15:02 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 16:15:02 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 16:15:02 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 16:15:02 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 16:15:03 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 16:15:03 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 16:15:03 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 16:15:03 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 16:15:03 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 16:15:03 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 16:15:03 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 16:15:03 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 16:15:03 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 16:15:03 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:15:03 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 16:15:03 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:15:03 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:15:03 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 16:15:03 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 16:15:03 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 16:15:03 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 16:15:06 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 16:15:06 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:15:06 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:15:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:15:26 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 16:15:30 [INFO]: GET /authentication/check-email?email=krish.chatrrom%40gmail.com 127.0.0.1 
+2026-03-29 16:15:30 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:15:30 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:15:37 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:16:02 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:16:22 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:16:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:16:42 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:17:24 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:17:40 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 16:17:40 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 16:17:40 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 16:17:40 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 16:17:41 [INFO]: GET / 127.0.0.1 
+2026-03-29 16:17:41 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 16:17:42 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 16:17:42 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:17:42 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:17:42 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 16:17:42 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 16:17:42 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 16:17:42 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 16:17:42 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 16:17:42 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 16:17:42 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 16:17:42 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 16:17:42 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 16:17:43 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 16:17:43 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 16:17:44 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 16:17:44 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 16:17:44 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:17:44 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 16:17:44 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 16:17:44 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 16:17:44 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 16:17:44 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 16:17:44 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:17:44 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:17:44 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 16:17:44 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 16:17:44 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 16:17:44 [INFO]: 🔥 Users seeded: 1 successfully! 
+2026-03-29 16:17:44 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 16:17:45 [INFO]: GET /authentication/register 127.0.0.1 
+2026-03-29 16:17:45 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:17:45 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:18:08 [INFO]: POST /authentication/register 127.0.0.1 
+2026-03-29 16:18:12 [INFO]: GET /authentication/check-email?email=krish.chatroom%40gmail.com 127.0.0.1 
+2026-03-29 16:18:12 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:18:12 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:18:19 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:18:50 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:18:51 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 16:18:57 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 16:18:57 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:18:57 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:19:00 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 16:19:00 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:19:00 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:19:11 [INFO]: POST /authentication/resend-verification 127.0.0.1 
+2026-03-29 16:19:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:19:26 [INFO]: GET /authentication/resend-link-page 127.0.0.1 
+2026-03-29 16:19:26 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 16:19:26 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 16:19:31 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:20:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 16:20:37 [INFO]: GET /keep-session-alive 127.0.0.1 

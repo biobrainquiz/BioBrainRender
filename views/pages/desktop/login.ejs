@@ -30,6 +30,14 @@
       <div class="links">
         <a href="/authentication/forgot">Forgot Password</a>
         <a href="/authentication/register">Register</a>
+        <a href="/authentication/resend-link-page">Resend Verification</a>
+      </div>
+
+      <div id="resendContainer" style="display: none; margin-top: 10px; text-align: center;">
+          <p style="font-size: 0.9em; color: #555;">Didn't get the link?</p>
+              <button id="resendBtn" style="background: none; border: none; color: #007bff; cursor: pointer; text-decoration: underline;">
+                  Resend Verification Email
+              </button>
       </div>
 
       <div class="error" id="errorMsg"></div>
@@ -55,40 +63,86 @@
       });
 
       // Login button click
-      document.getElementById("loginBtn").addEventListener("click", async () => {
-        const identifier = document.getElementById("identifier").value;
-        const password = document.getElementById("password").value;
-        const captchaInput = document.getElementById("captchaInput").value;
-        const errorMsg = document.getElementById("errorMsg");
-        errorMsg.innerText = "";
+      
+document.getElementById("loginBtn").addEventListener("click", async () => {
+  const identifier = document.getElementById("identifier").value;
+  const password = document.getElementById("password").value;
+  const captchaInput = document.getElementById("captchaInput").value;
+  const errorMsg = document.getElementById("errorMsg");
+  const resendContainer = document.getElementById("resendContainer"); // New reference
 
-        if (!identifier || !password || !captchaInput) {
-          errorMsg.innerText = "All fields are required!";
-          return;
-        }
+  errorMsg.innerText = "";
+  resendContainer.style.display = "none"; // Hide resend on new attempt
 
-        if (captchaInput.toUpperCase() !== currentCaptcha) {
-          errorMsg.innerText = "CAPTCHA does not match!";
-          return;
-        }
-        // Send login request to backend
-        try {
-          const res = await fetch("/authentication/login", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ identifier, password })
-          });
-          const data = await res.json();
-          if (data.success) {
-            //window.location.href = "/";
-            window.location.href = data.redirect;;
-          } else {
-            errorMsg.innerText = data.message;
-          }
-        } catch (e) {
-          errorMsg.innerText = "Server error!";
-        }
-      });
+  if (!identifier || !password || !captchaInput) {
+    errorMsg.innerText = "All fields are required!";
+    return;
+  }
+
+  if (captchaInput.toUpperCase() !== currentCaptcha) {
+    errorMsg.innerText = "CAPTCHA does not match!";
+    return;
+  }
+
+  try {
+    const res = await fetch("/authentication/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ identifier, password })
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      window.location.href = data.redirect;
+    } else {
+      errorMsg.innerText = data.message;
+
+      // Check if backend returned the verification error
+      if (data.message.toLowerCase().includes("verify your email")) {
+        resendContainer.style.display = "block";
+        
+        // Attach the email returned from backend to the resend button
+        // (Assumes you added 'email: user.email' to the login controller response)
+        window.pendingVerificationEmail = data.email; 
+      }
+    }
+  } catch (e) {
+    errorMsg.innerText = "Server error!";
+  }
+});
+
+// NEW: Handle Resend Button Click
+document.getElementById("resendBtn").addEventListener("click", async () => {
+  const errorMsg = document.getElementById("errorMsg");
+  const resendBtn = document.getElementById("resendBtn");
+  
+  errorMsg.innerText = "Sending verification email...";
+  resendBtn.disabled = true;
+
+  try {
+    const res = await fetch("/authentication/resend-verification", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: window.pendingVerificationEmail })
+    });
+
+    const data = await res.json();
+    errorMsg.style.color = data.success ? "green" : "red";
+    errorMsg.innerText = data.message;
+    
+    if (data.success) {
+      document.getElementById("resendContainer").style.display = "none";
+    }
+  } catch (e) {
+    errorMsg.innerText = "Error resending email.";
+  } finally {
+    resendBtn.disabled = false;
+  }
+});
+
+
+
     </script>
 
     <!-- Footer Include -->

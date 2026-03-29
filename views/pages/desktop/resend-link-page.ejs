@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioBrain - Resend Verification</title>
+  <link rel="stylesheet" href="/css/desktopStyle.css" />
+</head>
+
+<body>
+  <%- include('../../partials/desktop/header') %>
+
+  <div class="login-container">
+    <h2>Resend Activation</h2>
+    
+    <p style="text-align: center; color: #555; font-size: 0.9em; margin-bottom: 20px;">
+      <!--Enter your email address and we'll send you a new link to activate your account.-->
+      Enter your registered email to receive a new verification link.
+    </p>
+
+    <input type="email" id="resendEmail" placeholder="Enter your registered email" required />
+
+    <button id="resendSubmitBtn">Send Verification Link</button>
+   
+
+      <div class="links">
+      <a href="/authentication/login">Back to Login</a>
+      <a href="/authentication/register">Register</a>
+    </div>
+
+    <div class="error" id="resendStatus"></div>
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const emailParam = urlParams.get('email');
+      const errorParam = urlParams.get('error');
+
+      const emailInput = document.getElementById("resendEmail");
+      const status = document.getElementById("resendStatus");
+
+      // 1. Auto-fill the email if provided from login redirection
+      if (emailParam) {
+        emailInput.value = emailParam;
+      }
+
+      // 2. Show a helpful message if they were redirected here from an expired link
+      if (errorParam === 'expired') {
+        status.innerText = "Your verification link has expired. Please request a new one below.";
+        status.style.color = "red"; // Matching login error color
+      }
+    });
+
+    document.getElementById("resendSubmitBtn").addEventListener("click", async () => {
+      const email = document.getElementById("resendEmail").value;
+      const status = document.getElementById("resendStatus");
+      const btn = document.getElementById("resendSubmitBtn");
+
+      // Reset status on click
+      status.innerText = "";
+      status.style.color = "red"; 
+
+      if (!email) {
+        status.innerText = "Please enter an email address.";
+        return;
+      }
+
+      status.innerText = "Processing...";
+      status.style.color = "#555";
+      btn.disabled = true;
+
+      try {
+        const res = await fetch("/authentication/resend-verification", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ email })
+        });
+
+        const data = await res.json();
+
+        status.innerText = data.message;
+        // Use green for success, red for errors (matching your login logic)
+        status.style.color = data.success ? "green" : "red";
+
+        if (data.success) {
+          btn.style.display = "none"; // Clean UX: prevent double-sending
+        } else {
+          btn.disabled = false;
+        }
+
+      } catch (e) {
+        status.innerText = "Server error!";
+        status.style.color = "red";
+        btn.disabled = false;
+      }
+    });
+  </script>
+
+  <%- include('../../partials/desktop/footer') %>
+</body>
+
+</html>

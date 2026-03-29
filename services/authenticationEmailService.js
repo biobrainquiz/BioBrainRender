@@ -6,7 +6,7 @@ exports.sendForgotPasswordEmail = async (user, resetURL) => {
   try {
         const cleanDomain = getCleanDomain();
         const normalDomain = getNormalDomain();
-        const expiryMin = process.env.EMAIL_EXPIRY_IN_MIN || 15;
+        const expiryMin = process.env.RESET_PASSWORD_EXPIRY_IN_MIN || 15;
 
         // 1. Prepare dynamic links
         const supportSubject = encodeURIComponent(`Security Alert: ${user.username}`);
@@ -74,6 +74,81 @@ exports.sendForgotPasswordEmail = async (user, resetURL) => {
 
     } catch (error) {
         logger.error("Forgot Password Email Service Error:", error);
+        throw error;
+    }
+}
+
+exports.sendVerificationEmail = async (user, verificationURL) => {
+    try {
+        const cleanDomain = getCleanDomain();
+        const normalDomain = getNormalDomain();
+        const expiryHours = process.env.EMAIL_VERIFICATION_EXPIRY_IN_HRS || 24;  // Standard for registration
+
+        // 1. Prepare dynamic links (for security reporting)
+        const supportSubject = encodeURIComponent(`Registration Issue: ${user.username}`);
+        const supportBody = encodeURIComponent(
+            `Hello BioBrain Support,\n\nI received a registration verification email for (${user.email}) that I did not request.\n\nUsername: ${user.username}`
+        );
+        const mailtoLink = `mailto:support@${cleanDomain}?subject=${supportSubject}&body=${supportBody}`;
+
+        // 2. Build the email properties
+        const mailOptions = {
+            from: `BioBrain <no-reply@${cleanDomain}>`,
+            to: [user.email],
+            replyTo: process.env.EMAIL_FROM || "biobrainquiz@gmail.com",
+            subject: "Welcome to BioBrain: Verify Your Account",
+            text: `Welcome to BioBrain! Please verify your account here: ${verificationURL}. This link expires in ${expiryHours} hours.`,
+            html: `
+      <div style="background-color: #f1f5f9; padding: 50px 20px; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <div style="max-width: 560px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04);">
+          
+          <div style="background-color: #10b981; height: 6px;"></div> <div style="padding: 40px;">
+          <div style="margin-bottom: 30px;">
+              <span style="font-size: 22px; font-weight: 800; color: #1e293b; letter-spacing: -0.5px;">BioBrain</span>
+            </div>
+          <h1 style="color: #0f172a; font-size: 24px; font-weight: 700; margin: 0 0 16px 0; letter-spacing: -0.02em;">Activate Your Account</h1>
+            <p style="color: #475569; font-size: 16px; line-height: 1.6; margin-bottom: 24px;">
+              Hello <strong>${user.username}</strong>,
+              <br><br>
+              Welcome to the BioBrain learning platform! We're thrilled to have you join our community. To complete your registration and unlock all features, please verify your email address below:
+            </p>
+            <div style="text-align: center; margin: 40px 0;">
+              <a href="${verificationURL}" style="background-color: #1e293b; color: #ffffff; padding: 16px 32px; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: 600; display: inline-block;">
+                Verify Email Address
+              </a>
+            </div>
+            <div style="background-color: #f8fafc; border-radius: 8px; padding: 16px; border: 1px solid #e2e8f0; margin-bottom: 30px;">
+              <p style="margin: 0; color: #64748b; font-size: 14px; line-height: 1.5;">
+                <strong>Note:</strong> This activation link is valid for <strong>${expiryHours} hours</strong>. Once verified, you'll have full access to our performance analytics and learning tools.
+              </p>
+            </div>
+            <div style="border-top: 1px solid #f1f5f9; padding-top: 30px; text-align: center;">
+              <p style="font-size: 13px; font-weight: 700; color: #526685; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.05em;">
+                ${normalDomain}
+              </p>
+              <p style="font-size: 12px; color: #94a3b8; margin: 0 0 20px 0;">
+                &copy; ${new Date().getFullYear()} BioBrain. All rights reserved.
+              </p>
+              <p style="font-size: 11px; color: #94a3b8; line-height: 1.6; max-width: 400px; margin: 0 auto 20px auto;">
+                If you did not sign up for this account, please 
+                <a href="${mailtoLink}" style="color: #3b82f6; text-decoration: none; font-weight: 600;">contact our team</a> to secure your information.
+              </p>
+              <div style="font-size: 11px; font-weight: 500;">
+                <a href="${process.env.BASE_URI}/privacy" style="color: #64748b; text-decoration: none;">Privacy Policy</a>
+                <span style="color: #e2e8f0; margin: 0 10px;">&bull;</span>
+                <a href="${process.env.BASE_URI}/terms" style="color: #64748b; text-decoration: none;">Terms of Service</a>
+              </div>
+            </div>
+          </div>
+          </div>
+          <p style="text-align: center; color: #94a3b8; font-size: 11px; margin-top: 24px; letter-spacing: 0.02em;">Designed for Excellence &bull; BioBrain Learning Platform</p></div>`
+        };
+
+        // 3. Use the decoupled Mailer to send
+        return await Mailer.send(mailOptions);
+
+    } catch (error) {
+        logger.error("Verification Email Service Error:", error);
         throw error;
     }
 }

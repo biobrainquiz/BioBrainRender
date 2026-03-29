@@ -58,7 +58,9 @@
           if (data.success) {
             msg.innerText = data.message || 'Registration successful!';
             msg.classList.add('success');
-            setTimeout(() => { window.location.href = '/authentication/login'; }, 2000);
+            //setTimeout(() => { window.location.href = '/authentication/login'; }, 2000);
+            // Redirect to the "Check Email" page
+            setTimeout(() => { window.location.href = `/authentication/check-email?email=${encodeURIComponent(email)}`; }, 2000);
           }
           else {
             msg.innerText = data.message || 'Registration failed!';
