@@ -279,7 +279,8 @@ exports.verifyEmail = async (req, res) => {
         // Inside your verify-email route handler
         
         // 7️⃣ Success Response
-        return res.render('authentication/verify-success');
+        //return res.render('authentication/verify-success');
+        return res.render(`pages/${getDevice(req)}/verify-success`);
 
     } catch (err) {
         // Log verification errors
