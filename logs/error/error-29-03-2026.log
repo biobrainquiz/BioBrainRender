@@ -89,3 +89,14 @@ r is not defined
     at ServerResponse.render (D:\Projects\BioBrain\node_modules\express\lib\response.js:923:7)
     at exports.verifyEmail (D:\Projects\BioBrain\controllers\authenticationController.js:253:36)
     at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {"user":"Guest","ip":"127.0.0.1"}
+2026-03-29 20:26:28 [ERROR]: ReferenceError: consol is not defined
+    at exports.askbot (D:\Projects\BioBrain\controllers\aiBotController.js:9:5)
+    at Layer.handleRequest (D:\Projects\BioBrain\node_modules\router\lib\layer.js:152:17)
+    at next (D:\Projects\BioBrain\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\Projects\BioBrain\node_modules\router\lib\route.js:117:3)
+    at handle (D:\Projects\BioBrain\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\Projects\BioBrain\node_modules\router\lib\layer.js:152:17)
+    at D:\Projects\BioBrain\node_modules\router\index.js:295:15
+    at processParams (D:\Projects\BioBrain\node_modules\router\index.js:582:12)
+    at next (D:\Projects\BioBrain\node_modules\router\index.js:291:5)
+    at router.handle (D:\Projects\BioBrain\node_modules\router\index.js:186:3) {"user":"Guest","ip":"127.0.0.1","body":{"prompt":"hi"}}

@@ -204,6 +204,7 @@ app.use("/units", require("./routes/unit"));
 app.use("/topics", require("./routes/topic"));
 app.use("/mocktest", require("./routes/mocktest"));
 app.use("/aiassistant", require("./routes/aiAssistant"));
+app.use("/aibot", require("./routes/aiBot"));
 app.use("/authentication", require("./routes/authentication"));
 
 /* =========================================
