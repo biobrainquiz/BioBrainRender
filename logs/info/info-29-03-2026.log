@@ -460,3 +460,650 @@
 2026-03-29 01:20:26 [INFO]: POST /authentication/forgot 127.0.0.1 
 2026-03-29 01:20:55 [INFO]: GET /keep-session-alive 127.0.0.1 
 2026-03-29 01:25:55 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:05:03 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 09:05:03 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 09:05:03 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 09:05:03 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 09:05:04 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 09:05:05 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 09:05:05 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 09:05:05 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 09:05:05 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 09:05:05 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 09:05:05 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 09:05:05 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 09:05:05 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 09:05:05 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 09:05:05 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 09:05:06 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 09:05:06 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 09:05:06 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 09:05:06 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 09:05:06 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 09:05:06 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 09:05:06 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 09:05:06 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 09:05:06 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 09:05:06 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 09:05:06 [INFO]: 🔥 Users seeded: 2 successfully! 
+2026-03-29 09:05:06 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 09:05:08 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:05:08 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:05:08 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:05:08 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:05:08 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 09:05:09 [INFO]: GET /favicon.ico 127.0.0.1 
+2026-03-29 09:05:11 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:05:11 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 09:05:11 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:05:11 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:05:20 [INFO]: POST /authentication/login 127.0.0.1 
+2026-03-29 09:05:21 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:05:21 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:05:21 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:05:21 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 09:05:26 [INFO]: GET /mocktest/result/pdf/69c80e03778718ecdb84df68 127.0.0.1 
+2026-03-29 09:05:33 [INFO]: GET /mocktest/result/pdf/69c80e03778718ecdb84df68 127.0.0.1 
+2026-03-29 09:05:36 [INFO]: GET /mocktest/result/email/69c80e03778718ecdb84df68 127.0.0.1 
+2026-03-29 09:10:22 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:15:22 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:17:31 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 09:17:32 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 09:17:32 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 09:17:32 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 09:17:32 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 09:17:32 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 09:17:32 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 09:17:32 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 09:17:32 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 09:17:33 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 09:17:33 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 09:17:34 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 09:17:34 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 09:17:34 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 09:17:34 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 09:17:34 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 09:17:34 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 09:17:34 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 09:17:34 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 09:17:34 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 09:17:34 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 09:17:34 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 09:17:34 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 09:17:34 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 09:17:34 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 09:17:35 [INFO]: 🔥 Users seeded: 2 successfully! 
+2026-03-29 09:17:35 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 09:17:39 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:17:39 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:17:39 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:17:39 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 09:17:39 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:17:50 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:17:50 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:17:50 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:17:50 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 09:17:58 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:17:58 [INFO]: GET /.well-known/appspecific/com.chrome.devtools.json 127.0.0.1 
+2026-03-29 09:19:37 [INFO]: GET /.well-known/appspecific/com.chrome.devtools.json 127.0.0.1 
+2026-03-29 09:19:40 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:19:40 [INFO]: GET /.well-known/appspecific/com.chrome.devtools.json 127.0.0.1 
+2026-03-29 09:19:41 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:19:41 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:19:41 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:19:41 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 09:19:54 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:19:54 [INFO]: GET /.well-known/appspecific/com.chrome.devtools.json 127.0.0.1 
+2026-03-29 09:20:01 [INFO]: GET /.well-known/appspecific/com.chrome.devtools.json 127.0.0.1 
+2026-03-29 09:20:08 [INFO]: GET /.well-known/appspecific/com.chrome.devtools.json 127.0.0.1 
+2026-03-29 09:20:17 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:21:23 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:21:23 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:21:23 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:21:23 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 09:21:23 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:21:25 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:21:25 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:21:25 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:24:41 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:26:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:28:46 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:28:47 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:28:47 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:28:47 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:28:47 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 09:28:51 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:29:41 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:30:08 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 09:30:09 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 09:30:09 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 09:30:09 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 09:30:09 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 09:30:09 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 09:30:09 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 09:30:09 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 09:30:09 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 09:30:09 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 09:30:10 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 09:30:10 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 09:30:10 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 09:30:11 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 09:30:11 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 09:30:11 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 09:30:11 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 09:30:11 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 09:30:11 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 09:30:11 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 09:30:11 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 09:30:11 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 09:30:11 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 09:30:11 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 09:30:11 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 09:30:11 [INFO]: 🔥 Users seeded: 2 successfully! 
+2026-03-29 09:30:11 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 09:30:12 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:30:12 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:30:12 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:30:12 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 09:30:12 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:30:14 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:30:14 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 09:30:14 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:30:14 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:30:14 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 09:30:16 [INFO]: GET /mocktest/result/pdf/69c80e03778718ecdb84df68 127.0.0.1 
+2026-03-29 09:30:20 [INFO]: GET /mocktest/result/email/69c80e03778718ecdb84df68 127.0.0.1 
+2026-03-29 09:30:28 [INFO]: GET /mocktest/result/pdf/69c80e03778718ecdb84df68 127.0.0.1 
+2026-03-29 09:30:31 [INFO]: GET /mocktest/result/email/69c80e03778718ecdb84df68 127.0.0.1 
+2026-03-29 09:34:41 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:35:15 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:35:56 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 09:35:56 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 09:35:56 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 09:35:56 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 09:35:57 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 09:35:57 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 09:35:57 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 09:35:57 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 09:35:57 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 09:35:57 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 09:35:57 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 09:35:58 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 09:35:58 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 09:35:58 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 09:35:58 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 09:35:59 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 09:35:59 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 09:35:59 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 09:35:59 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 09:35:59 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 09:35:59 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 09:35:59 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 09:35:59 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 09:35:59 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 09:35:59 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 09:35:59 [INFO]: 🔥 Users seeded: 2 successfully! 
+2026-03-29 09:35:59 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 09:36:01 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:36:01 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:36:01 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:36:01 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 09:36:01 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:36:03 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:36:03 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:36:03 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 09:36:03 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:36:03 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:36:03 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 09:36:05 [INFO]: GET /mocktest/result/pdf/69c80e03778718ecdb84df68 127.0.0.1 
+2026-03-29 09:36:09 [INFO]: GET /mocktest/result/email/69c80e03778718ecdb84df68 127.0.0.1 
+2026-03-29 09:36:18 [INFO]: GET /topics/E4/S1/U1 127.0.0.1 
+2026-03-29 09:36:20 [INFO]: POST /mocktest/createorder 127.0.0.1 
+2026-03-29 09:36:20 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:36:23 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:36:23 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 09:37:35 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 09:37:36 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 09:37:36 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 09:37:36 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 09:37:36 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 09:37:36 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 09:37:36 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 09:37:36 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 09:37:36 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 09:37:36 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 09:37:36 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:37:36 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 09:37:37 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 09:37:37 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 09:37:38 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:37:38 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:37:38 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 09:37:38 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 09:37:38 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 09:37:38 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:37:38 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 09:37:38 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 09:37:38 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 09:37:38 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 09:37:38 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 09:37:38 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 09:37:38 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 09:37:38 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 09:37:38 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 09:37:38 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 09:37:38 [INFO]: 🔥 Users seeded: 2 successfully! 
+2026-03-29 09:37:38 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 09:37:40 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:37:40 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:37:40 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 09:37:40 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:37:40 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:37:40 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 09:37:51 [INFO]: GET /mocktest/result/pdf/69c80e03778718ecdb84df68 127.0.0.1 
+2026-03-29 09:38:02 [INFO]: GET /topics/E4/S1/U1 127.0.0.1 
+2026-03-29 09:38:03 [INFO]: POST /mocktest/createorder 127.0.0.1 
+2026-03-29 09:38:04 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:38:10 [INFO]: POST /mocktest/submit 127.0.0.1 
+2026-03-29 09:38:10 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 09:38:10 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:38:27 [INFO]: POST /authentication/login 127.0.0.1 
+2026-03-29 09:38:27 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:38:27 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:38:27 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:38:27 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 09:38:27 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:38:30 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:38:30 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:38:30 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 09:38:30 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:38:30 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 09:38:35 [INFO]: GET /topics/E4/S1/U1 127.0.0.1 
+2026-03-29 09:38:37 [INFO]: POST /mocktest/createorder 127.0.0.1 
+2026-03-29 09:38:37 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:38:45 [INFO]: POST /mocktest/submit 127.0.0.1 
+2026-03-29 09:38:48 [INFO]: GET /mocktest/result/pdf/69c8a5cdb2c6e496a0d3b7da 127.0.0.1 
+2026-03-29 09:39:41 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:40:15 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:43:20 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 09:43:21 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 09:43:21 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 09:43:21 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 09:43:23 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:43:23 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 09:43:24 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 09:43:24 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 09:43:24 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:43:24 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:43:24 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 09:43:24 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 09:43:24 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:43:24 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 09:43:24 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 09:43:24 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 09:43:24 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 09:43:24 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 09:43:24 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 09:43:24 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 09:43:25 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 09:43:25 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 09:43:25 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 09:43:25 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 09:43:25 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 09:43:25 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 09:43:25 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 09:43:25 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 09:43:25 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 09:43:25 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 09:43:25 [INFO]: 🔥 Users seeded: 2 successfully! 
+2026-03-29 09:43:25 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 09:43:26 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:43:26 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:43:26 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 09:43:26 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:43:26 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 09:43:29 [INFO]: GET /mocktest/result/pdf/69c8a5cdb2c6e496a0d3b7da 127.0.0.1 
+2026-03-29 09:43:32 [INFO]: GET /mocktest/result/email/69c8a5cdb2c6e496a0d3b7da 127.0.0.1 
+2026-03-29 09:43:43 [INFO]: GET /topics/E4/S1/U10 127.0.0.1 
+2026-03-29 09:43:45 [INFO]: GET /topics/E4/S1/U1 127.0.0.1 
+2026-03-29 09:43:47 [INFO]: POST /mocktest/createorder 127.0.0.1 
+2026-03-29 09:43:48 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:43:52 [INFO]: POST /mocktest/submit 127.0.0.1 
+2026-03-29 09:43:52 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 09:43:53 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:44:05 [INFO]: POST /authentication/login 127.0.0.1 
+2026-03-29 09:44:06 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:44:06 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:44:06 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:44:09 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:44:09 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:44:09 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 09:44:09 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:44:09 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 09:44:11 [INFO]: GET /topics/E4/S1/U1 127.0.0.1 
+2026-03-29 09:44:14 [INFO]: POST /mocktest/createorder 127.0.0.1 
+2026-03-29 09:44:15 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:44:21 [INFO]: POST /mocktest/submit 127.0.0.1 
+2026-03-29 09:44:21 [ERROR]: ReferenceError: D:\Projects\BioBrain\views\pages\desktop\quizresults.ejs:257
+    255|       </a>-->
+    256| 
+ >> 257|        <a href="javascript:void(0)"  onclick="downloadPdfReport('<%= r._id %>')" title="Download PDF">    
+    258|                                                 <i class="fa-solid fa-file-pdf"></i>
+    259|                                             </a>
+    260| 
+
+r is not defined
+    at eval ("D:\\Projects\\BioBrain\\views\\pages\\desktop\\quizresults.ejs":18:26)
+    at quizresults (D:\Projects\BioBrain\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (D:\Projects\BioBrain\node_modules\ejs\lib\ejs.js:274:36)
+    at exports.renderFile [as engine] (D:\Projects\BioBrain\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (D:\Projects\BioBrain\node_modules\express\lib\view.js:139:8)
+    at tryRender (D:\Projects\BioBrain\node_modules\express\lib\application.js:627:10)
+    at app.render (D:\Projects\BioBrain\node_modules\express\lib\application.js:574:3)
+    at ServerResponse.render (D:\Projects\BioBrain\node_modules\express\lib\response.js:923:7)
+    at exports.submit (D:\Projects\BioBrain\controllers\mocktestController.js:29:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {"user":"Guest","ip":"127.0.0.1","body":{"examSession":{"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","difficulty":"easy","userid":"69c8a6e5380c3c53075c90b5","username":"vamsi","useremail":null,"isuserpremium":false,"userroles":[],"exampapercode":"E4_S1_U1_T1","examname":"GATE","subjectname":"Zoology","unitname":"Animal Diversity","topicname":"Distribution,Systematics And Classification Of Animals","examstartedat":"2026-03-29T04:14:14.852Z","examendedat":null,"duration":0,"attempted":0,"right":0,"wrong":0,"skipped":0,"positivemarks":0,"negativemarks":0,"finalscore":0,"percentage":0,"accuracy":0,"tabswitchcount":0,"device":"Windows 10 / Chrome 146.0.0.0","ipaddress":"127.0.0.1","topicstats":[],"unitstats":[],"questions":[{"_id":"69c8a6e4380c3c53075c8f5f","qno":170,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Which type of classification uses evolutionary relationships only","opt1":"Artificial classification","opt2":"Phylogenetic classification","opt3":"Morphological classification","opt4":"Ecological classification","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.076Z","updatedAt":"2026-03-29T04:13:25.076Z"},{"_id":"69c8a6e4380c3c53075c8ebd","qno":8,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Homologous structures indicate","opt1":"Same function only","opt2":"Common ancestry","opt3":"Different ancestry","opt4":"Same habitat","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.063Z","updatedAt":"2026-03-29T04:13:25.063Z"},{"_id":"69c8a6e4380c3c53075c8f03","qno":78,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Which zoogeographical region includes India","opt1":"Ethiopian","opt2":"Oriental","opt3":"Nearctic","opt4":"Neotropical","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.070Z","updatedAt":"2026-03-29T04:13:25.070Z"},{"_id":"69c8a6e4380c3c53075c8f11","qno":92,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Which branch deals with evolutionary relationships and variation","opt1":"Alpha taxonomy","opt2":"Beta taxonomy","opt3":"Gamma taxonomy","opt4":"Classical taxonomy","answer":3,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.071Z","updatedAt":"2026-03-29T04:13:25.071Z"},{"_id":"69c8a6e4380c3c53075c8f65","qno":176,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Endemic species are best defined as species that","opt1":"Occur in all continents","opt2":"Are restricted to a particular geographic area","opt3":"Migrate seasonally","opt4":"Have high genetic variation","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.076Z","updatedAt":"2026-03-29T04:13:25.076Z"},{"_id":"69c8a6e4380c3c53075c8f68","qno":179,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Island biogeography theory was proposed by","opt1":"Darwin and Wallace","opt2":"MacArthur and Wilson","opt3":"Linnaeus and Lamarck","opt4":"Simpson and Mayr","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.077Z","updatedAt":"2026-03-29T04:13:25.077Z"},{"_id":"69c8a6e4380c3c53075c8f54","qno":159,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Which rank contains most diversity","opt1":"Species","opt2":"Genus","opt3":"Family","opt4":"Kingdom","answer":4,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.075Z","updatedAt":"2026-03-29T04:13:25.075Z"},{"_id":"69c8a6e4380c3c53075c8ebb","qno":6,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Cladistics classification is mainly based on","opt1":"Primitive characters","opt2":"Derived characters","opt3":"Habitat similarity","opt4":"Body symmetry","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.063Z","updatedAt":"2026-03-29T04:13:25.063Z"},{"_id":"69c8a6e4380c3c53075c8f1d","qno":104,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Which approach is most widely used in modern systematics","opt1":"Artificial classification","opt2":"Ecological classification","opt3":"Molecular phylogenetics","opt4":"Habitat classification","answer":3,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.072Z","updatedAt":"2026-03-29T04:13:25.072Z"},{"_id":"69c8a6e4380c3c53075c8f6e","qno":185,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Molecular clock hypothesis assumes that","opt1":"All genes evolve at identical rates","opt2":"Mutations accumulate at relatively constant rates over time","opt3":"Speciation is sudden","opt4":"DNA is conserved","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.077Z","updatedAt":"2026-03-29T04:13:25.077Z"}],"questionscount":"10","answers":{"69c8a6e4380c3c53075c8f5f":4,"69c8a6e4380c3c53075c8ebd":4,"69c8a6e4380c3c53075c8f03":4,"69c8a6e4380c3c53075c8f11":4,"69c8a6e4380c3c53075c8f65":4,"69c8a6e4380c3c53075c8f68":4},"attemptnumber":1,"resultid":null,"startedat":"2026-03-29T04:14:15.074Z"},"answers":{"69c8a6e4380c3c53075c8f5f":4,"69c8a6e4380c3c53075c8ebd":4,"69c8a6e4380c3c53075c8f03":4,"69c8a6e4380c3c53075c8f11":4,"69c8a6e4380c3c53075c8f65":4,"69c8a6e4380c3c53075c8f68":4},"questions":[{"_id":"69c8a6e4380c3c53075c8f5f","qno":170,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Which type of classification uses evolutionary relationships only","opt1":"Artificial classification","opt2":"Phylogenetic classification","opt3":"Morphological classification","opt4":"Ecological classification","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.076Z","updatedAt":"2026-03-29T04:13:25.076Z"},{"_id":"69c8a6e4380c3c53075c8ebd","qno":8,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Homologous structures indicate","opt1":"Same function only","opt2":"Common ancestry","opt3":"Different ancestry","opt4":"Same habitat","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.063Z","updatedAt":"2026-03-29T04:13:25.063Z"},{"_id":"69c8a6e4380c3c53075c8f03","qno":78,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Which zoogeographical region includes India","opt1":"Ethiopian","opt2":"Oriental","opt3":"Nearctic","opt4":"Neotropical","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.070Z","updatedAt":"2026-03-29T04:13:25.070Z"},{"_id":"69c8a6e4380c3c53075c8f11","qno":92,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Which branch deals with evolutionary relationships and variation","opt1":"Alpha taxonomy","opt2":"Beta taxonomy","opt3":"Gamma taxonomy","opt4":"Classical taxonomy","answer":3,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.071Z","updatedAt":"2026-03-29T04:13:25.071Z"},{"_id":"69c8a6e4380c3c53075c8f65","qno":176,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Endemic species are best defined as species that","opt1":"Occur in all continents","opt2":"Are restricted to a particular geographic area","opt3":"Migrate seasonally","opt4":"Have high genetic variation","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.076Z","updatedAt":"2026-03-29T04:13:25.076Z"},{"_id":"69c8a6e4380c3c53075c8f68","qno":179,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Island biogeography theory was proposed by","opt1":"Darwin and Wallace","opt2":"MacArthur and Wilson","opt3":"Linnaeus and Lamarck","opt4":"Simpson and Mayr","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.077Z","updatedAt":"2026-03-29T04:13:25.077Z"},{"_id":"69c8a6e4380c3c53075c8f54","qno":159,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Which rank contains most diversity","opt1":"Species","opt2":"Genus","opt3":"Family","opt4":"Kingdom","answer":4,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.075Z","updatedAt":"2026-03-29T04:13:25.075Z"},{"_id":"69c8a6e4380c3c53075c8ebb","qno":6,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Cladistics classification is mainly based on","opt1":"Primitive characters","opt2":"Derived characters","opt3":"Habitat similarity","opt4":"Body symmetry","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.063Z","updatedAt":"2026-03-29T04:13:25.063Z"},{"_id":"69c8a6e4380c3c53075c8f1d","qno":104,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Which approach is most widely used in modern systematics","opt1":"Artificial classification","opt2":"Ecological classification","opt3":"Molecular phylogenetics","opt4":"Habitat classification","answer":3,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.072Z","updatedAt":"2026-03-29T04:13:25.072Z"},{"_id":"69c8a6e4380c3c53075c8f6e","qno":185,"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","question":"Molecular clock hypothesis assumes that","opt1":"All genes evolve at identical rates","opt2":"Mutations accumulate at relatively constant rates over time","opt3":"Speciation is sudden","opt4":"DNA is conserved","answer":2,"difficulty_level":"easy","marks":1,"exam":"69c8a6e4380c3c53075c8e71","subject":"69c8a6e4380c3c53075c8e76","unit":"69c8a6e4380c3c53075c8e78","topic":"69c8a6e4380c3c53075c8e84","__v":0,"createdAt":"2026-03-29T04:13:25.077Z","updatedAt":"2026-03-29T04:13:25.077Z"}],"examcode":"E4","subjectcode":"S1","unitcode":"U1","topiccode":"T1","difficulty":"easy"}}
+2026-03-29 09:44:41 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:45:15 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:46:52 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 09:46:52 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 09:46:52 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 09:46:52 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 09:46:53 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 09:46:53 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 09:46:53 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 09:46:53 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 09:46:53 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 09:46:54 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 09:46:54 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 09:46:54 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 09:46:54 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 09:46:54 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 09:46:54 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 09:46:55 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 09:46:55 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 09:46:55 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 09:46:55 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 09:46:55 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 09:46:55 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 09:46:55 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 09:46:55 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 09:46:55 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 09:46:55 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 09:46:55 [INFO]: 🔥 Users seeded: 2 successfully! 
+2026-03-29 09:46:55 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 09:46:57 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:46:57 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:46:57 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:46:57 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 09:46:57 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:46:58 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:46:58 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:46:58 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:47:00 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:47:00 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:47:00 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 09:47:00 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:47:00 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 09:47:03 [INFO]: GET /authentication/logout 127.0.0.1 
+2026-03-29 09:47:03 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:47:04 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:47:04 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:47:05 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 09:47:05 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:47:05 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:47:07 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:47:07 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:47:07 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:47:09 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:47:09 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 09:47:09 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:47:09 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:47:18 [INFO]: POST /authentication/login 127.0.0.1 
+2026-03-29 09:47:19 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 09:47:19 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:47:19 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 09:47:19 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:47:19 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 09:47:22 [INFO]: GET /topics/E4/S1/U1 127.0.0.1 
+2026-03-29 09:47:24 [INFO]: POST /mocktest/createorder 127.0.0.1 
+2026-03-29 09:47:25 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:47:28 [INFO]: POST /mocktest/submit 127.0.0.1 
+2026-03-29 09:47:29 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 09:47:30 [INFO]: GET /mocktest/result/pdf/69c8a7d90819cd17f123a894 127.0.0.1 
+2026-03-29 09:47:35 [INFO]: GET /mocktest/result/email/69c8a7d90819cd17f123a894 127.0.0.1 
+2026-03-29 09:49:41 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:50:15 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:52:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:55:15 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:55:28 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:57:25 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 09:59:57 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 09:59:57 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 09:59:57 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 09:59:57 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 09:59:57 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 09:59:58 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 09:59:58 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 09:59:58 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 09:59:58 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 09:59:58 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 09:59:58 [INFO]: GET / 127.0.0.1 
+2026-03-29 09:59:59 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 09:59:59 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 09:59:59 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 09:59:59 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 09:59:59 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 09:59:59 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 09:59:59 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 09:59:59 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 09:59:59 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 09:59:59 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 09:59:59 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 09:59:59 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 09:59:59 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 09:59:59 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 09:59:59 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 09:59:59 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 09:59:59 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 09:59:59 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 10:00:00 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 10:00:00 [INFO]: 🔥 Users seeded: 2 successfully! 
+2026-03-29 10:00:00 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 10:00:01 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 10:00:02 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:00:02 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 10:00:02 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:00:02 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 10:00:02 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 10:00:05 [INFO]: GET /topics/E4/S1/U1 127.0.0.1 
+2026-03-29 10:00:10 [INFO]: POST /mocktest/createorder 127.0.0.1 
+2026-03-29 10:00:10 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:00:15 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 10:00:17 [INFO]: POST /mocktest/submit 127.0.0.1 
+2026-03-29 10:00:18 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 10:00:18 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:00:21 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:00:21 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:00:21 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:00:21 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 10:00:21 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 10:00:24 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 10:00:24 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:00:24 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 10:00:24 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:00:24 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 10:00:26 [INFO]: GET /topics/E4/S1/U1 127.0.0.1 
+2026-03-29 10:00:28 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 10:00:28 [INFO]: POST /mocktest/createorder 127.0.0.1 
+2026-03-29 10:00:29 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:00:36 [INFO]: POST /mocktest/submit 127.0.0.1 
+2026-03-29 10:00:36 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 10:00:36 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:01:09 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:01:09 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:01:09 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:01:15 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 10:01:15 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:01:15 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 10:01:15 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:01:15 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 10:01:15 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 10:01:18 [INFO]: GET /topics/E4/S1/U1 127.0.0.1 
+2026-03-29 10:01:19 [INFO]: POST /mocktest/createorder 127.0.0.1 
+2026-03-29 10:01:20 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:01:24 [INFO]: POST /mocktest/submit 127.0.0.1 
+2026-03-29 10:01:25 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 10:01:25 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:01:48 [INFO]: POST /authentication/login 127.0.0.1 
+2026-03-29 10:01:48 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:01:48 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:01:48 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:01:48 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 10:01:51 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 10:01:51 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:01:51 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 10:01:51 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:01:51 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 10:01:54 [INFO]: GET /topics/E4/S1/U1 127.0.0.1 
+2026-03-29 10:01:56 [INFO]: POST /mocktest/createorder 127.0.0.1 
+2026-03-29 10:01:57 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:02:02 [INFO]: POST /mocktest/submit 127.0.0.1 
+2026-03-29 10:02:03 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 10:02:05 [INFO]: GET /mocktest/result/pdf/69c8ab42cd78e4d7f3a5e886 127.0.0.1 
+2026-03-29 10:02:08 [INFO]: GET /mocktest/result/email/69c8ab42cd78e4d7f3a5e886 127.0.0.1 
+2026-03-29 10:02:24 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:02:24 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:02:24 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:03:17 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:03:17 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:03:17 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:03:17 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 10:03:17 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 10:03:20 [INFO]: GET /authentication/logout 127.0.0.1 
+2026-03-29 10:03:21 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:03:21 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:03:21 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:03:23 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 10:03:23 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:03:23 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:03:36 [INFO]: POST /authentication/login 127.0.0.1 
+2026-03-29 10:03:36 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:03:36 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:03:36 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:03:39 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 10:03:40 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:03:40 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 10:03:40 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:03:40 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 10:03:42 [INFO]: GET /topics/E4/S1/U1 127.0.0.1 
+2026-03-29 10:03:45 [INFO]: POST /mocktest/createorder 127.0.0.1 
+2026-03-29 10:03:45 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:03:50 [INFO]: POST /mocktest/submit 127.0.0.1 
+2026-03-29 10:03:51 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 10:03:59 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:03:59 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:03:59 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:04:01 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 10:04:01 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:04:01 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 10:04:01 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:04:02 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 10:04:04 [INFO]: GET /topics/E4/S1/U1 127.0.0.1 
+2026-03-29 10:04:06 [INFO]: POST /mocktest/createorder 127.0.0.1 
+2026-03-29 10:04:07 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:04:13 [INFO]: POST /mocktest/submit 127.0.0.1 
+2026-03-29 10:04:13 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 10:04:15 [INFO]: GET /mocktest/result/pdf/69c8abc5cd78e4d7f3a5e8b1 127.0.0.1 
+2026-03-29 10:04:20 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:04:20 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:04:20 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:04:22 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 10:04:23 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:04:23 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 10:04:23 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:04:23 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 10:04:24 [INFO]: GET /mocktest/result/pdf/69c8a7d90819cd17f123a894 127.0.0.1 
+2026-03-29 10:04:36 [INFO]: GET /mocktest/result/email/69c8a7d90819cd17f123a894 127.0.0.1 
+2026-03-29 10:05:28 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 10:05:28 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 10:09:24 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 10:10:28 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 10:10:28 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 10:14:24 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 10:15:12 [INFO]: 🚀 Server running on port 3000 
+2026-03-29 10:15:13 [INFO]: ✅ Connected to MongoDB 
+2026-03-29 10:15:13 [INFO]: 🔥  Forced seeding of Exam Database enabled. 
+2026-03-29 10:15:13 [INFO]: ⚠ Clearing old Questions... 
+2026-03-29 10:15:13 [INFO]: ⚠ Clearing old Topics... 
+2026-03-29 10:15:14 [INFO]: ⚠ Clearing old Units... 
+2026-03-29 10:15:14 [INFO]: ⚠ Clearing old Subjects... 
+2026-03-29 10:15:14 [INFO]: ⚠ Clearing old Exams... 
+2026-03-29 10:15:14 [INFO]: ⚠ Clearing old Payments... 
+2026-03-29 10:15:14 [INFO]: ⚡ Seeding Exam database... 
+2026-03-29 10:15:14 [INFO]: 🔥 Exam seeded: 4 successfully! 
+2026-03-29 10:15:14 [INFO]: 🔥 Subject seeded: 4 successfully! 
+2026-03-29 10:15:14 [INFO]: 🔥 Unit seeded: 11 successfully! 
+2026-03-29 10:15:14 [INFO]: 🔥 Topics seeded: 49 successfully! 
+2026-03-29 10:15:14 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U1.json... 
+2026-03-29 10:15:15 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:15:15 [INFO]: ✅ Inserted 460 from questiontable_E1_S1_U1.json 
+2026-03-29 10:15:15 [INFO]: 📂 Seeding Questions From questiontable_E1_S1_U2.json... 
+2026-03-29 10:15:16 [INFO]: ✅ Inserted 40 from questiontable_E1_S1_U2.json 
+2026-03-29 10:15:16 [INFO]: 🔥 Total Questions seeded: 500 
+2026-03-29 10:15:16 [INFO]: ✅ All Exam database seeded successfully! 
+2026-03-29 10:15:16 [INFO]: 🔥  Forced seeding of UserRoles Database enabled. 
+2026-03-29 10:15:16 [INFO]: ⚠ Clearing old Users... 
+2026-03-29 10:15:16 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:15:16 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:15:16 [INFO]: ⚠ Clearing old Roles... 
+2026-03-29 10:15:16 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 10:15:16 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 10:15:16 [INFO]: ⚡ Seeding UserRoles Database ... 
+2026-03-29 10:15:16 [INFO]: 🔥 Roles seeded: 5 successfully! 
+2026-03-29 10:15:16 [INFO]: 🔥 Users seeded: 2 successfully! 
+2026-03-29 10:15:16 [INFO]: ✅ All UserRole Database seeded successfully! 
+2026-03-29 10:15:18 [INFO]: GET /authentication/logout 127.0.0.1 
+2026-03-29 10:15:18 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:15:18 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:15:18 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:15:19 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 10:15:19 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 10:15:19 [INFO]: GET /authentication/login 127.0.0.1 
+2026-03-29 10:15:19 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:15:19 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:15:28 [INFO]: POST /authentication/login 127.0.0.1 
+2026-03-29 10:15:28 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 10:15:28 [INFO]: GET /keep-session-alive 127.0.0.1 
+2026-03-29 10:15:28 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:15:28 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:15:28 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:15:28 [INFO]: GET /images/dna-pattern.png 127.0.0.1 
+2026-03-29 10:15:28 [INFO]: GET /images/molucule-structure.png 127.0.0.1 
+2026-03-29 10:15:31 [INFO]: GET /mocktest/init/E4/S1 127.0.0.1 
+2026-03-29 10:15:31 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:15:31 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 10:15:31 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:15:31 [INFO]: GET /units/E4/S1 127.0.0.1 
+2026-03-29 10:15:34 [INFO]: GET /mocktest/result/pdf/69c8a71d380c3c53075c90d7 127.0.0.1 
+2026-03-29 10:15:37 [INFO]: GET /mocktest/result/email/69c8a71d380c3c53075c90d7 127.0.0.1 
+2026-03-29 10:15:44 [INFO]: GET /mocktest/result/pdf/69c80e03778718ecdb84df68 127.0.0.1 
+2026-03-29 10:15:50 [INFO]: GET /topics/E4/S1/U1 127.0.0.1 
+2026-03-29 10:15:52 [INFO]: POST /mocktest/createorder 127.0.0.1 
+2026-03-29 10:15:52 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:15:57 [INFO]: POST /mocktest/submit 127.0.0.1 
+2026-03-29 10:15:58 [INFO]: GET /js/ui-helper.js 127.0.0.1 
+2026-03-29 10:16:02 [INFO]: GET /mocktest/result/pdf/69c8ae8549601c289da6a6ff 127.0.0.1 
+2026-03-29 10:16:05 [INFO]: GET /mocktest/result/email/69c8ae8549601c289da6a6ff 127.0.0.1 
+2026-03-29 10:16:11 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:16:11 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:16:11 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:16:26 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:16:26 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:16:26 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:16:36 [INFO]: GET /user/profile 127.0.0.1 
+2026-03-29 10:16:37 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:16:37 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 
+2026-03-29 10:16:39 [INFO]: GET / 127.0.0.1 
+2026-03-29 10:16:39 [INFO]: GET /css/desktopStyle.css 127.0.0.1 
+2026-03-29 10:16:39 [INFO]: GET /images/biobrain-logo.png 127.0.0.1 

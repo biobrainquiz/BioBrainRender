@@ -6,6 +6,8 @@
   <title>Quiz Results | BioBrain</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/js/ui-helper.js"></script>
 
   <style>
     :root {
@@ -213,49 +215,44 @@
     }
 
     /* ⏳ Hourglass Loader */
-.loader {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 15px;
-}
+    .loader {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+    }
 
-.hourglass {
-  width: 20px;
-  height: 20px;
-  border: 3px solid var(--secondary);
-  border-radius: 50%;
-  border-top-color: transparent;
-  animation: spin 1s linear infinite;
-}
+    .hourglass {
+      width: 20px;
+      height: 20px;
+      border: 3px solid var(--secondary);
+      border-radius: 50%;
+      border-top-color: transparent;
+      animation: spin 1s linear infinite;
+    }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
   </style>
 </head>
-
 <body>
 
-  <header>
+<header>
     <h1>BioBrain - Quiz Results</h1>
-
     <div class="header-actions">
       <a href="/" class="home-btn">🏠 Home</a>
-
-      <a href="/mocktest/result/pdf/<%= examSession.resultid %>" title="Get PDF of Your Result">
-        <i class="fa-solid fa-file-pdf"></i> PDF
+      <a href="javascript:void(0)"    onclick="downloadPdfReport('<%= examSession.resultid %>')"    title="Get PDF of Your Result">
+          <i class="fa-solid fa-file-pdf"></i>PDF
       </a>
-
-      <a href="/mocktest/result/email/<%= examSession.resultid %>" title="Send Result via Email">
-        <i class="fa-solid fa-envelope"></i> Email
+      <a href="javascript:void(0)"    onclick="sendEmailReport('<%= examSession.resultid %>')"    title="Send Result via Email">  
+          <i class="fa-solid fa-envelope"></i> Email
       </a>
     </div>
-  </header>
-
-  <div class="container">
+</header>
+<div class="container">
 
     <div class="greeting">
       Hello, <strong>
@@ -312,9 +309,7 @@
 
 <!-- AI Summary Output -->
 <div id="ai-summary" class="ai-response"></div>
-
     <h2>Question Review</h2>
-
     <% examSession.questions.forEach((q, idx)=> {
       const userAns = examSession.answers[q._id]; %>
       <div class="question-box">
@@ -365,10 +360,54 @@
 
       </div>
       <% }) %>
+</div>
 
-  </div>
+<script>
+    // Wrap in a check to ensure BioBrainUI is ready
+  async function downloadPdfReport(id) {
+    if (typeof BioBrainUI === 'undefined') return console.error("Helper not loaded");
+    
+    BioBrainUI.showLoading('Generating PDF', 'Preparing your performance analytics...');
+    try {
+        const response = await fetch(`/mocktest/result/pdf/${id}`);
+        if (!response.ok) throw new Error();
+        const blob = await response.blob();
+        
+        BioBrainUI.finish();
+        
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `BioBrain_Report_${id}.pdf`;
+        a.click();
+        window.URL.revokeObjectURL(url);
+        
+        setTimeout(() => Swal.close(), 600);
+    } catch (err) {
+        BioBrainUI.error('Download Failed', 'Could not generate the PDF.');
+    }
+}
 
-  <script>
+  async function sendEmailReport(id) {
+    if (typeof BioBrainUI === 'undefined') return console.error("Helper not loaded");
+
+    BioBrainUI.showLoading('Sending Email', 'Generating PDF and dispatching to your inbox...');
+    try {
+        const response = await fetch(`/mocktest/result/email/${id}`);
+        const data = await response.json();
+        if (data.success) {
+            BioBrainUI.finish();
+             setTimeout(() => {
+                BioBrainUI.success('Sent!', 'Check your email for the report.');
+            }, 500);
+        } else {
+            throw new Error();
+        }
+    } catch (err) {
+        BioBrainUI.error('Email Failed', 'We could not send the report at this time.');
+    }
+}
+
   // 📄 Analyse This Quiz (POST)
   async function analyzeQuiz(btn) {
     const box = document.getElementById("ai-summary");
@@ -400,7 +439,6 @@
       box.innerHTML = "❌ Failed to analyze quiz";
     }
   }
-
 
   // 📊 Analyse All Quizzes (POST)
   async function analyzeAll(btn) {
@@ -442,6 +480,7 @@
     .replace(/###/g, "<br><strong>")
     .replace(/---/g, "<hr>");
 }
+ 
   function formatFullAnalysis(data) {
   let html = "";
 
@@ -515,6 +554,6 @@
       .replace(/•/g, "✔️ ")
       .replace(/- /g, "👉 ");
     }
-  </script>
+</script>
 </body>
 </html>

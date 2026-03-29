@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/desktopStyle.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/ui-helper.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body {
@@ -251,8 +253,6 @@
             pointer-events: none;
         }
 
-
-
         .performance-dashboard-card {
             display: flex;
             flex-direction: column;
@@ -391,7 +391,6 @@
                                                     </span>
                                                     <% } %>
                                         </td>
-
                                         <td>
                                             <% if (r.percentage>= 70) { %>
                                                 <span class="badge-green">
@@ -404,14 +403,10 @@
                                                     <% } %>
                                         </td>
                                         <td class="action-icons">
-
-                                            <a href="/mocktest/result/pdf/<%= r._id %>" title="Download PDF">
+                                          
+                                            <a href="javascript:void(0)"  onclick="downloadPdfReport('<%= r._id %>')" title="Download PDF">    
                                                 <i class="fa-solid fa-file-pdf"></i>
                                             </a>
-
-                                            <!--<a href="/mocktest/result/email/<%= r._id %>" title="Send Email">
-                                                <i class="fa-solid fa-envelope"></i>
-                                            </a>-->
 
                                             <a href="javascript:void(0)" onclick="sendEmailReport('<%= r._id %>')" title="Send Email">
                                                 <i class="fa-solid fa-envelope"></i>
@@ -531,45 +526,53 @@
             </div>
         </section>
         <%- include('../../partials/desktop/footer') %>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!--<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>-->
+       
 <script>
-async function sendEmailReport(mocktestid) {
-    // 1. Show "Sending..." state
-    Swal.fire({
-        title: 'Sending Performance Report',
-        text: 'Please wait while we generate and mail your PDF...',
-        allowOutsideClick: false,
-        didOpen: () => { Swal.showLoading() }
-    });
 
+async function downloadPdfReport(id) {
+    BioBrainUI.showLoading('Generating PDF', 'Preparing your performance analytics...');
+    
     try {
-        // 2. Call your existing route
-        const response = await fetch(`/mocktest/result/email/${mocktestid}`);
+        const response = await fetch(`/mocktest/result/pdf/${id}`);
+        if (!response.ok) throw new Error();
+
+        const blob = await response.blob();
+        BioBrainUI.finish(); // Snaps to 100%
+
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `Report_${id}.pdf`;
+        a.click();
+        
+        setTimeout(() => { Swal.close(); }, 600);
+    } catch (err) {
+        BioBrainUI.error('Download Failed', 'Could not generate the PDF.');
+    }
+}
+
+async function sendEmailReport(id) {
+    BioBrainUI.showLoading('Sending Email', 'Generating PDF and dispatching to your inbox...');
+    
+    try {
+        const response = await fetch(`/mocktest/result/email/${id}`);
         const data = await response.json();
 
         if (data.success) {
-            // 3. Show Success
-            Swal.fire({
-                icon: 'success',
-                title: 'Sent!',
-                text: 'The email has been sent to your registered address.',
-                timer: 3000
-            });
+            BioBrainUI.finish();
+            setTimeout(() => {
+                BioBrainUI.success('Sent!', 'Check your email for the report.');
+            }, 500);
         } else {
-            throw new Error(data.message);
+            throw new Error();
         }
     } catch (err) {
-        // 4. Show Error
-        Swal.fire({
-            icon: 'error',
-            title: 'Failed',
-            text: 'Could not send the email. Please try again later.'
-        });
+        BioBrainUI.error('Email Failed', 'We could not send the report at this time.');
     }
 }
-</script>
 
-            <script>
+
                 // Script for validating unit,topic,count,difficulty before submit
                 const form = document.querySelector("form");
                 form.addEventListener("submit", function (e) {
@@ -589,9 +592,7 @@ async function sendEmailReport(mocktestid) {
                     errorBox.style.display = "none";
 
                 });
-            </script>
-
-            <script>
+            
                 //script for filling unit,topic dropdowns
                 const examcode = "<%= prepareTestObj.examcode %>";
                 const subjectcode = "<%= prepareTestObj.subjectcode %>";
@@ -669,9 +670,7 @@ async function sendEmailReport(mocktestid) {
                         const topics = await res.json();
                         topicDropdown.setOptions(topics, "topicname", "topiccode");
                     });
-            </script>
-
-            <script>
+            
                 document.addEventListener("DOMContentLoaded", function () {
 <% if (prepareTestObj.resultsforgraph && prepareTestObj.resultsforgraph.length > 1) { %>
 
@@ -800,7 +799,6 @@ async function sendEmailReport(mocktestid) {
 
 <% } %>
 });
-            </script>
+</script>
 </body>
-
 </html>
