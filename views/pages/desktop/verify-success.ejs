@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioBrain - Email Verified</title>
+  <link rel="stylesheet" href="/css/desktopStyle.css" />
+  <style>
+    .success-icon {
+      font-size: 50px;
+      color: green;
+      margin-bottom: 15px;
+    }
+    .success-container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .action-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .btn-secondary {
+      background-color: transparent;
+      border: 1px solid #007bff;
+      color: #007bff;
+    }
+    .btn-secondary:hover {
+      background-color: #f0f7ff;
+    }
+  </style>
+</head>
+
+<body>
+  <%- include('../../partials/desktop/header') %>
+
+  <div class="login-container">
+    <div class="success-container">
+      <div class="success-icon">✓</div>
+      <h2>Email Verified!</h2>
+      <p style="color: #555; line-height: 1.5;">
+        Your account has been successfully activated. You can now access all BioBrain features.
+      </p>
+
+      <div class="action-buttons">
+        <button onclick="window.location.href='/authentication/login'">Go to Login</button>
+        <button class="btn-secondary" onclick="window.location.href='/'">Return Home</button>
+      </div>
+    </div>
+  </div>
+
+  <%- include('../../partials/desktop/footer') %>
+</body>
+
+</html>

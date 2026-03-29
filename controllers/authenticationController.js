@@ -247,18 +247,6 @@ exports.verifyEmail = async (req, res) => {
         });
 
         // 4️⃣ Handle invalid or expired tokens
-        /*if (!user) {
-            // Render a custom error page or redirect with an error query
-            return res.status(400).render(`pages/${getDevice(req)}/error`, {
-                message: "Your verification link is invalid or has expired. Please try registering again or request a new link."
-            });
-        }*/
-
-        /*if (!user) {
-            // Redirect to the Resend Page with a query parameter
-            return res.redirect("/authentication/resend-link-page?error=expired");
-        }*/
-
         if (!user) {
             // 1. Try to find the user by the token anyway (even if expired) 
             // to get their email for the redirect.
