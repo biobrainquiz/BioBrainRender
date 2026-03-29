@@ -22,14 +22,7 @@
       gap: 10px;
       margin-top: 20px;
     }
-    .btn-secondary {
-      background-color: transparent;
-      border: 1px solid #007bff;
-      color: #007bff;
-    }
-    .btn-secondary:hover {
-      background-color: #f0f7ff;
-    }
+   
   </style>
 </head>
 
@@ -45,8 +38,8 @@
       </p>
 
       <div class="action-buttons">
-        <button onclick="window.location.href='/authentication/login'">Go to Login</button>
-        <button class="btn-secondary" onclick="window.location.href='/'">Return Home</button>
+        <button id="loginBtn" class="btn-primary" onclick="window.location.href='/authentication/login'">Go to Login</button>
+        <button id="homeBtn" class="btn-secondary" onclick="window.location.href='/'">Return Home</button>
       </div>
     </div>
   </div>
