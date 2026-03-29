@@ -522,7 +522,9 @@ body {
 
 #loginBtn,
 #resendSubmitBtn,
-#resendBtn {
+#resendBtn,
+#loginBtn,
+#homeBtn {
   width: 100%;
   padding: 14px 0;
   border: none;
@@ -537,7 +539,9 @@ body {
 
 #loginBtn:hover,
 #resendSubmitBtn:hover,
-resendBtn:hover {
+#loginBtn:hover,
+#homeBtn:hover
+#resendBtn:hover {
   background: #028394;
 }
 
