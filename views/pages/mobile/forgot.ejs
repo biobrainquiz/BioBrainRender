@@ -8,18 +8,18 @@
   <link rel="stylesheet" href="/css/mobileStyle.css" />
 </head>
 
-<body class="view-pages-mobile-forgot">
+<body class="mobile-forgot-page">
   <%- include('../../partials/mobile/header') %>
 
-    <div class="forgot-container">
+    <div class="forgot-container mobile-forgot-container">
       <h2>Forgot Password</h2>
       <input type="text" id="userInput" placeholder="Email" />
 
-      <button class="btn-submit" id="submitBtn">Send Reset Link</button>
+      <button class="btn-submit mobile-forgot-btn-submit" id="submitBtn">Send Reset Link</button>
 
-      <div class="message" id="msg"></div>
+      <div class="message mobile-forgot-message" id="msg"></div>
 
-      <div class="links">
+      <div class="links mobile-forgot-links">
         <a href="/authentication/login">Login</a>
         <a href="/authentication/register">Register</a>
       </div>

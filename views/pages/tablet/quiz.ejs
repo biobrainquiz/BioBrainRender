@@ -7,18 +7,18 @@
   
 </head>
 
-<body class="view-pages-tablet-quiz">
+<body class="desktop-quiz-page">
   <header>
     <div>
       Hello, <%= examSession.username %> 👋 | Examination Portal |
-        <span class="breadcrumb-wrapper">
-          <span class="breadcrumb">
+        <span class="breadcrumb-wrapper desktop-quiz-breadcrumb-wrapper">
+          <span class="breadcrumb desktop-quiz-breadcrumb">
             <%= examSession.examname %> &gt; <%= examSession.subjectname %> &gt;
-                <span class="truncate" title="<%= examSession.unitname %>">
+                <span class="truncate desktop-quiz-truncate" title="<%= examSession.unitname %>">
                   <%= examSession.unitname.length> 15 ? examSession.unitname.slice(0, 15) + '...' : examSession.unitname
                     %>
                 </span> &gt;
-                <span class="truncate" title="<%= examSession.topicname %>">
+                <span class="truncate desktop-quiz-truncate" title="<%= examSession.topicname %>">
                   <%= examSession.topicname.length> 20 ? examSession.topicname.slice(0, 20) + '...' :
                     examSession.topicname %>
                 </span>
@@ -30,22 +30,22 @@
     <div>Time Left: <span id="timer">00:00</span></div>
   </header>
 
-  <div class="container">
+  <div class="container desktop-quiz-container">
 
-    <div class="left-panel">
-      <div class="question-box" id="questionText"></div>
+    <div class="left-panel desktop-quiz-left-panel">
+      <div class="question-box desktop-quiz-question-box" id="questionText"></div>
       <div id="optionsBox"></div>
 
-      <div class="actions">
-        <button class="save-btn" id="saveBtn">Save & Next</button>
-        <button class="review-btn" id="reviewBtn">Mark for Review</button>
+      <div class="actions desktop-quiz-actions">
+        <button class="save-btn desktop-quiz-save-btn" id="saveBtn">Save & Next</button>
+        <button class="review-btn desktop-quiz-review-btn" id="reviewBtn">Mark for Review</button>
       </div>
     </div>
 
-    <div class="right-panel">
-      <div class="timer">Question Palette</div>
-      <div class="palette" id="palette"></div>
-      <button class="submit-btn" id="submitBtn">Submit Quiz</button>
+    <div class="right-panel desktop-quiz-right-panel">
+      <div class="timer desktop-quiz-timer">Question Palette</div>
+      <div class="palette desktop-quiz-palette" id="palette"></div>
+      <button class="submit-btn desktop-quiz-submit-btn" id="submitBtn">Submit Quiz</button>
     </div>
 
   </div>
@@ -212,7 +212,7 @@
     });
   </script>
 
-  <link rel="stylesheet" href="/css/laptopStyle.css" />
-  <%- include('../../partials/tablet/footer') %>
+  <link rel="stylesheet" href="/css/desktopStyle.css" />
+  <%- include('../../partials/desktop/footer') %>
 </body>
 </html>

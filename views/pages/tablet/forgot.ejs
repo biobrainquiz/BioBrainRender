@@ -5,21 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BioBrain - Forgot Password</title>
-  <link rel="stylesheet" href="/css/laptopStyle.css" />
+  <link rel="stylesheet" href="/css/desktopStyle.css" />
 </head>
 
-<body class="view-pages-tablet-forgot">
-  <%- include('../../partials/tablet/header') %>
+<body class="desktop-forgot-page">
+  <%- include('../../partials/desktop/header') %>
 
-    <div class="forgot-container">
+    <div class="forgot-container desktop-forgot-container">
       <h2>Forgot Password</h2>
       <input type="text" id="userInput" placeholder="Email" />
 
-      <button class="btn-submit" id="submitBtn">Send Reset Link</button>
+      <button class="btn-submit desktop-forgot-btn-submit" id="submitBtn">Send Reset Link</button>
 
-      <div class="message" id="msg"></div>
+      <div class="message desktop-forgot-message" id="msg"></div>
 
-      <div class="links">
+      <div class="links desktop-forgot-links">
         <a href="/authentication/login">Login</a>
         <a href="/authentication/register">Register</a>
       </div>
@@ -58,7 +58,7 @@
       });
     </script>
 
-    <%- include('../../partials/tablet/footer') %>
+    <%- include('../../partials/desktop/footer') %>
 </body>
 
 </html>

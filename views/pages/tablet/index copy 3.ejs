@@ -5,45 +5,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BioBrain - Home</title>
-    <link rel="stylesheet" href="/css/laptopStyle.css" />
+    <link rel="stylesheet" href="/css/desktopStyle.css" />
 
     
 </head>
 
-<body class="view-pages-tablet-index-copy-3">
-    <%- include('../../partials/tablet/header') %>
+<body class="desktop-index-copy-3-page">
+    <%- include('../../partials/desktop/header') %>
 
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-overlay"></div>
+        <section class="hero desktop-index-copy-3-hero">
+            <div class="hero-overlay desktop-index-copy-3-hero-overlay"></div>
             <h2>Master Life Sciences with Smart Quizzes</h2>
             <p>Challenge yourself with quizzes in Zoology, Botany, Genetics, Ecology & More.</p>
             <div>
-                <button class="btn-primary">Start Quiz</button>
-                <button class="btn-secondary">View Leaderboard</button>
+                <button class="btn-primary desktop-index-copy-3-btn-primary">Start Quiz</button>
+                <button class="btn-secondary desktop-index-copy-3-btn-secondary">View Leaderboard</button>
             </div>
         </section>
 
         <!-- Quiz Categories -->
-        <section class="section">
+        <section class="section desktop-index-copy-3-section">
             <h3>Quiz Categories</h3>
-            <div class="card-container">
-                <div class="card">
+            <div class="card-container desktop-index-copy-3-card-container">
+                <div class="card desktop-index-copy-3-card">
                     <h4>NEET</h4>
                     <p>Zoology</p>
                     <button onclick="mockTest('E1','S1')">Start</button>
                 </div>
-                <div class="card">
+                <div class="card desktop-index-copy-3-card">
                     <h4>DL/JL/Asst. Prof.</h4>
                     <p>Zoology</p>
                     <button onclick="mockTest('E2','S1')">Start</button>
                 </div>
-                <div class="card">
+                <div class="card desktop-index-copy-3-card">
                     <h4>CSIR.NET/SLET/SET</h4>
                     <p>Life Sciences</p>
                     <button onclick="mockTest('E3','S2')">Start</button>
                 </div>
-                <div class="card">
+                <div class="card desktop-index-copy-3-card">
                     <h4>GATE</h4>
                     <p>Zoology</p>
                     <button onclick="mockTest('E4','S1')">Start</button>
@@ -52,22 +52,22 @@
         </section>
 
         <!-- Features Section -->
-        <section class="section">
+        <section class="section desktop-index-copy-3-section">
             <h3>Why Choose BioBrain?</h3>
-            <div class="features">
-                <div class="feature-box">✔ 1000+ MCQs across topics</div>
-                <div class="feature-box">✔ Instant Results & Explanations</div>
-                <div class="feature-box">✔ Track Your Progress</div>
-                <div class="feature-box">✔ Compete on Leaderboard</div>
+            <div class="features desktop-index-copy-3-features">
+                <div class="feature-box desktop-index-copy-3-feature-box">✔ 1000+ MCQs across topics</div>
+                <div class="feature-box desktop-index-copy-3-feature-box">✔ Instant Results & Explanations</div>
+                <div class="feature-box desktop-index-copy-3-feature-box">✔ Track Your Progress</div>
+                <div class="feature-box desktop-index-copy-3-feature-box">✔ Compete on Leaderboard</div>
             </div>
         </section>
 
         <!-- Leaderboard Section -->
-<section class="leaderboard">
+<section class="leaderboard desktop-index-copy-3-leaderboard">
     <h3>🏆 Top Biology Minds</h3>
 
-    <div class="leaderboard-wrapper">
-        <table class="leaderboard-table">
+    <div class="leaderboard-wrapper desktop-index-copy-3-leaderboard-wrapper">
+        <table class="leaderboard-table desktop-index-copy-3-leaderboard-table">
             <thead>
                 <tr>
                     <th>Rank</th>
@@ -83,7 +83,7 @@
                         <tr class="<%= currentuser && currentuser._id.toString() === user._id.toString() ? 'current-user' : '' %>">
 
                             <!-- Rank with medals -->
-                            <td class="rank-cell">
+                            <td class="rank-cell desktop-index-copy-3-rank-cell">
                                 <% if(index === 0) { %> 🥇
                                 <% } else if(index === 1) { %> 🥈
                                 <% } else if(index === 2) { %> 🥉
@@ -91,15 +91,15 @@
                                 <% } %>
                             </td>
 
-                            <td class="name-cell"><%= user.username %></td>
-                            <td class="score-cell"><%= user.finalscore %></td>
-                            <td class="accuracy-cell"><%= user.accuracy %>%</td>
+                            <td class="name-cell desktop-index-copy-3-name-cell"><%= user.username %></td>
+                            <td class="score-cell desktop-index-copy-3-score-cell"><%= user.finalscore %></td>
+                            <td class="accuracy-cell desktop-index-copy-3-accuracy-cell"><%= user.accuracy %>%</td>
                         </tr>
                     <% }) %>
 
                 <% } else { %>
                     <tr>
-                        <td colspan="4" class="empty">No data available</td>
+                        <td colspan="4" class="empty desktop-index-copy-3-empty">No data available</td>
                     </tr>
                 <% } %>
             </tbody>
@@ -113,7 +113,7 @@
             }
         </script>
         </script>
-        <%- include('../../partials/tablet/footer') %>
+        <%- include('../../partials/desktop/footer') %>
 </body>
 
 </html>

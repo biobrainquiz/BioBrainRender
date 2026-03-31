@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <title>BioBrain | Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/laptopStyle.css">
+    <link rel="stylesheet" href="/css/desktopStyle.css">
 
     
 </head>
 
-<body class="view-pages-tablet-profile">
+<body class="desktop-profile-page">
 
-<%- include('../../partials/tablet/header') %>
+<%- include('../../partials/desktop/header') %>
 
-<div class="profile-wrapper">
-<div class="container">
+<div class="profile-wrapper desktop-profile-wrapper">
+<div class="container desktop-profile-container">
 
     <!-- USER INFO -->
-    <div class="profile-card">
+    <div class="profile-card desktop-profile-card">
         <div>
             <h2><%= user.username %></h2>
 
@@ -32,33 +32,33 @@
             </p>
         </div>
 
-        <div class="badge">BioBrain Explorer 🚀</div>
+        <div class="badge desktop-profile-badge">BioBrain Explorer 🚀</div>
     </div>
 
     <!-- STATS -->
-    <div class="stats-grid">
-        <div class="stat-box"><h4>Quizzes</h4><span><%= stats.totalQuizzes || 0 %></span></div>
-        <div class="stat-box"><h4>Total Score</h4><span><%= stats.totalScore || 0 %></span></div>
-        <div class="stat-box"><h4>Average</h4><span><%= stats.averageScore || 0 %></span></div>
-        <div class="stat-box"><h4>Highest</h4><span><%= stats.highestScore || 0 %></span></div>
-        <div class="stat-box"><h4>Lowest</h4><span><%= stats.lowestScore || 0 %></span></div>
-        <div class="stat-box"><h4>Accuracy</h4><span><%= stats.overallAccuracy || 0 %>%</span></div>
+    <div class="stats-grid desktop-profile-stats-grid">
+        <div class="stat-box desktop-profile-stat-box"><h4>Quizzes</h4><span><%= stats.totalQuizzes || 0 %></span></div>
+        <div class="stat-box desktop-profile-stat-box"><h4>Total Score</h4><span><%= stats.totalScore || 0 %></span></div>
+        <div class="stat-box desktop-profile-stat-box"><h4>Average</h4><span><%= stats.averageScore || 0 %></span></div>
+        <div class="stat-box desktop-profile-stat-box"><h4>Highest</h4><span><%= stats.highestScore || 0 %></span></div>
+        <div class="stat-box desktop-profile-stat-box"><h4>Lowest</h4><span><%= stats.lowestScore || 0 %></span></div>
+        <div class="stat-box desktop-profile-stat-box"><h4>Accuracy</h4><span><%= stats.overallAccuracy || 0 %>%</span></div>
     </div>
 
     <!-- PERFORMANCE + CHART -->
-    <div class="performance-row">
+    <div class="performance-row desktop-profile-performance-row">
 
-        <div class="section half-card">
+        <div class="section half-card desktop-profile-section desktop-profile-half-card">
             <h3>Overall Performance (<%= stats.overallAccuracy || 0 %>%)</h3>
 
-            <div class="progress-container">
+            <div class="progress-container desktop-profile-progress-container">
                 <div class="progress-bar pct-width pct-<%= Math.max(0, Math.min(100, Math.round(Number(Math.min(stats.overallAccuracy || 0, 100)) || 0))) %>"></div>
             </div>
         </div>
 
-        <div class="section half-card">
+        <div class="section half-card desktop-profile-section desktop-profile-half-card">
             <h3>Score Trend</h3>
-            <div class="chart-container">
+            <div class="chart-container desktop-profile-chart-container">
                 <canvas id="scoreChart"></canvas>
             </div>
         </div>
@@ -68,7 +68,7 @@
 </div>
 </div>
 
-<%- include('../../partials/tablet/footer') %>
+<%- include('../../partials/desktop/footer') %>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 

@@ -8,36 +8,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   
-  <link rel="stylesheet" href="/css/laptopStyle.css" />
+  <link rel="stylesheet" href="/css/desktopStyle.css" />
 </head>
 
-<body class="view-pages-tablet-quizresults-copy">
+<body class="desktop-quizresults-copy-page">
 
   <header>
     <h1>BioBrain - Quiz Results</h1>
 
-    <div class="header-actions">
-      <a href="/" class="home-btn">🏠 Home</a>
+    <div class="header-actions desktop-quizresults-copy-header-actions">
+      <a href="/" class="home-btn desktop-quizresults-copy-home-btn">🏠 Home</a>
 
       <a href="/mocktest/result/pdf/<%= examSession.resultid %>" title="Get PDF of Your Result">
-        <i class="fa-solid fa-file-pdf"></i> PDF
+        <i class="fa-solid fa-file-pdf desktop-quizresults-copy-fa-solid desktop-quizresults-copy-fa-file-pdf"></i> PDF
       </a>
 
       <a href="/mocktest/result/email/<%= examSession.resultid %>" title="Send Result via Email">
-        <i class="fa-solid fa-envelope"></i> Email
+        <i class="fa-solid fa-envelope desktop-quizresults-copy-fa-solid desktop-quizresults-copy-fa-envelope"></i> Email
       </a>
     </div>
   </header>
 
-  <div class="container">
+  <div class="container desktop-quizresults-copy-container">
 
-    <div class="greeting">
+    <div class="greeting desktop-quizresults-copy-greeting">
       Hello, <strong>
         <%= examSession.username ? examSession.username : 'Guest' %>
       </strong>!
     </div>
 
-    <table class="stats-table">
+    <table class="stats-table desktop-quizresults-copy-stats-table">
       <tr>
         <th>Total Questions</th>
         <th>Attempted</th>
@@ -52,10 +52,10 @@
         <td>
           <%= examSession.attempted %>
         </td>
-        <td class="correct">
+        <td class="correct desktop-quizresults-copy-correct">
           <%= examSession.right %>
         </td>
-        <td class="wrong">
+        <td class="wrong desktop-quizresults-copy-wrong">
           <%= examSession.wrong %>
         </td>
         <td>
@@ -68,12 +68,12 @@
 
     <% examSession.questions.forEach((q, idx)=> {
       const userAns = examSession.answers[q._id]; %>
-      <div class="question-box">
+      <div class="question-box desktop-quizresults-copy-question-box">
         <p><strong>Q<%= idx + 1 %>:</strong>
           <%= q.question %>
         </p>
 
-        <ul class="question-options">
+        <ul class="question-options desktop-quizresults-copy-question-options">
           <% ['opt1', 'opt2' , 'opt3' , 'opt4' ].forEach((optKey, i)=> {
             const optionNum = i + 1;
             let cls = '';
@@ -96,11 +96,11 @@
             <%= ['A','B','C','D'][q.answer-1] %>
           </strong></p>
         <% if(!userAns){ %>
-          <p class="unattempted">You did not attempt this question.</p>
+          <p class="unattempted desktop-quizresults-copy-unattempted">You did not attempt this question.</p>
           <% } %>
 
             <!-- 🤖 AI BUTTON -->
-            <button class="ai-btn" onclick="<%= examSession.isuserpremium ? 'explainAnswer(this)' : 'return false;' %>"
+            <button class="ai-btn desktop-quizresults-copy-ai-btn" onclick="<%= examSession.isuserpremium ? 'explainAnswer(this)' : 'return false;' %>"
               <%- !examSession.isuserpremium ? 'disabled title="Premium Feature: Upgrade to access"' : '' %>
               data-question="<%= q.question %>"
                 data-opt1="<%= q.opt1 %>"
@@ -112,7 +112,7 @@
                             🤖 Explain Answer
             </button>
 
-            <div class="ai-response"></div>
+            <div class="ai-response desktop-quizresults-copy-ai-response"></div>
 
       </div>
       <% }) %>

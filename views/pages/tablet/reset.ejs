@@ -4,24 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <title>BioBrain - Reset Password</title>
-  <link rel="stylesheet" href="/css/laptopStyle.css" />
+  <link rel="stylesheet" href="/css/desktopStyle.css" />
 </head>
 
-<body class="view-pages-tablet-reset">
+<body class="desktop-reset-page">
 
   <!-- Header -->
-  <%- include('../../partials/tablet/header') %>
+  <%- include('../../partials/desktop/header') %>
 
-    <div class="login-container">
+    <div class="login-container desktop-reset-login-container">
       <h2>Reset Password</h2>
 
       <input type="password" id="newPassword" placeholder="New Password">
       <input type="password" id="confirmPassword" placeholder="Confirm Password">
 
-      <button class="btn-register" id="resetBtn">Reset Password</button>
+      <button class="btn-register desktop-reset-btn-register" id="resetBtn">Reset Password</button>
 
-      <div class="error" id="errorMsg"></div>
-      <div class="success" id="successMsg"></div>
+      <div class="error desktop-reset-error" id="errorMsg"></div>
+      <div class="success desktop-reset-success" id="successMsg"></div>
 
       
     </div>
@@ -51,10 +51,10 @@
         }
 
         try {
-          const res = await fetch(`/reset/${token}`, {
+          const res = await fetch(`/authentication/reset/${token}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ newPassword })
+            body: JSON.stringify({ newPassword,confirmPassword })
           });
 
           const data = await res.json();
@@ -76,7 +76,7 @@
     </script>
 
     <!-- Footer -->
-    <%- include('../../partials/tablet/footer') %>
+    <%- include('../../partials/desktop/footer') %>
 
 </body>
 

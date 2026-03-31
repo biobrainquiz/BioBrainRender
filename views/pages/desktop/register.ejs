@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="/css/desktopStyle.css" />
 </head>
 
-<body class="view-pages-desktop-register">
+<body class="desktop-register-page">
   <%- include('../../partials/desktop/header') %>
 
-    <div class="register-container">
+    <div class="register-container desktop-register-container">
       <h2>Sign Up</h2>
       <input type="text" id="username" placeholder="Username" />
       <input type="password" id="password" placeholder="Password" />
@@ -20,11 +20,11 @@
       <input type="email" id="email" placeholder="Email" />
 
 
-      <button class="btn-register" id="registerBtn">Register</button>
+      <button class="btn-register desktop-register-btn-register" id="registerBtn">Register</button>
 
-      <div class="message" id="msg"></div>
+      <div class="message desktop-register-message" id="msg"></div>
 
-      <div class="links">
+      <div class="links desktop-register-links">
         <a href="/authentication/login">Already have an account? Login</a>
         <a href="/authentication/forgot">Forgot Password</a>
       </div>

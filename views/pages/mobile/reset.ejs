@@ -7,21 +7,21 @@
   <link rel="stylesheet" href="/css/mobileStyle.css" />
 </head>
 
-<body class="view-pages-mobile-reset">
+<body class="mobile-reset-page">
 
   <!-- Header -->
   <%- include('../../partials/mobile/header') %>
 
-    <div class="login-container">
+    <div class="login-container mobile-reset-login-container">
       <h2>Reset Password</h2>
 
       <input type="password" id="newPassword" placeholder="New Password">
       <input type="password" id="confirmPassword" placeholder="Confirm Password">
 
-      <button class="btn-register" id="resetBtn">Reset Password</button>
+      <button class="btn-register mobile-reset-btn-register" id="resetBtn">Reset Password</button>
 
-      <div class="error" id="errorMsg"></div>
-      <div class="success" id="successMsg"></div>
+      <div class="error mobile-reset-error" id="errorMsg"></div>
+      <div class="success mobile-reset-success" id="successMsg"></div>
 
       
     </div>
@@ -51,10 +51,10 @@
         }
 
         try {
-          const res = await fetch(`/reset/${token}`, {
+          const res = await fetch(`/authentication/reset/${token}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ newPassword })
+            body: JSON.stringify({ newPassword,confirmPassword })
           });
 
           const data = await res.json();

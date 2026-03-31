@@ -1,0 +1,46 @@
+
+<header>
+  <div class="navbar">
+    <a href="/">
+      <img src="/images/biobrain-logo.png" alt="BioBrain Quiz Logo" id="logo">
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/leaderboard">Leaderboard</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/admin">Admin</a></li>
+
+      <% if (session && session.user) { %>
+        <li class="nav-user">
+          <div class="user-menu" id="userMenu">
+            <div class="user-trigger">
+              <div class="user-avatar">
+                <%= session.user.username.charAt(0).toUpperCase() %>
+              </div>
+              <span class="arrow">&#9662;</span>
+            </div>
+
+            <div class="dropdown">
+              <div class="dropdown-header mobile-header-copy-inline-01">
+                <div class="dropdown-username mobile-header-copy-inline-02">
+                  <%= session.user.username %>
+                </div>
+                <div class="dropdown-email mobile-header-copy-inline-03">
+                  <%= session.user.email %>
+                </div>
+              </div>
+              <div class="dropdown-divider mobile-header-copy-inline-04"></div>
+              <a href="/user/profile" class="dropdown-item mobile-header-copy-inline-05">👤 Profile</a>
+              <a href="/authentication/logout" class="dropdown-item logout mobile-header-copy-inline-06">🚪 Logout</a>
+            </div>
+          </div>
+        </li>
+      <% } else { %>
+        <li>
+          <a href="/authentication/login" class="btn-navbar">Login</a>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+</header>

@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="/css/mobileStyle.css" />
 </head>
 
-<body class="view-pages-mobile-register">
+<body class="mobile-register-page">
   <%- include('../../partials/mobile/header') %>
 
-    <div class="register-container">
+    <div class="register-container mobile-register-container">
       <h2>Sign Up</h2>
       <input type="text" id="username" placeholder="Username" />
       <input type="password" id="password" placeholder="Password" />
@@ -20,11 +20,11 @@
       <input type="email" id="email" placeholder="Email" />
 
 
-      <button class="btn-register" id="registerBtn">Register</button>
+      <button class="btn-register mobile-register-btn-register" id="registerBtn">Register</button>
 
-      <div class="message" id="msg"></div>
+      <div class="message mobile-register-message" id="msg"></div>
 
-      <div class="links">
+      <div class="links mobile-register-links">
         <a href="/authentication/login">Already have an account? Login</a>
         <a href="/authentication/forgot">Forgot Password</a>
       </div>
@@ -58,7 +58,9 @@
           if (data.success) {
             msg.innerText = data.message || 'Registration successful!';
             msg.classList.add('success');
-            setTimeout(() => { window.location.href = '/authentication/login'; }, 2000);
+            //setTimeout(() => { window.location.href = '/authentication/login'; }, 2000);
+            // Redirect to the "Check Email" page
+            setTimeout(() => { window.location.href = `/authentication/check-email?email=${encodeURIComponent(email)}`; }, 2000);
           }
           else {
             msg.innerText = data.message || 'Registration failed!';

@@ -8,39 +8,39 @@
   <link rel="stylesheet" href="/css/desktopStyle.css" />
 </head>
 
-<body class="view-pages-desktop-login">
+<body class="desktop-login-page">
   <!-- Header Include -->
   <%- include('../../partials/desktop/header') %>
 
-    <div class="login-container">
+    <div class="login-container desktop-login-container">
       <h2>Sign In</h2>
 
       <!--<input type="text" id="username" placeholder="Username" />-->
       <input type="text" id="identifier" placeholder="Username / Email / Mobile" />
       <input type="password" id="password" placeholder="Password" />
 
-      <div class="captcha-container">
-        <div class="captcha" id="captcha"></div>
+      <div class="captcha-container desktop-login-captcha-container">
+        <div class="captcha desktop-login-captcha" id="captcha"></div>
         <button id="refreshCaptcha">↻</button>
       </div>
       <input type="text" id="captchaInput" placeholder="Enter CAPTCHA" />
 
       <button id="loginBtn">Login</button>
 
-      <div class="links">
+      <div class="links desktop-login-links">
         <a href="/authentication/forgot">Forgot Password</a>
         <a href="/authentication/register">Register</a>
         <a href="/authentication/resend-link-page">Resend Verification</a>
       </div>
 
-      <div class="desktop-inline-6dz4zx" id="resendContainer">
-          <p class="desktop-inline-1aebiag">Didn't get the link?</p>
-              <button class="desktop-inline-srpstu" id="resendBtn">
+      <div class="desktop-login-inline-01" id="resendContainer">
+          <p class="desktop-login-inline-02">Didn't get the link?</p>
+              <button class="desktop-login-inline-03" id="resendBtn">
                   Resend Verification Email
               </button>
       </div>
 
-      <div class="error" id="errorMsg"></div>
+      <div class="error desktop-login-error" id="errorMsg"></div>
     </div>
 
     <script>

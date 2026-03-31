@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BioBrain - Register</title>
-  <link rel="stylesheet" href="/css/laptopStyle.css" />
+  <link rel="stylesheet" href="/css/desktopStyle.css" />
 </head>
 
-<body class="view-pages-tablet-register">
-  <%- include('../../partials/tablet/header') %>
+<body class="desktop-register-page">
+  <%- include('../../partials/desktop/header') %>
 
-    <div class="register-container">
+    <div class="register-container desktop-register-container">
       <h2>Sign Up</h2>
       <input type="text" id="username" placeholder="Username" />
       <input type="password" id="password" placeholder="Password" />
@@ -20,11 +20,11 @@
       <input type="email" id="email" placeholder="Email" />
 
 
-      <button class="btn-register" id="registerBtn">Register</button>
+      <button class="btn-register desktop-register-btn-register" id="registerBtn">Register</button>
 
-      <div class="message" id="msg"></div>
+      <div class="message desktop-register-message" id="msg"></div>
 
-      <div class="links">
+      <div class="links desktop-register-links">
         <a href="/authentication/login">Already have an account? Login</a>
         <a href="/authentication/forgot">Forgot Password</a>
       </div>
@@ -58,7 +58,9 @@
           if (data.success) {
             msg.innerText = data.message || 'Registration successful!';
             msg.classList.add('success');
-            setTimeout(() => { window.location.href = '/authentication/login'; }, 2000);
+            //setTimeout(() => { window.location.href = '/authentication/login'; }, 2000);
+            // Redirect to the "Check Email" page
+            setTimeout(() => { window.location.href = `/authentication/check-email?email=${encodeURIComponent(email)}`; }, 2000);
           }
           else {
             msg.innerText = data.message || 'Registration failed!';
@@ -71,7 +73,7 @@
         }
       });
     </script>
-    <%- include('../../partials/tablet/footer') %>
+    <%- include('../../partials/desktop/footer') %>
 </body>
 
 </html>

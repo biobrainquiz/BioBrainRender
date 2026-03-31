@@ -10,40 +10,40 @@
     
 </head>
 
-<body class="view-pages-desktop-index-copy-2">
+<body class="desktop-index-copy-2-page">
     <%- include('../../partials/desktop/header') %>
 
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-overlay"></div>
+        <section class="hero desktop-index-copy-2-hero">
+            <div class="hero-overlay desktop-index-copy-2-hero-overlay"></div>
             <h2>Master Life Sciences with Smart Quizzes</h2>
             <p>Challenge yourself with quizzes in Zoology, Botany, Genetics, Ecology & More.</p>
             <div>
-                <button class="btn-primary">Start Quiz</button>
-                <button class="btn-secondary">View Leaderboard</button>
+                <button class="btn-primary desktop-index-copy-2-btn-primary">Start Quiz</button>
+                <button class="btn-secondary desktop-index-copy-2-btn-secondary">View Leaderboard</button>
             </div>
         </section>
 
         <!-- Quiz Categories -->
-        <section class="section">
+        <section class="section desktop-index-copy-2-section">
             <h3>Quiz Categories</h3>
-            <div class="card-container">
-                <div class="card">
+            <div class="card-container desktop-index-copy-2-card-container">
+                <div class="card desktop-index-copy-2-card">
                     <h4>NEET</h4>
                     <p>Zoology</p>
                     <button onclick="mockTest('E1','S1')">Start</button>
                 </div>
-                <div class="card">
+                <div class="card desktop-index-copy-2-card">
                     <h4>DL/JL/Asst. Prof.</h4>
                     <p>Zoology</p>
                     <button onclick="mockTest('E2','S1')">Start</button>
                 </div>
-                <div class="card">
+                <div class="card desktop-index-copy-2-card">
                     <h4>CSIR.NET/SLET/SET</h4>
                     <p>Life Sciences</p>
                     <button onclick="mockTest('E3','S2')">Start</button>
                 </div>
-                <div class="card">
+                <div class="card desktop-index-copy-2-card">
                     <h4>GATE</h4>
                     <p>Zoology</p>
                     <button onclick="mockTest('E4','S1')">Start</button>
@@ -52,20 +52,20 @@
         </section>
 
         <!-- Features Section -->
-        <section class="section">
+        <section class="section desktop-index-copy-2-section">
             <h3>Why Choose BioBrain?</h3>
-            <div class="features">
-                <div class="feature-box">✔ 1000+ MCQs across topics</div>
-                <div class="feature-box">✔ Instant Results & Explanations</div>
-                <div class="feature-box">✔ Track Your Progress</div>
-                <div class="feature-box">✔ Compete on Leaderboard</div>
+            <div class="features desktop-index-copy-2-features">
+                <div class="feature-box desktop-index-copy-2-feature-box">✔ 1000+ MCQs across topics</div>
+                <div class="feature-box desktop-index-copy-2-feature-box">✔ Instant Results & Explanations</div>
+                <div class="feature-box desktop-index-copy-2-feature-box">✔ Track Your Progress</div>
+                <div class="feature-box desktop-index-copy-2-feature-box">✔ Compete on Leaderboard</div>
             </div>
         </section>
 
         <!-- Leaderboard Section -->
-        <section class="leaderboard">
+        <section class="leaderboard desktop-index-copy-2-leaderboard">
             <h3>🏆 Top Biology Minds</h3>
-            <table class="leaderboard-table">
+            <table class="leaderboard-table desktop-index-copy-2-leaderboard-table">
                 <thead>
                     <tr>
                         <th>Rank</th>
@@ -80,7 +80,7 @@
                             <tr
                                 class="<%= currentuser && currentuser._id.toString() === user._id.toString() ? 'current-user' : '' %>">
                                 <td>
-                                    <span class="rank-box">
+                                    <span class="rank-box desktop-index-copy-2-rank-box">
                                         <% if(index===0) { %> 🥇
                                             <% } else if(index===1) { %> 🥈
                                                 <% } else if(index===2) { %> 🥉
@@ -88,17 +88,17 @@
                                                             <% } %>
                                     </span>
                                 </td>
-                                <td class="desktop-inline-1ka1nmi">
+                                <td class="desktop-index-copy-2-inline-01">
                                     <%= user.username %>
-                                        <% if(index===0) { %> <small class="desktop-inline-zjjwrb"
+                                        <% if(index===0) { %> <small class="desktop-index-copy-2-inline-02"
                                                >TOP GENIUS</small>
                                             <% } %>
                                 </td>
-                                <td class="desktop-inline-1b5wa92">
+                                <td class="desktop-index-copy-2-inline-03">
                                     <%= user.finalscore %>
                                 </td>
                                 <td>
-                                    <div class="accuracy-bar-bg">
+                                    <div class="accuracy-bar-bg desktop-index-copy-2-accuracy-bar-bg">
                                         <div class="accuracy-bar-fill pct-width pct-<%= Math.max(0, Math.min(100, Math.round(Number(user.accuracy) || 0))) %>"></div>
                                     </div>
                                     <%= user.accuracy %>%
@@ -107,7 +107,7 @@
                             <% }) %>
                                 <% } else { %>
                                     <tr>
-                                        <td class="desktop-inline-1hbcky3" colspan="4">No brilliant minds
+                                        <td class="desktop-index-copy-2-inline-04" colspan="4">No brilliant minds
                                             yet. Be the first!</td>
                                     </tr>
                                     <% } %>

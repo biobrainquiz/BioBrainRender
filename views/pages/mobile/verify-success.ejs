@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioBrain - Email Verified</title>
+  <link rel="stylesheet" href="/css/mobileStyle.css" />
+  
+</head>
+
+<body class="mobile-verify-success-page">
+  <%- include('../../partials/mobile/header') %>
+
+  <div class="login-container mobile-verify-success-login-container">
+    <div class="success-container mobile-verify-success-success-container">
+      <div class="success-icon mobile-verify-success-success-icon">✓</div>
+      <h2>Email Verified!</h2>
+      <p class="mobile-verify-success-inline-01">
+        Your account has been successfully activated. You can now access all BioBrain features.
+      </p>
+
+      <div class="action-buttons mobile-verify-success-action-buttons">
+        <button id="loginBtn" class="btn-primary mobile-verify-success-btn-primary" onclick="window.location.href='/authentication/login'">Go to Login</button>
+        <button id="homeBtn" class="btn-secondary mobile-verify-success-btn-secondary" onclick="window.location.href='/'">Return Home</button>
+      </div>
+    </div>
+  </div>
+
+  <%- include('../../partials/mobile/footer') %>
+</body>
+
+</html>

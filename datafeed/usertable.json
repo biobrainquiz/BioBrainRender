@@ -5,6 +5,7 @@
     "mobile": "9876543210",
     "email": "admin@biobrain.com",
     "roles": ["650f1a2b3c4d5e6f7a8b9010"],
-    "isActive": true
+    "isActive": true,
+    "isVerified": true
   }
 ]

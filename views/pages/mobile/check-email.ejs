@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioBrain - Verify Email</title>
+  <link rel="stylesheet" href="/css/mobileStyle.css" />
+</head>
+
+<body class="mobile-check-email-page">
+  <%- include('../../partials/mobile/header') %>
+
+  <div class="login-container mobile-check-email-login-container">
+    <h2>Verify Your Email</h2>
+    
+    <div class="mobile-check-email-inline-01">
+      <p class="mobile-check-email-inline-02">
+        We've sent a verification link to:<br>
+        <strong class="mobile-check-email-inline-03"><%= email %></strong>
+      </p>
+      <p class="mobile-check-email-inline-04">
+        Please click the link in the email to activate your account.
+      </p>
+    </div>
+
+    <div class="mobile-check-email-inline-05" id="resendSection">
+      <p class="mobile-check-email-inline-06">Didn't receive the email?</p>
+      <button class="mobile-check-email-inline-07" id="resendBtn"  >
+        Resend Verification Email
+      </button>
+    </div>
+
+    <div class="links mobile-check-email-inline-08 mobile-check-email-links">
+      <a href="/authentication/login">Back to Login</a>
+    </div>
+
+    <div class="error mobile-check-email-inline-09 mobile-check-email-error" id="statusMsg"></div>
+  </div>
+
+  <script>
+    document.getElementById("resendBtn").addEventListener("click", async () => {
+      const statusMsg = document.getElementById("statusMsg");
+      const resendBtn = document.getElementById("resendBtn");
+
+      // Reset styles
+      statusMsg.innerText = "Sending...";
+      statusMsg.style.color = "#64748b"; 
+      resendBtn.disabled = true;
+      resendBtn.style.opacity = "0.5";
+
+      try {
+        const res = await fetch("/authentication/resend-verification", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: "<%= email %>" })
+        });
+
+        const data = await res.json();
+        
+        statusMsg.innerText = data.message;
+        statusMsg.style.color = data.success ? "#10b981" : "#ef4444"; // Green for success, red for error
+
+        // If successful, prevent spamming by keeping button disabled for 30 seconds
+        if (data.success) {
+          setTimeout(() => {
+            resendBtn.disabled = false;
+            resendBtn.style.opacity = "1";
+          }, 30000);
+        } else {
+          resendBtn.disabled = false;
+          resendBtn.style.opacity = "1";
+        }
+
+      } catch (e) {
+        statusMsg.innerText = "Server error! Please try again later.";
+        statusMsg.style.color = "#ef4444";
+        resendBtn.disabled = false;
+        resendBtn.style.opacity = "1";
+      }
+    });
+  </script>
+
+  <%- include('../../partials/mobile/footer') %>
+</body>
+
+</html>

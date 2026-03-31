@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioBrain - Home</title>
+    <link rel="stylesheet" href="/css/mobileStyle.css" />
+
+    
+</head>
+
+<body class="mobile-index-copy-4-page">
+    <%- include('../../partials/mobile/header') %>
+
+        <!-- Hero Section -->
+        <section class="hero mobile-index-copy-4-hero">
+            <div class="hero-overlay mobile-index-copy-4-hero-overlay"></div>
+            <h2>Master Life Sciences with Smart Quizzes</h2>
+            <p>Challenge yourself with quizzes in Zoology, Botany, Genetics, Ecology & More.</p>
+            <div>
+                <button class="btn-primary mobile-index-copy-4-btn-primary">Start Quiz</button>
+                <button class="btn-secondary mobile-index-copy-4-btn-secondary">View Leaderboard</button>
+            </div>
+        </section>
+
+        <!-- Quiz Categories -->
+        <section class="section mobile-index-copy-4-section">
+            <h3>Quiz Categories</h3>
+            <div class="card-container mobile-index-copy-4-card-container">
+                <div class="card mobile-index-copy-4-card">
+                    <h4>NEET</h4>
+                    <p>Zoology</p>
+                    <button onclick="mockTest('E1','S1')">Start</button>
+                </div>
+                <div class="card mobile-index-copy-4-card">
+                    <h4>DL/JL/Asst. Prof.</h4>
+                    <p>Zoology</p>
+                    <button onclick="mockTest('E2','S1')">Start</button>
+                </div>
+                <div class="card mobile-index-copy-4-card">
+                    <h4>CSIR.NET/SLET/SET</h4>
+                    <p>Life Sciences</p>
+                    <button onclick="mockTest('E3','S2')">Start</button>
+                </div>
+                <div class="card mobile-index-copy-4-card">
+                    <h4>GATE</h4>
+                    <p>Zoology</p>
+                    <button onclick="mockTest('E4','S1')">Start</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section mobile-index-copy-4-section">
+            <h3>Why Choose BioBrain?</h3>
+            <div class="features mobile-index-copy-4-features">
+                <div class="feature-box mobile-index-copy-4-feature-box">✔ 1000+ MCQs across topics</div>
+                <div class="feature-box mobile-index-copy-4-feature-box">✔ Instant Results & Explanations</div>
+                <div class="feature-box mobile-index-copy-4-feature-box">✔ Track Your Progress</div>
+                <div class="feature-box mobile-index-copy-4-feature-box">✔ Compete on Leaderboard</div>
+            </div>
+        </section>
+
+        <!-- Leaderboard Section -->
+        <section class="leaderboard mobile-index-copy-4-leaderboard">
+            <h3>🏆 Top Biology Minds</h3>
+            <table class="leaderboard-table mobile-index-copy-4-leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Accuracy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% if (leaderboard && leaderboard.length> 0) { %>
+
+                        <% leaderboard.forEach((user, index)=> { %>
+                            <tr
+                                class="<%= currentuser && currentuser._id.toString() === user._id.toString() ? 'current-user' : '' %>">
+                                <td>
+                                    <% if(index===0) { %> 🥇
+                                        <% } else if(index===1) { %> 🥈
+                                            <% } else if(index===2) { %> 🥉
+                                                <% } else { %>
+                                                    <%= index + 1 %>
+                                                        <% } %>
+                                </td>
+                                <td>
+                                    <%= user.username %>
+                                </td>
+                                <td>
+                                    <%= user.finalscore %>
+                                </td>
+                                <td>
+                                    <%= user.accuracy %>%
+                                </td>
+                            </tr>
+                            <% }) %>
+
+                                <% } else { %>
+                                    <tr>
+                                        <td colspan="4">No data available</td>
+                                    </tr>
+                                    <% } %>
+                </tbody>
+            </table>
+        </section>
+
+        <script>
+            function mockTest(examcode, subjectcode) {
+                window.location.href = `/mocktest/init/${examcode}/${subjectcode}`;
+            }
+        </script>
+        </script>
+        <%- include('../../partials/mobile/footer') %>
+</body>
+
+</html>

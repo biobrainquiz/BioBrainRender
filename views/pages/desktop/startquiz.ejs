@@ -13,17 +13,17 @@
     
 </head>
 
-<body class="view-pages-desktop-startquiz">
+<body class="desktop-startquiz-page">
 
     <%- include('../../partials/desktop/header') %>
 
-        <section class="section">
+        <section class="section desktop-startquiz-section">
             <!-- card for displaying 50 Past performances-->
-            <div class="card">
+            <div class="card desktop-startquiz-card">
                 <h4>📊 Your Last 50 Quiz Performances</h4>
 
                 <% if (prepareTestObj.pageresult && prepareTestObj.pageresult.length> 0) { %>
-                    <div class="table-container">
+                    <div class="table-container desktop-startquiz-table-container">
                         <table>
                             <thead>
                                 <tr>
@@ -94,34 +94,34 @@
 
                                         <td>
                                             <% if (r.accuracy>= 70) { %>
-                                                <span class="badge-green">
+                                                <span class="badge-green desktop-startquiz-badge-green">
                                                     <%= r.accuracy %>%
                                                 </span>
                                                 <% } else { %>
-                                                    <span class="badge-red">
+                                                    <span class="badge-red desktop-startquiz-badge-red">
                                                         <%= r.accuracy %>%
                                                     </span>
                                                     <% } %>
                                         </td>
                                         <td>
                                             <% if (r.percentage>= 70) { %>
-                                                <span class="badge-green">
+                                                <span class="badge-green desktop-startquiz-badge-green">
                                                     <%= r.percentage %>%
                                                 </span>
                                                 <% } else { %>
-                                                    <span class="badge-red">
+                                                    <span class="badge-red desktop-startquiz-badge-red">
                                                         <%= r.percentage %>%
                                                     </span>
                                                     <% } %>
                                         </td>
-                                        <td class="action-icons">
+                                        <td class="action-icons desktop-startquiz-action-icons">
                                           
                                             <a href="javascript:void(0)"  onclick="downloadPdfReport('<%= r._id %>')" title="Download PDF">    
-                                                <i class="fa-solid fa-file-pdf"></i>
+                                                <i class="fa-solid fa-file-pdf desktop-startquiz-fa-solid desktop-startquiz-fa-file-pdf"></i>
                                             </a>
 
                                             <a href="javascript:void(0)" onclick="sendEmailReport('<%= r._id %>')" title="Send Email">
-                                                <i class="fa-solid fa-envelope"></i>
+                                                <i class="fa-solid fa-envelope desktop-startquiz-fa-solid desktop-startquiz-fa-envelope"></i>
                                             </a>
 
                                         </td>
@@ -133,20 +133,20 @@
 
                     <!-- ===== PAGINATION CONTROLS ===== -->
 
-                    <div class="pagination">
+                    <div class="pagination desktop-startquiz-pagination">
 
                         <!-- Previous -->
                         <% if(prepareTestObj.pageno> 1){ %>
                             <a href="?pageno=<%= prepareTestObj.pageno - 1 %>">⬅ Previous</a>
                             <% } else { %>
-                                <span class="disabled">⬅ Previous</span>
+                                <span class="disabled desktop-startquiz-disabled">⬅ Previous</span>
                                 <% } %>
 
                                     <!-- Page Numbers -->
                                     <% for(let i=1; i <=prepareTestObj.totalpages; i++){ %>
 
                                         <% if(i===prepareTestObj.pageno){ %>
-                                            <span class="active">
+                                            <span class="active desktop-startquiz-active">
                                                 <%= i %>
                                             </span>
                                             <% } else { %>
@@ -162,7 +162,7 @@
                                                             <a href="?pageno=<%= prepareTestObj.pageno + 1 %>">Next
                                                                 ➡</a>
                                                             <% } else { %>
-                                                                <span class="disabled">Next ➡</span>
+                                                                <span class="disabled desktop-startquiz-disabled">Next ➡</span>
                                                                 <% } %>
 
                     </div>
@@ -171,9 +171,9 @@
                         <% } %>
             </div>
 
-            <div class="card-row">
+            <div class="card-row desktop-startquiz-card-row">
                 <!-- card for configuring Quiz-->
-                <div class="card half-card">
+                <div class="card half-card desktop-startquiz-card desktop-startquiz-half-card">
                     <h4>⚙ Configure Your Exam</h4>
 
                     <form action="/mocktest/createorder" method="POST">
@@ -181,27 +181,27 @@
                         <input type="hidden" name="subjectcode" value="<%= prepareTestObj.subjectcode %>">
 
                         <label>Unit</label>
-                        <div class="custom-dropdown" id="unitWrapper">
-                            <div class="dropdown-selected">Select Unit</div>
-                            <div class="dropdown-menu">
-                                <input type="text" class="dropdown-search" placeholder="Search unit...">
-                                <div class="dropdown-options"></div>
+                        <div class="custom-dropdown desktop-startquiz-custom-dropdown" id="unitWrapper">
+                            <div class="dropdown-selected desktop-startquiz-dropdown-selected">Select Unit</div>
+                            <div class="dropdown-menu desktop-startquiz-dropdown-menu">
+                                <input type="text" class="dropdown-search desktop-startquiz-dropdown-search" placeholder="Search unit...">
+                                <div class="dropdown-options desktop-startquiz-dropdown-options"></div>
                             </div>
                         </div>
                         <input type="hidden" name="unitcode" id="unitHidden" required>
 
                         <label>Topic</label>
-                        <div class="custom-dropdown disabled" id="topicWrapper">
-                            <div class="dropdown-selected">Select Topic</div>
-                            <div class="dropdown-menu">
-                                <input type="text" class="dropdown-search" placeholder="Search topic...">
-                                <div class="dropdown-options"></div>
+                        <div class="custom-dropdown disabled desktop-startquiz-custom-dropdown desktop-startquiz-disabled" id="topicWrapper">
+                            <div class="dropdown-selected desktop-startquiz-dropdown-selected">Select Topic</div>
+                            <div class="dropdown-menu desktop-startquiz-dropdown-menu">
+                                <input type="text" class="dropdown-search desktop-startquiz-dropdown-search" placeholder="Search topic...">
+                                <div class="dropdown-options desktop-startquiz-dropdown-options"></div>
                             </div>
                         </div>
                         <input type="hidden" name="topiccode" id="topicHidden" required>
 
-                        <div class="inline-row">
-                            <div class="inline-group">
+                        <div class="inline-row desktop-startquiz-inline-row">
+                            <div class="inline-group desktop-startquiz-inline-group">
                                 <label>No. of Questions</label>
                                 <select name="count">
                                     <option value="10">10</option>
@@ -210,7 +210,7 @@
                                 </select>
                             </div>
 
-                            <div class="inline-group">
+                            <div class="inline-group desktop-startquiz-inline-group">
                                 <label>Difficulty</label>
                                 <select name="difficulty">
                                     <option value="easy">Easy</option>
@@ -219,14 +219,14 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="btn-primary">Proceed to Payment</button>
-                        <p class="desktop-inline-1whbofr" id="formError"></p>
+                        <button type="submit" class="btn-primary desktop-startquiz-btn-primary">Proceed to Payment</button>
+                        <p class="desktop-startquiz-inline-01" id="formError"></p>
                     </form>
                 </div>
                 <!-- card for Performance Dashboard-->
-                <div class="card half-card">
+                <div class="card half-card desktop-startquiz-card desktop-startquiz-half-card">
                     <h4>📈 Performance Dashboard
-                        <div class="performance-dashboard-card">
+                        <div class="performance-dashboard-card desktop-startquiz-performance-dashboard-card">
                             <select id="scoreType">
                                 <option value="accuracy">Accuracy</option>
                                 <option value="percentage">Percentage</option>

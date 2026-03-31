@@ -11,33 +11,33 @@
   <link rel="stylesheet" href="/css/mobileStyle.css" />
 </head>
 
-<body class="view-pages-mobile-quizresults-copy">
+<body class="mobile-quizresults-copy-page">
 
   <header>
     <h1>BioBrain - Quiz Results</h1>
 
-    <div class="header-actions">
-      <a href="/" class="home-btn">🏠 Home</a>
+    <div class="header-actions mobile-quizresults-copy-header-actions">
+      <a href="/" class="home-btn mobile-quizresults-copy-home-btn">🏠 Home</a>
 
       <a href="/mocktest/result/pdf/<%= examSession.resultid %>" title="Get PDF of Your Result">
-        <i class="fa-solid fa-file-pdf"></i> PDF
+        <i class="fa-solid fa-file-pdf mobile-quizresults-copy-fa-solid mobile-quizresults-copy-fa-file-pdf"></i> PDF
       </a>
 
       <a href="/mocktest/result/email/<%= examSession.resultid %>" title="Send Result via Email">
-        <i class="fa-solid fa-envelope"></i> Email
+        <i class="fa-solid fa-envelope mobile-quizresults-copy-fa-solid mobile-quizresults-copy-fa-envelope"></i> Email
       </a>
     </div>
   </header>
 
-  <div class="container">
+  <div class="container mobile-quizresults-copy-container">
 
-    <div class="greeting">
+    <div class="greeting mobile-quizresults-copy-greeting">
       Hello, <strong>
         <%= examSession.username ? examSession.username : 'Guest' %>
       </strong>!
     </div>
 
-    <table class="stats-table">
+    <table class="stats-table mobile-quizresults-copy-stats-table">
       <tr>
         <th>Total Questions</th>
         <th>Attempted</th>
@@ -52,10 +52,10 @@
         <td>
           <%= examSession.attempted %>
         </td>
-        <td class="correct">
+        <td class="correct mobile-quizresults-copy-correct">
           <%= examSession.right %>
         </td>
-        <td class="wrong">
+        <td class="wrong mobile-quizresults-copy-wrong">
           <%= examSession.wrong %>
         </td>
         <td>
@@ -68,12 +68,12 @@
 
     <% examSession.questions.forEach((q, idx)=> {
       const userAns = examSession.answers[q._id]; %>
-      <div class="question-box">
+      <div class="question-box mobile-quizresults-copy-question-box">
         <p><strong>Q<%= idx + 1 %>:</strong>
           <%= q.question %>
         </p>
 
-        <ul class="question-options">
+        <ul class="question-options mobile-quizresults-copy-question-options">
           <% ['opt1', 'opt2' , 'opt3' , 'opt4' ].forEach((optKey, i)=> {
             const optionNum = i + 1;
             let cls = '';
@@ -96,11 +96,11 @@
             <%= ['A','B','C','D'][q.answer-1] %>
           </strong></p>
         <% if(!userAns){ %>
-          <p class="unattempted">You did not attempt this question.</p>
+          <p class="unattempted mobile-quizresults-copy-unattempted">You did not attempt this question.</p>
           <% } %>
 
             <!-- 🤖 AI BUTTON -->
-            <button class="ai-btn" onclick="<%= examSession.isuserpremium ? 'explainAnswer(this)' : 'return false;' %>"
+            <button class="ai-btn mobile-quizresults-copy-ai-btn" onclick="<%= examSession.isuserpremium ? 'explainAnswer(this)' : 'return false;' %>"
               <%- !examSession.isuserpremium ? 'disabled title="Premium Feature: Upgrade to access"' : '' %>
               data-question="<%= q.question %>"
                 data-opt1="<%= q.opt1 %>"
@@ -112,7 +112,7 @@
                             🤖 Explain Answer
             </button>
 
-            <div class="ai-response"></div>
+            <div class="ai-response mobile-quizresults-copy-ai-response"></div>
 
       </div>
       <% }) %>

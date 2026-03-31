@@ -6,38 +6,35 @@
   <title>Quiz Results | BioBrain</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/js/ui-helper.js"></script>
 
   
   <link rel="stylesheet" href="/css/mobileStyle.css" />
 </head>
+<body class="mobile-quizresults-page">
 
-<body class="view-pages-mobile-quizresults">
-
-  <header>
+<header>
     <h1>BioBrain - Quiz Results</h1>
-
-    <div class="header-actions">
-      <a href="/" class="home-btn">🏠 Home</a>
-
-      <a href="/mocktest/result/pdf/<%= examSession.resultid %>" title="Get PDF of Your Result">
-        <i class="fa-solid fa-file-pdf"></i> PDF
+    <div class="header-actions mobile-quizresults-header-actions">
+      <a href="/" class="home-btn mobile-quizresults-home-btn">🏠 Home</a>
+      <a href="javascript:void(0)"    onclick="downloadPdfReport('<%= examSession.resultid %>')"    title="Get PDF of Your Result">
+          <i class="fa-solid fa-file-pdf mobile-quizresults-fa-solid mobile-quizresults-fa-file-pdf"></i>PDF
       </a>
-
-      <a href="/mocktest/result/email/<%= examSession.resultid %>" title="Send Result via Email">
-        <i class="fa-solid fa-envelope"></i> Email
+      <a href="javascript:void(0)"    onclick="sendEmailReport('<%= examSession.resultid %>')"    title="Send Result via Email">  
+          <i class="fa-solid fa-envelope mobile-quizresults-fa-solid mobile-quizresults-fa-envelope"></i> Email
       </a>
     </div>
-  </header>
+</header>
+<div class="container mobile-quizresults-container">
 
-  <div class="container">
-
-    <div class="greeting">
+    <div class="greeting mobile-quizresults-greeting">
       Hello, <strong>
         <%= examSession.username ? examSession.username : 'Guest' %>
       </strong>!
     </div>
 
-    <table class="stats-table">
+    <table class="stats-table mobile-quizresults-stats-table">
       <tr>
         <th>Total Questions</th>
         <th>Attempted</th>
@@ -52,10 +49,10 @@
         <td>
           <%= examSession.attempted %>
         </td>
-        <td class="correct">
+        <td class="correct mobile-quizresults-correct">
           <%= examSession.right %>
         </td>
-        <td class="wrong">
+        <td class="wrong mobile-quizresults-wrong">
           <%= examSession.wrong %>
         </td>
         <td>
@@ -64,10 +61,10 @@
       </tr>
     </table>
 
-    <div class="mobile-inline-s84gep">
+    <div class="mobile-quizresults-inline-01">
 
   <!-- Analyse This Quiz -->
-  <button class="ai-btn"
+  <button class="ai-btn mobile-quizresults-ai-btn"
     onclick="<%= examSession.isuserpremium ? 'analyzeQuiz(this)' : 'return false;' %>"
     <%- !examSession.isuserpremium ? 'disabled title="Premium Feature: Upgrade to access"' : '' %>
     data-resultid="<%= examSession.resultid %>">
@@ -75,7 +72,7 @@
   </button>
 
   <!-- Analyse All Quizzes -->
-  <button class="ai-btn"
+  <button class="ai-btn mobile-quizresults-ai-btn"
     onclick="<%= examSession.isuserpremium ? 'analyzeAll(this)' : 'return false;' %>"
     <%- !examSession.isuserpremium ? 'disabled title="Premium Feature: Upgrade to access"' : '' %>
     data-userid="<%= examSession.userid %>">
@@ -85,18 +82,16 @@
 </div>
 
 <!-- AI Summary Output -->
-<div id="ai-summary" class="ai-response"></div>
-
+<div id="ai-summary" class="ai-response mobile-quizresults-ai-response"></div>
     <h2>Question Review</h2>
-
     <% examSession.questions.forEach((q, idx)=> {
       const userAns = examSession.answers[q._id]; %>
-      <div class="question-box">
+      <div class="question-box mobile-quizresults-question-box">
         <p><strong>Q<%= idx + 1 %>:</strong>
           <%= q.question %>
         </p>
 
-        <ul class="question-options">
+        <ul class="question-options mobile-quizresults-question-options">
           <% ['opt1', 'opt2' , 'opt3' , 'opt4' ].forEach((optKey, i)=> {
             const optionNum = i + 1;
             let cls = '';
@@ -119,11 +114,11 @@
             <%= ['A','B','C','D'][q.answer-1] %>
           </strong></p>
         <% if(!userAns){ %>
-          <p class="unattempted">You did not attempt this question.</p>
+          <p class="unattempted mobile-quizresults-unattempted">You did not attempt this question.</p>
           <% } %>
 
             <!-- 🤖 AI BUTTON -->
-            <button class="ai-btn" onclick="<%= examSession.isuserpremium ? 'explainAnswer(this)' : 'return false;' %>"
+            <button class="ai-btn mobile-quizresults-ai-btn" onclick="<%= examSession.isuserpremium ? 'explainAnswer(this)' : 'return false;' %>"
               <%- !examSession.isuserpremium ? 'disabled title="Premium Feature: Upgrade to access"' : '' %>
               data-question="<%= q.question %>"
                 data-opt1="<%= q.opt1 %>"
@@ -135,14 +130,58 @@
                             🤖 Explain Answer
             </button>
 
-            <div class="ai-response"></div>
+            <div class="ai-response mobile-quizresults-ai-response"></div>
 
       </div>
       <% }) %>
+</div>
 
-  </div>
+<script>
+    // Wrap in a check to ensure BioBrainUI is ready
+  async function downloadPdfReport(id) {
+    if (typeof BioBrainUI === 'undefined') return console.error("Helper not loaded");
+    
+    BioBrainUI.showLoading('Generating PDF', 'Preparing your performance analytics...');
+    try {
+        const response = await fetch(`/mocktest/result/pdf/${id}`);
+        if (!response.ok) throw new Error();
+        const blob = await response.blob();
+        
+        BioBrainUI.finish();
+        
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `BioBrain_Report_${id}.pdf`;
+        a.click();
+        window.URL.revokeObjectURL(url);
+        
+        setTimeout(() => Swal.close(), 600);
+    } catch (err) {
+        BioBrainUI.error('Download Failed', 'Could not generate the PDF.');
+    }
+}
 
-  <script>
+  async function sendEmailReport(id) {
+    if (typeof BioBrainUI === 'undefined') return console.error("Helper not loaded");
+
+    BioBrainUI.showLoading('Sending Email', 'Generating PDF and dispatching to your inbox...');
+    try {
+        const response = await fetch(`/mocktest/result/email/${id}`);
+        const data = await response.json();
+        if (data.success) {
+            BioBrainUI.finish();
+             setTimeout(() => {
+                BioBrainUI.success('Sent!', 'Check your email for the report.');
+            }, 500);
+        } else {
+            throw new Error();
+        }
+    } catch (err) {
+        BioBrainUI.error('Email Failed', 'We could not send the report at this time.');
+    }
+}
+
   // 📄 Analyse This Quiz (POST)
   async function analyzeQuiz(btn) {
     const box = document.getElementById("ai-summary");
@@ -150,8 +189,8 @@
     //box.innerHTML = "⏳ Analyzing this quiz...";
 
     box.innerHTML = `
-  <div class="loader">
-    <div class="hourglass"></div>
+  <div class="loader mobile-quizresults-loader">
+    <div class="hourglass mobile-quizresults-hourglass"></div>
     <span>Analyzing this quiz...</span>
   </div>
 `;
@@ -175,15 +214,14 @@
     }
   }
 
-
   // 📊 Analyse All Quizzes (POST)
   async function analyzeAll(btn) {
     const box = document.getElementById("ai-summary");
     box.style.display = "block";
     //box.innerHTML = "⏳ Analyzing all quizzes...";
     box.innerHTML = `
-  <div class="loader">
-    <div class="hourglass"></div>
+  <div class="loader mobile-quizresults-loader">
+    <div class="hourglass mobile-quizresults-hourglass"></div>
     <span>Analyzing all quizzes...</span>
   </div>
 `;
@@ -216,6 +254,7 @@
     .replace(/###/g, "<br><strong>")
     .replace(/---/g, "<hr>");
 }
+ 
   function formatFullAnalysis(data) {
   let html = "";
 
@@ -248,8 +287,8 @@
       //box.innerHTML = "⏳ Thinking...";
 
        box.innerHTML = `
-  <div class="loader">
-    <div class="hourglass"></div>
+  <div class="loader mobile-quizresults-loader">
+    <div class="hourglass mobile-quizresults-hourglass"></div>
     <span>Thinking...</span>
   </div>
 `;
@@ -289,6 +328,6 @@
       .replace(/•/g, "✔️ ")
       .replace(/- /g, "👉 ");
     }
-  </script>
+</script>
 </body>
 </html>

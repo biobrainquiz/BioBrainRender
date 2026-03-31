@@ -7,21 +7,21 @@
   <link rel="stylesheet" href="/css/desktopStyle.css" />
 </head>
 
-<body class="view-pages-desktop-reset">
+<body class="desktop-reset-page">
 
   <!-- Header -->
   <%- include('../../partials/desktop/header') %>
 
-    <div class="login-container">
+    <div class="login-container desktop-reset-login-container">
       <h2>Reset Password</h2>
 
       <input type="password" id="newPassword" placeholder="New Password">
       <input type="password" id="confirmPassword" placeholder="Confirm Password">
 
-      <button class="btn-register" id="resetBtn">Reset Password</button>
+      <button class="btn-register desktop-reset-btn-register" id="resetBtn">Reset Password</button>
 
-      <div class="error" id="errorMsg"></div>
-      <div class="success" id="successMsg"></div>
+      <div class="error desktop-reset-error" id="errorMsg"></div>
+      <div class="success desktop-reset-success" id="successMsg"></div>
 
       
     </div>
