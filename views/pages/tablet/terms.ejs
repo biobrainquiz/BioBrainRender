@@ -4,86 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terms & Conditions | BioBrain</title>
-  <link rel="stylesheet" href="/css/desktopStyle.css" />
-  <style>
-    /* Collapsible sections style */
-    .collapsible {
-      background-color: #e8f5e9;
-      color: #1B5E20;
-      cursor: pointer;
-      padding: 15px 20px;
-      width: 100%;
-      border: none;
-      border-radius: 10px;
-      text-align: left;
-      outline: none;
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 10px;
-      transition: background 0.3s;
-    }
-
-    .collapsible:hover {
-      background-color: #dcedc8;
-    }
-
-    .collapsible:after {
-      content: '\25BC'; /* Down arrow */
-      float: right;
-      transition: transform 0.3s;
-    }
-
-    .collapsible.active:after {
-      transform: rotate(180deg);
-    }
-
-    .content {
-      padding: 0 20px;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-      background-color: rgba(255,255,255,0.6);
-      border-radius: 0 0 10px 10px;
-      margin-bottom: 15px;
-    }
-
-    .content p, .content ul {
-      margin: 15px 0;
-    }
-
-    .btn-home {
-      display:inline-block;
-      margin-top:20px;
-      padding: 12px 24px;
-      background:#1B5E20;
-      color:#fff;
-      text-decoration:none;
-      border-radius:10px;
-      transition: 0.3s ease;
-      font-weight:500;
-    }
-
-    .btn-home:hover {
-      background:#144d17;
-      transform:translateY(-2px);
-      box-shadow:0 8px 20px rgba(0,0,0,0.15);
-    }
-
-    /* Responsive */
-    @media(max-width:768px){
-      .collapsible {
-        font-size: 16px;
-        padding: 12px 15px;
-      }
-      .content {
-        padding: 0 15px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/css/laptopStyle.css" />
+  
 </head>
-<body>
+<body class="view-pages-tablet-terms">
 
-  <%- include('../../partials/desktop/header') %>
+  <%- include('../../partials/tablet/header') %>
 
   <div class="disclaimer-container">
     <h1>Terms & Conditions</h1>
@@ -136,7 +62,7 @@
     <a href="/" class="btn-home">Back to Home</a>
   </div>
 
-  <%- include('../../partials/desktop/footer') %>
+  <%- include('../../partials/tablet/footer') %>
 
   <script>
     // Collapsible sections toggle

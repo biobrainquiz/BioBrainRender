@@ -6,175 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BioBrain - Home</title>
     <link rel="stylesheet" href="/css/desktopStyle.css" />
-    <style>
-        /* ================================
-   LEADERBOARD SECTION
-================================ */
-        .leaderboard {
-            max-width: 1000px;
-            margin: 60px auto;
-            padding: 30px;
-            background: linear-gradient(145deg, #0f172a, #1e293b);
-            border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-            color: #e2e8f0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* subtle glow effect */
-        .leaderboard::before {
-            content: "";
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(56, 189, 248, 0.08), transparent 70%);
-            z-index: 0;
-        }
-
-        .leaderboard h3 {
-            text-align: center;
-            font-size: 28px;
-            margin-bottom: 25px;
-            color: #38bdf8;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* ================================
-   TABLE
-================================ */
-        .leaderboard-table {
-            width: 100%;
-            border-collapse: collapse;
-            border-radius: 14px;
-            overflow: hidden;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* Header */
-        .leaderboard-table thead {
-            background: linear-gradient(135deg, #1e293b, #334155);
-        }
-
-        .leaderboard-table th {
-            padding: 15px;
-            text-align: center;
-            font-size: 14px;
-            color: #94a3b8;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* Rows */
-        .leaderboard-table td {
-            padding: 16px;
-            text-align: center;
-            font-size: 15px;
-            border-bottom: 1px solid #1e293b;
-            transition: all 0.2s ease;
-        }
-
-        /* Zebra rows */
-        .leaderboard-table tbody tr:nth-child(even) {
-            background: rgba(30, 41, 59, 0.6);
-        }
-
-        /* Hover effect */
-        .leaderboard-table tbody tr:hover {
-            background: #334155;
-            transform: scale(1.01);
-        }
-
-        /* ================================
-   CURRENT USER HIGHLIGHT
-================================ */
-        .current-user {
-            background: linear-gradient(135deg, #22c55e, #16a34a) !important;
-            color: #fff;
-            font-weight: 600;
-        }
-
-        .current-user td {
-            border-bottom: none;
-        }
-
-        /* ================================
-   TOP 3 SPECIAL STYLING
-================================ */
-        .leaderboard-table tbody tr:nth-child(1) td:first-child {
-            font-size: 18px;
-            font-weight: bold;
-            color: gold;
-        }
-
-        .leaderboard-table tbody tr:nth-child(2) td:first-child {
-            font-size: 17px;
-            font-weight: bold;
-            color: silver;
-        }
-
-        .leaderboard-table tbody tr:nth-child(3) td:first-child {
-            font-size: 16px;
-            font-weight: bold;
-            color: #cd7f32;
-        }
-
-        /* ================================
-   EMPTY STATE
-================================ */
-        .leaderboard-table td[colspan="4"] {
-            padding: 25px;
-            text-align: center;
-            color: #94a3b8;
-            font-style: italic;
-        }
-
-        /* ================================
-   RESPONSIVE (MOBILE)
-================================ */
-        @media (max-width: 768px) {
-            .leaderboard {
-                padding: 20px;
-            }
-
-            .leaderboard-table th,
-            .leaderboard-table td {
-                padding: 10px;
-                font-size: 13px;
-            }
-
-            .leaderboard h3 {
-                font-size: 22px;
-            }
-        }
-
-        .leaderboard-table tbody tr:nth-child(1) td:nth-child(2)::after {
-            content: " 👑";
-        }
-
-        .leaderboard {
-            animation: fadeIn 0.6s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    
 </head>
 
-<body>
+<body class="view-pages-desktop-index">
     <%- include('../../partials/desktop/header') %>
 
 <div id="bio-bot-container">
@@ -200,60 +35,7 @@
     <div id="chat-bubble" onclick="toggleChat()" title="AI Bot">🧬</div>
 </div>
 
-<style>
-    /* Fixed Positioning */
-    #bio-bot-container {
-        position: fixed;
-        bottom: 25px;
-        right: 25px;
-        z-index: 9999;
-        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    }
 
-
-    
-    #chat-bubble {
-        width: 45px; height: 45px; background: #27ae60;
-        border-radius: 50%; display: flex; align-items: center;
-        justify-content: center; color: white; font-size: 22px;
-        cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        transition: transform 0.3s ease;
-    }
-    #chat-bubble:hover { transform: scale(1.1) rotate(10deg); }
-
-    #chat-window {
-        width: 350px; height: 480px; background: white;
-        border-radius: 15px; box-shadow: 0 12px 30px rgba(0,0,0,0.2);
-        display: none; flex-direction: column; overflow: hidden; margin-bottom: 15px;
-        border: 1px solid #eee;
-    }
-
-    #chat-header {
-        background: #27ae60; color: white; padding: 15px;
-        display: flex; justify-content: space-between; align-items: center;
-    }
-
-    #header-actions button {
-        background: rgba(255,255,255,0.2);
-        border: none; color: white; margin-left: 8px;
-        padding: 5px 8px; border-radius: 4px; cursor: pointer;
-        font-size: 14px; transition: background 0.2s;
-    }
-    #header-actions button:hover { background: rgba(255,255,255,0.4); }
-
-    #messages {
-        flex: 1; padding: 20px; overflow-y: auto; font-size: 14px;
-        background: #fdfdfd; display: flex; flex-direction: column; gap: 12px;
-    }
-
-    .user-msg { align-self: flex-end; background: #e8f5e9; padding: 10px 14px; border-radius: 15px 15px 0 15px; color: #1b5e20; max-width: 85%; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-    .bot-msg { align-self: flex-start; background: #ffffff; padding: 10px 14px; border-radius: 15px 15px 15px 0; border: 1px solid #efefef; max-width: 85%; box-shadow: 0 2px 5px rgba(0,0,0,0.05); color: #333; line-height: 1.6; }
-
-    .input-area { display: flex; padding: 15px; border-top: 1px solid #f0f0f0; background: #fff; }
-    #user-input { flex: 1; border: 1px solid #ddd; border-radius: 8px; padding: 10px; outline: none; transition: border 0.2s; }
-    #user-input:focus { border-color: #27ae60; }
-    #send-btn { margin-left: 10px; background: #27ae60; color: white; border: none; padding: 10px 18px; border-radius: 8px; cursor: pointer; font-weight: bold; }
-</style>
 
 <script>
     function toggleChat() {
@@ -306,10 +88,10 @@
                 const htmlResponse = data.answer.replace(/\n/g, '<br>');
                 msgDiv.innerHTML += `<div class="bot-msg">${htmlResponse}</div>`;
             } else {
-                msgDiv.innerHTML += `<div class="bot-msg" style="color:red;">Error: AI limit reached or offline.</div>`;
+                msgDiv.innerHTML += `<div class="bot-msg desktop-inline-kq0js8">Error: AI limit reached or offline.</div>`;
             }
         } catch (err) {
-            msgDiv.innerHTML += `<div class="bot-msg" style="color:red;">Server connection failed.</div>`;
+            msgDiv.innerHTML += `<div class="bot-msg desktop-inline-kq0js8">Server connection failed.</div>`;
         } finally {
             btn.disabled = false;
             btn.innerText = "Ask";

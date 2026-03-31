@@ -4,165 +4,10 @@
   <meta charset="UTF-8">
   <title>BioBrain - Examination Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f6f9;
-    }
-
-    header {
-      background: #1B5E20;
-      color: white;
-      padding: 15px 30px;
-      font-size: 18px;
-      font-weight: bold;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .container {
-      display: flex;
-      height: calc(100vh - 60px);
-    }
-
-    .left-panel {
-      flex: 3;
-      padding: 30px;
-      background: white;
-      overflow-y: auto;
-    }
-
-    .right-panel {
-      flex: 1;
-      background: #eef1f4;
-      padding: 20px;
-      border-left: 2px solid #ddd;
-    }
-
-    .question-box {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    /* OPTIONS */
-    .option {
-      margin-bottom: 15px;
-    }
-
-    .option input[type="radio"] {
-      display: none;
-    }
-
-    .option label {
-      display: block;
-      padding: 12px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-
-    .option input[type="radio"]:checked+label {
-      background: #1B5E20;
-      color: white;
-      border-color: #1B5E20;
-    }
-
-    .option label:hover {
-      background: #e8f5e9;
-    }
-
-    /* BUTTONS */
-    .actions {
-      margin-top: 20px;
-    }
-
-    button {
-      padding: 10px 18px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-right: 10px;
-    }
-
-    .save-btn {
-      background: #1976D2;
-      color: white;
-    }
-
-    .review-btn {
-      background: orange;
-      color: white;
-    }
-
-    .submit-btn {
-      background: #d32f2f;
-      color: white;
-      width: 100%;
-      margin-top: 20px;
-    }
-
-    /* PALETTE */
-    .palette {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 8px;
-    }
-
-    .palette button {
-      padding: 10px;
-      font-weight: bold;
-      border-radius: 4px;
-      border: none;
-    }
-
-    .not-visited {
-      background: #ccc;
-    }
-
-    .answered {
-      background: #1B5E20;
-      color: white;
-    }
-
-    .review {
-      background: orange;
-      color: white;
-    }
-
-    .timer {
-      font-size: 16px;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-
-    .breadcrumb-wrapper {
-      display: inline-block;
-      background-color: #f5f5f5;
-      /* optional light background for contrast */
-      padding: 2px 4px;
-      /* optional small padding */
-      border-radius: 3px;
-      /* rounded corners */
-    }
-
-    .breadcrumb {
-      font-weight: 400;
-      /* normal weight */
-      color: #111 !important;
-      /* dark black, force override */
-    }
-
-    .breadcrumb .truncate {
-      font-weight: 400;
-      color: #000 !important;
-      /* pure black for truncated names */
-    }
-  </style>
+  
 </head>
 
-<body>
+<body class="view-pages-tablet-quiz">
   <header>
     <div>
       Hello, <%= examSession.username %> 👋 | Examination Portal |
@@ -367,7 +212,7 @@
     });
   </script>
 
-  <link rel="stylesheet" href="/css/desktopStyle.css" />
-  <%- include('../../partials/desktop/footer') %>
+  <link rel="stylesheet" href="/css/laptopStyle.css" />
+  <%- include('../../partials/tablet/footer') %>
 </body>
 </html>

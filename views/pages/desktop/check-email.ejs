@@ -8,34 +8,34 @@
   <link rel="stylesheet" href="/css/desktopStyle.css" />
 </head>
 
-<body>
+<body class="view-pages-desktop-check-email">
   <%- include('../../partials/desktop/header') %>
 
   <div class="login-container">
     <h2>Verify Your Email</h2>
     
-    <div style="text-align: center; margin-bottom: 20px;">
-      <p style="color: #475569; line-height: 1.6;">
+    <div class="desktop-inline-11zvx75">
+      <p class="desktop-inline-pesw2g">
         We've sent a verification link to:<br>
-        <strong style="color: #1e293b;"><%= email %></strong>
+        <strong class="desktop-inline-10aefdw"><%= email %></strong>
       </p>
-      <p style="font-size: 0.9em; color: #64748b; margin-top: 10px;">
+      <p class="desktop-inline-10l7wx6">
         Please click the link in the email to activate your account.
       </p>
     </div>
 
-    <div id="resendSection" style="text-align: center; border-top: 1px solid #eee; pt: 15px;">
-      <p style="font-size: 0.85em; color: #94a3b8;">Didn't receive the email?</p>
-      <button id="resendBtn"  style="margin-top: 10px;" >
+    <div class="desktop-inline-cnrfi0" id="resendSection">
+      <p class="desktop-inline-h2au7e">Didn't receive the email?</p>
+      <button class="desktop-inline-xk9cqr" id="resendBtn"  >
         Resend Verification Email
       </button>
     </div>
 
-    <div class="links" style="margin-top: 20px;">
+    <div class="links desktop-inline-xk9zqa">
       <a href="/authentication/login">Back to Login</a>
     </div>
 
-    <div class="error" id="statusMsg" style="margin-top: 15px; text-align: center; min-height: 1.2em;"></div>
+    <div class="error desktop-inline-xn3h6r" id="statusMsg"></div>
   </div>
 
   <script>

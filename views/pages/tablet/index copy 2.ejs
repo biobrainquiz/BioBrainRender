@@ -5,159 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BioBrain - Home</title>
-    <link rel="stylesheet" href="/css/desktopStyle.css" />
+    <link rel="stylesheet" href="/css/laptopStyle.css" />
 
-    <style>
-        /* ================================
-   UPGRADED LEADERBOARD SECTION
-================================ */
-        .leaderboard {
-            max-width: 900px;
-            margin: 80px auto;
-            padding: 40px;
-            background: rgba(15, 23, 42, 0.8);
-            backdrop-filter: blur(10px);
-            border-radius: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Background Glows */
-        .leaderboard::after {
-            content: "";
-            position: absolute;
-            top: -10%;
-            right: -10%;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(45, 212, 191, 0.1), transparent 70%);
-            z-index: 0;
-        }
-
-        .leaderboard h3 {
-            text-align: center;
-            font-size: 32px;
-            font-weight: 800;
-            margin-bottom: 40px;
-            background: linear-gradient(to right, #fff, #2dd4bf);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: -1px;
-        }
-
-        /* Table Styling */
-        .leaderboard-table {
-            width: 100%;
-            border-spacing: 0 10px;
-            /* Creates the "Card" look for rows */
-            border-collapse: separate;
-            position: relative;
-            z-index: 1;
-        }
-
-        .leaderboard-table th {
-            padding: 10px 20px;
-            text-align: left;
-            color: #64748b;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .leaderboard-table tr {
-            transition: transform 0.2s ease;
-        }
-
-        .leaderboard-table td {
-            background: rgba(30, 41, 59, 0.5);
-            padding: 20px;
-            color: #f8fafc;
-        }
-
-        /* Rounded corners for the "Card" rows */
-        .leaderboard-table td:first-child {
-            border-radius: 15px 0 0 15px;
-            text-align: center;
-            width: 80px;
-        }
-
-        .leaderboard-table td:last-child {
-            border-radius: 0 15px 15px 0;
-        }
-
-        /* Rank Typography */
-        .rank-box {
-            font-weight: 800;
-            font-size: 18px;
-            display: inline-block;
-        }
-
-        /* Specific styling for Top 3 */
-        tr:nth-child(1) td {
-            background: rgba(253, 224, 71, 0.1);
-            border: 1px solid rgba(253, 224, 71, 0.2);
-            border-width: 1px 0;
-        }
-
-        tr:nth-child(1) td:first-child {
-            border-width: 1px 0 1px 1px;
-            color: #fde047;
-        }
-
-        tr:nth-child(1) td:last-child {
-            border-width: 1px 1px 1px 0;
-        }
-
-        /* Current User Highlight - Neon Pulse */
-        .current-user td {
-            background: rgba(45, 212, 191, 0.15) !important;
-            border: 1px solid #2dd4bf !important;
-            border-width: 1px 0 !important;
-        }
-
-        .current-user td:first-child {
-            border-width: 1px 0 1px 1px !important;
-        }
-
-        .current-user td:last-child {
-            border-width: 1px 1px 1px 0 !important;
-        }
-
-        /* Progress Bar for Accuracy */
-        .accuracy-bar-bg {
-            width: 100px;
-            height: 6px;
-            background: #0f172a;
-            border-radius: 10px;
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 10px;
-        }
-
-        .accuracy-bar-fill {
-            height: 100%;
-            background: #2dd4bf;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(45, 212, 191, 0.5);
-        }
-
-        @media (max-width: 768px) {
-            .accuracy-bar-bg {
-                display: none;
-            }
-
-            .leaderboard {
-                padding: 15px;
-                margin: 30px 10px;
-            }
-        }
-    </style>
+    
 </head>
 
-<body>
-    <%- include('../../partials/desktop/header') %>
+<body class="view-pages-tablet-index-copy-2">
+    <%- include('../../partials/tablet/header') %>
 
         <!-- Hero Section -->
         <section class="hero">
@@ -234,18 +88,18 @@
                                                             <% } %>
                                     </span>
                                 </td>
-                                <td style="font-weight: 600;">
+                                <td class="laptop-inline-1ka1nmi">
                                     <%= user.username %>
-                                        <% if(index===0) { %> <small
-                                                style="display:block; color:#fde047; font-size:10px;">TOP GENIUS</small>
+                                        <% if(index===0) { %> <small class="laptop-inline-zjjwrb"
+                                               >TOP GENIUS</small>
                                             <% } %>
                                 </td>
-                                <td style="color: #2dd4bf; font-family: monospace; font-size: 1.1rem;">
+                                <td class="laptop-inline-1b5wa92">
                                     <%= user.finalscore %>
                                 </td>
                                 <td>
                                     <div class="accuracy-bar-bg">
-                                        <div class="accuracy-bar-fill" style="width: <%= user.accuracy %>%"></div>
+                                        <div class="accuracy-bar-fill pct-width pct-<%= Math.max(0, Math.min(100, Math.round(Number(user.accuracy) || 0))) %>"></div>
                                     </div>
                                     <%= user.accuracy %>%
                                 </td>
@@ -253,7 +107,7 @@
                             <% }) %>
                                 <% } else { %>
                                     <tr>
-                                        <td colspan="4" style="text-align: center; opacity: 0.5;">No brilliant minds
+                                        <td class="laptop-inline-1hbcky3" colspan="4">No brilliant minds
                                             yet. Be the first!</td>
                                     </tr>
                                     <% } %>
@@ -267,7 +121,7 @@
             }
         </script>
         </script>
-        <%- include('../../partials/desktop/footer') %>
+        <%- include('../../partials/tablet/footer') %>
 </body>
 
 </html>
